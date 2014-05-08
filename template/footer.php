@@ -8,7 +8,7 @@
 	<label for="name">Name: </label>
 	<input type="text" name="name"/>
 
-	<label for="email">email: </label>
+	<label for="email">Email: </label>
 	<input type="text" name="email"/>
 
 	<input type="submit" name="submit" value="subscribe"/>
