@@ -26,7 +26,7 @@
 <body>
 <header>
 	<nav>
-		<ul><?php foreach($main as $nav) ?>
+		<ul><?php foreach($main as $nav): ?>
 			<li><?php echo $nav['name']; ?></li>
 			<?php endforeach;?>
 		</ul>

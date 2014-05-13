@@ -11,12 +11,12 @@ $_SESSION = array();
 
 //check for a new language ID
 //store language ID in session:
-if(isset$($_GET['lid']) && filter_var($_GET['lid'],
+if(isset($_GET['lid']) && filter_var($_GET['lid'],
 	Filter_VALIDATE_INT, array('min_range' => 1))
 	){
 	$_SESSION['lid'] = $_GET['lid'];
 } elseif (!isset($_SESSION['lid'])){
-	$_SESSION['lid'] = 1 //default language
+	$_SESSION['lid'] = 1; //default language
 }
 
 // Get the words for this language:
