@@ -3,11 +3,11 @@
 --for navigation--
 
 CREATE TABLE navigation (
-	id int(8) NOT NULL AUTO_INCREMENT,
+	id INT(8) NOT NULL AUTO_INCREMENT,
 	name VARCHAR(20) NOT NULL,
 	position VARCHAR(20) NOT NULL,
 	page_url VARCHAR(70) NOT NULL
-) ENGINE = InnoDB;;
+);
 
 --For forums --
 CREATE TABLE users (
