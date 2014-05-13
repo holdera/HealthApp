@@ -1,0 +1,7 @@
+doctrine:
+  class: database
+  param:
+    dsn: 'mysql:host=50.62.209.8:3306;dbname=HealthApp'
+    username: APSquared
+    password: K5-dynabagyxu
+

@@ -1,0 +1,5 @@
+healthhealth_user_homepage:
+    pattern:  /
+    defaults: { _controller: healthhealthUserBundle:Default:index }
+
+

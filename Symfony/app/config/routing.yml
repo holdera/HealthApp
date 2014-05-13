@@ -1,4 +1,5 @@
-acme_test:
-    resource: "@AcmeTestBundle/Resources/config/routing.yml"
-    prefix:   /
+healthhealth_user:
+    path: /
+    defaults: {_controller: healthhealthUserBundle:Default:index}
+
 
