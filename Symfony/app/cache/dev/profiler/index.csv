@@ -158,3 +158,10 @@ e3179c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle
 06cbad,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400025838,
 665216,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400025869,
 eabda1,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400025891,
+7cb4d3,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400026082,45dfb0
+45dfb0,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400026082,
+c9bae0,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400026667,
+068855,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exericse,1400026671,4385f3
+4385f3,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exericse,1400026671,
+fd4f9a,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1400026727,
+d4a590,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1400026729,

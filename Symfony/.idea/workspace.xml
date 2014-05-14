@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LifeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/LifeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="62" selection-start="256" selection-end="256" vertical-scroll-proportion="0.29239765" vertical-offset="0" max-vertical-offset="513">
+            <state line="2" column="0" selection-start="7" selection-end="288" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -62,16 +62,43 @@
       <file leaf-file-name="lifestyle.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Lifestyle/lifestyle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="67" selection-start="643" selection-end="643" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="exercises.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/exercises.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="112" selection-start="1990" selection-end="1990" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExerciseController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="69" selection-start="267" selection-end="267" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="75" selection-start="441" selection-end="596" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="58" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="9" column="11" selection-start="205" selection-end="213" vertical-scroll-proportion="0.24545455" vertical-offset="0" max-vertical-offset="550">
               <folding />
             </state>
           </provider>
@@ -105,21 +132,24 @@
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/healthhealthUserExtension.php" />
         <option value="$PROJECT_DIR$/app/cache/dev/classes.php" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Lifestyle/lifestyle.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/Configuration.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/LifeController.php" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Lifestyle/lifestyle.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/exercises.html" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/exercises.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
-    <option name="y" value="181" />
-    <option name="width" value="865" />
+    <option name="x" value="151" />
+    <option name="y" value="231" />
+    <option name="width" value="1092" />
     <option name="height" value="693" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -277,41 +307,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Lifestyle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="healthUserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
+              <option name="myItemId" value="Exercises" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,7 +359,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DependencyInjection" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,6 +385,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -445,7 +442,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="181" width="865" height="693" extended-state="0" />
+    <frame x="151" y="231" width="1092" height="693" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -454,7 +451,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28786126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22802198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1650641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -513,13 +510,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="77" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
@@ -732,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.7916667" vertical-offset="89" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/healthhealthUserExtension.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="0.4385965" vertical-offset="0" max-vertical-offset="513">
@@ -756,20 +739,6 @@
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Lifestyle/lifestyle.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="643" selection-end="643" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.1119403" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
@@ -851,16 +820,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="12" column="24" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.7916667" vertical-offset="89" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="75" selection-start="441" selection-end="596" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/LifeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="62" selection-start="256" selection-end="256" vertical-scroll-proportion="0.29239765" vertical-offset="0" max-vertical-offset="513">
+        <state line="2" column="0" selection-start="7" selection-end="288" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Lifestyle/lifestyle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/exercises.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="112" selection-start="1990" selection-end="1990" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="69" selection-start="267" selection-end="267" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="205" selection-end="213" vertical-scroll-proportion="0.24545455" vertical-offset="0" max-vertical-offset="550">
           <folding />
         </state>
       </provider>
