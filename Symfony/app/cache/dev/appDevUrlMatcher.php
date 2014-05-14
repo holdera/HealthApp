@@ -144,6 +144,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\healthUserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'healthhealth_user',);
         }
 
+        // healthhealth_life
+        if ($pathinfo === '/lifestyle') {
+            return array (  '_controller' => 'health\\healthUserBundle\\Controller\\LifeController::showAction',  '_route' => 'healthhealth_life',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

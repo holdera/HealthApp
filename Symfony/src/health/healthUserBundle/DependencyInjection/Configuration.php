@@ -20,10 +20,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('healthhealth_user');
 
-        $rootNode
-            ->children()
-            ->scalarNode('lifestyle')->defaultValue("hey")->end()
-            ->end();
+
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

@@ -2,4 +2,6 @@ healthhealth_user:
     path: /
     defaults: {_controller: healthhealthUserBundle:Default:index}
 
-
+healthhealth_life:
+  path: /lifestyle
+  defaults: {_controller: healthhealthUserBundle:Life:show}

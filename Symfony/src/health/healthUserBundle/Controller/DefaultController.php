@@ -10,4 +10,17 @@ class DefaultController extends Controller
     {
         return $this->render('healthhealthUserBundle:Default:index.html.twig');
     }
+
+    public function showAction()
+    {
+        $navigation = $this->getDoctrine()
+            ->getRepository('healthUserBundle')
+            ->find(id);
+
+
+        if(!$navigation)
+        {
+            throw $this->createNotFoundException('no navigation');
+        }
+    }
 }
