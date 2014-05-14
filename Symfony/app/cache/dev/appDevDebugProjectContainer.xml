@@ -26,7 +26,7 @@
     <parameter key="database_driver">pdo_mysql</parameter>
     <parameter key="database_host">50.62.209.8</parameter>
     <parameter key="database_port">3306</parameter>
-    <parameter key="database_name">HealthApp</parameter>
+    <parameter key="database_name">HealthLife</parameter>
     <parameter key="database_user">APSquared</parameter>
     <parameter key="database_password">K5-dynabagyxu</parameter>
     <parameter key="mailer_transport">smtp</parameter>
@@ -2237,7 +2237,7 @@
         <argument key="driver">pdo_mysql</argument>
         <argument key="host">50.62.209.8</argument>
         <argument key="port">3306</argument>
-        <argument key="dbname">HealthApp</argument>
+        <argument key="dbname">HealthLife</argument>
         <argument key="user">APSquared</argument>
         <argument key="password">K5-dynabagyxu</argument>
         <argument key="charset">UTF8</argument>
