@@ -31,6 +31,8 @@ monolog:
 
 assetic:
     use_controller: true
+    bundles: ['healthhealthUserBundle']
+    debug:          %kernel.debug%
 
 #swiftmailer:
 #    delivery_address: me@example.com

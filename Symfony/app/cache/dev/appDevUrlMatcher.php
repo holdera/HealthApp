@@ -27,6 +27,35 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $context = $this->context;
         $request = $this->request;
 
+        if (0 === strpos($pathinfo, '/css/4f9dc43')) {
+            // _assetic_4f9dc43
+            if ($pathinfo === '/css/4f9dc43.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_4f9dc43',);
+            }
+
+            if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_')) {
+                // _assetic_4f9dc43_0
+                if ($pathinfo === '/css/4f9dc43_part_1_bootstrap.min_1.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_0',);
+                }
+
+                if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_styles_')) {
+                    // _assetic_4f9dc43_1
+                    if ($pathinfo === '/css/4f9dc43_part_1_styles_2.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_1',);
+                    }
+
+                    // _assetic_4f9dc43_2
+                    if ($pathinfo === '/css/4f9dc43_part_1_styles_3.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_2',);
+                    }
+
+                }
+
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _wdt
             if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {

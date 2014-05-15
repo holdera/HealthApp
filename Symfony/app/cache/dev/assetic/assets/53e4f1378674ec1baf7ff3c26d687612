@@ -1,0 +1,14 @@
+$mouse:#66E3E3;
+$main:#4EA1D4;
+$back:#fff;
+
+body{
+	a:hover{ color:$mouse;}
+	a {}
+	color:$main;
+	list-style-types:none;
+}
+
+header{
+	
+}
