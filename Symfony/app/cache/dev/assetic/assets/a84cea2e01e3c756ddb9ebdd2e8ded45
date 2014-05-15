@@ -1,4 +1,4 @@
-$mouse:#66E3E3;
+$mouse:#000;
 $main:#4EA1D4;
 $back:#fff;
 
@@ -10,5 +10,8 @@ body{
 }
 
 header{
-	
+	background: $mouse;
+}
+.inputW{
+  width:100px;
 }

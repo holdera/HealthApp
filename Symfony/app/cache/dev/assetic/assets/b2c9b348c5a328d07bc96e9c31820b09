@@ -1,0 +1,23 @@
+$mouse:#000;
+$main:#000;
+$white:#fff;
+
+body{
+	a:hover{ color:$white;}
+	a {}
+	color:$main;
+	list-style-types:none;
+}
+
+header{
+	background: $main;
+  #logo{
+    color:$white;
+  }
+}
+.login{
+  padding:10px 0;
+}
+.inputW{
+  width:200px;
+}

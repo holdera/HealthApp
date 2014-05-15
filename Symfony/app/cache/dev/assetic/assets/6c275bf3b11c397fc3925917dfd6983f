@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  list-style-types: none; }
+  body a:hover {
+    color: white; }
+
+header {
+  background: black; }
+  header #logo {
+    color: white; }
+
+.login {
+  padding: 10px 0; }
+
+.inputW {
+  width: 200px; }

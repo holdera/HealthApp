@@ -1,3 +1,4 @@
+{#extends '::layout.html.twig' #}
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="health, fitness, exercise, lifestyle, healthy, weightloss">
@@ -14,12 +15,18 @@
     {% endstylesheets %}
 {% endblock %}
 
-<section class="non-slider">
+<header>
+    <h1 id="logo">The Healthy Lifestyle</h1>
+</header>
 
-</section>
+<section class="container-fluid">
+
 
 <section class="row content">
 
+    <section id="non-slider">
+
+    </section>
 
     <section class="col-md-6 welcome">
         <h1>Change Your Lifestyle!</h1>
@@ -34,15 +41,21 @@
 
     <section class="col-md-6 login">
         <h1>Login/Sign Up</h1>
-<form method="post">
-      <label for="username">Username:</label>
-      <input type="text" name="username" id="userName" />
+<form class="form-horizontal login" method="post">
+    <section class="form-group">
+      <label class="col-sm-2 control-label" for="username">Username:</label>
+      <input type="text" name="username" class="form-control inputW" id="userName" />
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="passWord" />
+        <label class="col-sm-2 control-label" for="password">Password</label>
+        <input type="password" name="password" class="form-control inputW" id="passWord" />
+    <section class="form-group">
+        <section class="col-sm-12">
+        <input type="submit" name="submit" id="subMit" />
+    </section>
 
-    <input type="submit" name="submit" id="subMit" />
+        </section>
 </form>
     </section><!--end of homeIMG-->
 
 </section><!--end of row-->
+    </section><!--container fluid ends-->

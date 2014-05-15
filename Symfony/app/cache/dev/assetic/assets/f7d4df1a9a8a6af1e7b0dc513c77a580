@@ -1,0 +1,11 @@
+body {
+  color: #4ea1d4;
+  list-style-types: none; }
+  body a:hover {
+    color: black; }
+
+header {
+  background: black; }
+
+.inputW {
+  width: 10px; }

@@ -1,0 +1,17 @@
+$mouse:#000;
+$main:#4EA1D4;
+$back:#fff;
+
+body{
+	a:hover{ color:$mouse;}
+	a {}
+	color:$main;
+	list-style-types:none;
+}
+
+header{
+	background: $mouse;
+}
+.inputW{
+  width:40px;
+}

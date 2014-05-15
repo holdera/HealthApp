@@ -1,0 +1,14 @@
+body {
+  color: #4ea1d4;
+  list-style-types: none; }
+  body a:hover {
+    color: black; }
+
+header {
+  background: black; }
+
+#login {
+  padding: 10px 0; }
+
+.inputW {
+  width: 200px; }

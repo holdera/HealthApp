@@ -1,0 +1,31 @@
+$mouse:#000;
+$main:#000;
+$white:#fff;
+
+body{
+  margin:0;
+  padding:0;
+	a:hover{ color:$white;}
+	color:$main;
+	list-style-types:none;
+}
+
+header{
+  margin:-20px 0;
+  padding: 10px;
+  background: $main;
+  #logo{
+    color:$white;
+  }
+}
+#non-slider{
+  background-image:url('../../Resources/public/css/images/image1') ;
+  width:1024px;
+  height:305px;
+}
+.login{
+  padding:10px 0;
+}
+.inputW{
+  width:200px;
+}
