@@ -575,7 +575,7 @@ class appDevDebugProjectContainer extends Container
         $b = new \Doctrine\DBAL\Configuration();
         $b->setSQLLogger($a);
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '50.62.209.8', 'port' => '3306', 'dbname' => 'HealthLife', 'user' => 'APSquared', 'password' => 'K5-dynabagyxu', 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '50.62.209.8', 'port' => '3306', 'dbname' => 'HealthApp', 'user' => 'APSquared', 'password' => 'K5-dynabagyxu', 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
     }
 
     /**
@@ -3408,7 +3408,7 @@ class appDevDebugProjectContainer extends Container
             'database_driver' => 'pdo_mysql',
             'database_host' => '50.62.209.8',
             'database_port' => '3306',
-            'database_name' => 'HealthLife',
+            'database_name' => 'HealthApp',
             'database_user' => 'APSquared',
             'database_password' => 'K5-dynabagyxu',
             'mailer_transport' => 'smtp',

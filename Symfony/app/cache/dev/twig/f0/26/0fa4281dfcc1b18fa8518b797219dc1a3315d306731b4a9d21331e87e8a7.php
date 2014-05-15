@@ -29,7 +29,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
         // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 16
+        // line 17
         echo "
 <section class=\"non-slider\">
 
@@ -79,6 +79,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         // line 14
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("public/css/styles.css"), "html", null, true);
         echo "\"  rel=\"stylesheet\" />
+    
 ";
     }
 
@@ -89,6 +90,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  80 => 14,  75 => 12,  72 => 11,  69 => 10,  33 => 16,  31 => 10,  20 => 1,);
+        return array (  80 => 14,  75 => 12,  72 => 11,  69 => 10,  33 => 17,  31 => 10,  20 => 1,);
     }
 }

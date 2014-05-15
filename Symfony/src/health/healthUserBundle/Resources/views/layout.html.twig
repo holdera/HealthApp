@@ -1,12 +1,20 @@
-{% block stylesheets %}
+<!DOCTYPE html>
+ <html>
+<head>
+    {% block stylesheets %}
 
-<link href="{{ asset('public/css/bootstrap.min.css')  }}"  rel="stylesheet" />
-<link href="{{ asset ('public/css/styles.css') }}"  rel="stylesheet" />
-{% endblock stylesheets %}
+        <link href="{{ asset('public/css/bootstrap.min.css')  }}"  rel="stylesheet" />
+        <link href="{{ asset ('public/css/styles.css') }}"  rel="stylesheet" />
+    {% endblock stylesheets %}
 
+    <title>{{ page-title }}</title>
+</head>
+
+<body>
+{# this is a comment#}
 
 {% block header %}
-
+<h1>{{ content-title }}</h1>
 {% endblock %}
 
 
@@ -23,33 +31,35 @@
 
 
 {% block sideBar %}
- <aside class="row">
+    <aside class="row">
 
-    <aside class="col-md-4 sidebar">
-    <h3>Monthly Contest</h3>
-        <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
-            Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
-            normcore odio gluten-free tofu ullamco. </p>
+        <aside class="col-md-4 sidebar">
+            <h3>Monthly Contest</h3>
+            <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
+                Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
+                normcore odio gluten-free tofu ullamco. </p>
+        </aside>
+
+        <aside class="col-md-4 sidebar">
+            <h3>Monthly Contest</h3>
+            <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
+                Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
+                normcore odio gluten-free tofu ullamco. </p>
+        </aside>
+
+        <aside class="col-md-4 sidebar">
+            <h3>Monthly Contest</h3>
+            <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
+                Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
+                normcore odio gluten-free tofu ullamco. </p>
+        </aside>
+
     </aside>
-
-     <aside class="col-md-4 sidebar">
-         <h3>Monthly Contest</h3>
-         <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
-             Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
-             normcore odio gluten-free tofu ullamco. </p>
-     </aside>
-
-     <aside class="col-md-4 sidebar">
-         <h3>Monthly Contest</h3>
-         <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
-             Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
-             normcore odio gluten-free tofu ullamco. </p>
-     </aside>
-
- </aside>
- {% endblock %}
+{% endblock %}
 
 
 {% block footer %}
 
 {% endblock %}
+</body>
+</html>
