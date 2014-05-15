@@ -17,6 +17,7 @@
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="healthhealthUserBundle">health\healthUserBundle\healthhealthUserBundle</parameter>
+      <parameter key="healthforumBundle">health\forumBundle\healthforumBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -24,11 +25,11 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">50.62.209.8</parameter>
-    <parameter key="database_port">3306</parameter>
-    <parameter key="database_name">HealthApp</parameter>
-    <parameter key="database_user">APSquared</parameter>
-    <parameter key="database_password">K5-dynabagyxu</parameter>
+    <parameter key="database_host">localhost:8889</parameter>
+    <parameter key="database_port">null</parameter>
+    <parameter key="database_name">healthDB</parameter>
+    <parameter key="database_user">root</parameter>
+    <parameter key="database_password">root</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -2235,11 +2236,11 @@
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">50.62.209.8</argument>
-        <argument key="port">3306</argument>
-        <argument key="dbname">HealthApp</argument>
-        <argument key="user">APSquared</argument>
-        <argument key="password">K5-dynabagyxu</argument>
+        <argument key="host">localhost:8889</argument>
+        <argument key="port">null</argument>
+        <argument key="dbname">healthDB</argument>
+        <argument key="user">root</argument>
+        <argument key="password">root</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
       </argument>
@@ -2701,6 +2702,10 @@
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/views</argument>
         <argument>healthhealthUser</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/views</argument>
+        <argument>healthforum</argument>
       </call>
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

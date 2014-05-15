@@ -79,7 +79,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         // line 14
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("public/css/styles.css"), "html", null, true);
         echo "\"  rel=\"stylesheet\" />
-    
+
 ";
     }
 

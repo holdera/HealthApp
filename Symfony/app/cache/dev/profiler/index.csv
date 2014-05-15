@@ -182,3 +182,12 @@ c1ce3f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,14000932
 6beee8,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400093399,9885ea
 9885ea,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400093399,
 4d494c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400093511,
+e3aed8,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400159274,
+3a1a4b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400159277,
+cf3f10,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400160206,
+82e9cf,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/_configurator/,1400164970,
+1289fb,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/_configurator/step/0,1400164971,
+ce7778,::1,POST,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/_configurator/step/0,1400164985,
+16ef91,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/_configurator/step/1,1400164987,
+167724,::1,POST,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/_configurator/step/1,1400164989,
+03eddb,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/_configurator/final,1400164990,
