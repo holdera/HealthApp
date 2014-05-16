@@ -24,21 +24,24 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 \t lose weight, build muscle, its not a diet, its a lifestyle change\">
     <meta name=\"viewport\" content=\"width=device-width, user-scalable=no\">
     <title>The Healthy LifeStyle</title>
-</head>
 
 ";
-        // line 11
+        // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 17
+        // line 16
         echo "
+    ";
+        // line 20
+        echo "</head>
+
 <header>
     <h1 id=\"logo\">The Healthy Lifestyle</h1>
 </header>
 
-<section class=\"container-fluid\">
+<section >
 
 
-<section class=\"row content\">
+<section class=\"row container content\">
 
     <section id=\"non-slider\">
 
@@ -55,7 +58,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             dreamcatcher stumptown Etsy blog organic McSweeney's banjo.</p>
     </section><!--end of welcome-->
 
-    <section class=\"col-md-6 login\">
+    <section class=\"col-md-6\">
         <h1>Login/Sign Up</h1>
 <form class=\"form-horizontal login\" method=\"post\">
     <section class=\"form-group\">
@@ -64,67 +67,101 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
         <label class=\"col-sm-2 control-label\" for=\"password\">Password</label>
         <input type=\"password\" name=\"password\" class=\"form-control inputW\" id=\"passWord\" />
-    <section class=\"form-group\">
-        <section class=\"col-sm-12\">
-        <input type=\"submit\" name=\"submit\" id=\"subMit\" />
-    </section>
 
         </section>
+
+        <input type=\"submit\" class=\"btn btn-default\" name=\"submit\" id=\"subMit\" />
+
 </form>
     </section><!--end of homeIMG-->
 
 </section><!--end of row-->
-    </section><!--container fluid ends-->";
+
+    </section><!--container fluid ends-->
+
+<footer class=\"row\">
+
+    <section class=\"col-md-4 foot_nav\">
+        <ul>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+        </ul>
+    </section>
+
+    <section class=\"col-md-4 foot_nav\">
+        <ul>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+        </ul>
+    </section>
+
+
+    <section class=\"col-md-4\">
+        <form id=\"subscribe\" method=\"post\" action=\"\">
+            <label for=\"name\">Name: </label>
+            <input type=\"text\" name=\"name\" class=\"form-control fields\">
+            <label for=\"email\">Email:</label>
+            <input type=\"text\" name=\"email\" class=\"form-control fields\">
+
+            <input type=\"submit\" name=\"sub\" class=\"btn\" id=\"submitBut\" value=\"subscribe\">
+        </form>
+    </section>
+
+</footer>";
     }
 
-    // line 11
+    // line 10
     public function block_stylesheets($context, array $blocks = array())
     {
-        // line 12
+        // line 11
         echo "    ";
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "4f9dc43_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_bootstrap.min_1.css");
-            // line 13
+            // line 12
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\">
         <link href=\"";
-            // line 14
+            // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
     ";
             // asset "4f9dc43_1"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_styles_2.css");
-            // line 13
+            // line 12
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\">
         <link href=\"";
-            // line 14
+            // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
     ";
             // asset "4f9dc43_2"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_2") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_styles_3.css");
-            // line 13
+            // line 12
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\">
         <link href=\"";
-            // line 14
+            // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
     ";
         } else {
             // asset "4f9dc43"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43.css");
-            // line 13
+            // line 12
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\">
         <link href=\"";
-            // line 14
+            // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
     ";
@@ -139,6 +176,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  128 => 14,  123 => 13,  116 => 14,  111 => 13,  105 => 14,  100 => 13,  94 => 14,  89 => 13,  84 => 12,  81 => 11,  33 => 17,  31 => 11,  20 => 2,);
+        return array (  165 => 13,  160 => 12,  153 => 13,  148 => 12,  142 => 13,  137 => 12,  131 => 13,  126 => 12,  121 => 11,  118 => 10,  35 => 20,  32 => 16,  30 => 10,  20 => 2,);
     }
 }

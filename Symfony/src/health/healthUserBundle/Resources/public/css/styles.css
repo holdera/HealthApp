@@ -4,7 +4,7 @@ body {
   color: black;
   list-style-types: none; }
   body a:hover {
-    color: white; }
+    color: #4cd231; }
 
 header {
   margin: -20px 0;
@@ -19,7 +19,35 @@ header {
   height: 305px; }
 
 .login {
-  padding: 10px 0; }
+  padding: 10px 0;
+  height: 200px; }
 
 .inputW {
-  width: 200px; }
+  width: 200px;
+  margin: 10px 0; }
+
+#subMit {
+  margin: 10px 0; }
+
+footer {
+  clear: both;
+  background: black;
+  height: 191px;
+  margin: 0;
+  padding: 0;
+  color: white; }
+
+.foot_nav {
+  margin: 20px 0; }
+  .foot_nav li {
+    list-style-type: none; }
+
+.fields {
+  width: 150px;
+  height: 30px;
+  display: block;
+  margin: 7px 0;
+  color: black; }
+
+#submitBut {
+  color: black; }
