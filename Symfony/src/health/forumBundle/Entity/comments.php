@@ -1,70 +1,45 @@
 <?php
 
-namespace health\forumBundle\Entity;
+namespace health\LifestyleBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * comments
- *
- * @ORM\Table()
- * @ORM\Entity
+ * Comments
  */
-class comments
+class Comments
 {
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
-    /**
      * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=50)
      */
     private $name;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="comment", type="text")
      */
     private $comment;
 
     /**
      * @var \DateTime
-     *
-     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="page", type="string", length=100)
      */
     private $page;
 
-
     /**
-     * Get id
-     *
-     * @return integer 
+     * @var integer
      */
-    public function getId()
-    {
-        return $this->id;
-    }
+    private $id;
+
 
     /**
      * Set name
      *
      * @param string $name
-     * @return comments
+     * @return Comments
      */
     public function setName($name)
     {
@@ -87,7 +62,7 @@ class comments
      * Set comment
      *
      * @param string $comment
-     * @return comments
+     * @return Comments
      */
     public function setComment($comment)
     {
@@ -110,7 +85,7 @@ class comments
      * Set date
      *
      * @param \DateTime $date
-     * @return comments
+     * @return Comments
      */
     public function setDate($date)
     {
@@ -133,7 +108,7 @@ class comments
      * Set page
      *
      * @param string $page
-     * @return comments
+     * @return Comments
      */
     public function setPage($page)
     {
@@ -150,5 +125,15 @@ class comments
     public function getPage()
     {
         return $this->page;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }

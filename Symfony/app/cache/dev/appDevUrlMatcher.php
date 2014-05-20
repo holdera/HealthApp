@@ -164,6 +164,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/hello')) {
+            // health_admin_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'health_admin_homepage')), array (  '_controller' => 'health\\AdminBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // health_resources_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'health_resources_homepage')), array (  '_controller' => 'health\\ResourcesBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // health_detox_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'health_detox_homepage')), array (  '_controller' => 'health\\DetoxBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+        }
+
+        // health_lifestyle_homepage
+        if ($pathinfo === '/lifestyle') {
+            return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\DefaultController::indexAction',  '_route' => 'health_lifestyle_homepage',);
+        }
+
         // healthforum_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'healthforum_homepage')), array (  '_controller' => 'health\\forumBundle\\Controller\\DefaultController::indexAction',));
@@ -180,7 +203,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // life
         if ($pathinfo === '/lifestyle') {
-            return array (  '_controller' => 'health\\healthUserBundle\\Controller\\LifeController::showAction',  '_route' => 'life',);
+            return array (  '_controller' => 'healthhealthUserBundle:Life:show',  '_route' => 'life',);
         }
 
         // Exercise

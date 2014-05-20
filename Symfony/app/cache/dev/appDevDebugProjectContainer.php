@@ -578,7 +578,7 @@ class appDevDebugProjectContainer extends Container
         $b = new \Doctrine\DBAL\Configuration();
         $b->setSQLLogger($a);
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => 'localhost:8889', 'port' => NULL, 'dbname' => 'healthDB', 'user' => 'root', 'password' => 'root', 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => 'localhost', 'port' => 8889, 'dbname' => 'healthDB', 'user' => 'root', 'password' => 'root', 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
     }
 
     /**
@@ -600,15 +600,16 @@ class appDevDebugProjectContainer extends Container
         $c = new \Doctrine\Common\Cache\ArrayCache();
         $c->setNamespace('sf2orm_default_c9929b264c0ef0117f13aed2fbfcdf20e6f1c72691fbb3eb720976e2bb787a7d');
 
-        $d = new \Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver(array('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine' => 'health\\healthUserBundle\\Entity', '/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine' => 'health\\forumBundle\\Entity'));
+        $d = new \Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver(array('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine' => 'health\\healthUserBundle\\Entity', '/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine' => 'health\\forumBundle\\Entity', '/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine' => 'health\\LifestyleBundle\\Entity'));
         $d->setGlobalBasename('mapping');
 
         $e = new \Doctrine\ORM\Mapping\Driver\DriverChain();
         $e->addDriver($d, 'health\\healthUserBundle\\Entity');
         $e->addDriver($d, 'health\\forumBundle\\Entity');
+        $e->addDriver($d, 'health\\LifestyleBundle\\Entity');
 
         $f = new \Doctrine\ORM\Configuration();
-        $f->setEntityNamespaces(array('healthhealthUserBundle' => 'health\\healthUserBundle\\Entity', 'healthforumBundle' => 'health\\forumBundle\\Entity'));
+        $f->setEntityNamespaces(array('healthhealthUserBundle' => 'health\\healthUserBundle\\Entity', 'healthforumBundle' => 'health\\forumBundle\\Entity', 'healthLifestyleBundle' => 'health\\LifestyleBundle\\Entity'));
         $f->setMetadataCacheImpl($a);
         $f->setQueryCacheImpl($b);
         $f->setResultCacheImpl($c);
@@ -2946,6 +2947,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/views', 'healthLifestyle');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/views', 'healthDetox');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/views', 'healthResources');
+        $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/AdminBundle/Resources/views', 'healthAdmin');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views', 'SensioDistribution');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/app/Resources/views');
@@ -3417,6 +3419,7 @@ class appDevDebugProjectContainer extends Container
                 'healthLifestyleBundle' => 'health\\LifestyleBundle\\healthLifestyleBundle',
                 'healthDetoxBundle' => 'health\\DetoxBundle\\healthDetoxBundle',
                 'healthResourcesBundle' => 'health\\ResourcesBundle\\healthResourcesBundle',
+                'healthAdminBundle' => 'health\\AdminBundle\\healthAdminBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
                 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle',
@@ -3424,8 +3427,8 @@ class appDevDebugProjectContainer extends Container
             'kernel.charset' => 'UTF-8',
             'kernel.container_class' => 'appDevDebugProjectContainer',
             'database_driver' => 'pdo_mysql',
-            'database_host' => 'localhost:8889',
-            'database_port' => NULL,
+            'database_host' => 'localhost',
+            'database_port' => 8889,
             'database_name' => 'healthDB',
             'database_user' => 'root',
             'database_password' => 'root',
@@ -3851,7 +3854,7 @@ class appDevDebugProjectContainer extends Container
 
             ),
             'assetic.java.bin' => '/usr/bin/java',
-            'assetic.node.bin' => '/usr/local/bin/node',
+            'assetic.node.bin' => '/usr/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',

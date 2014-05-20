@@ -21,6 +21,7 @@
       <parameter key="healthLifestyleBundle">health\LifestyleBundle\healthLifestyleBundle</parameter>
       <parameter key="healthDetoxBundle">health\DetoxBundle\healthDetoxBundle</parameter>
       <parameter key="healthResourcesBundle">health\ResourcesBundle\healthResourcesBundle</parameter>
+      <parameter key="healthAdminBundle">health\AdminBundle\healthAdminBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -28,8 +29,8 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">localhost:8889</parameter>
-    <parameter key="database_port">null</parameter>
+    <parameter key="database_host">localhost</parameter>
+    <parameter key="database_port">8889</parameter>
     <parameter key="database_name">healthDB</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">root</parameter>
@@ -439,7 +440,7 @@
     <parameter key="assetic.write_to">/Applications/MAMP/htdocs/HealthApp/Symfony/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
-    <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
+    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -2270,8 +2271,8 @@
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">localhost:8889</argument>
-        <argument key="port">null</argument>
+        <argument key="host">localhost</argument>
+        <argument key="port">8889</argument>
         <argument key="dbname">healthDB</argument>
         <argument key="user">root</argument>
         <argument key="password">root</argument>
@@ -2335,6 +2336,7 @@
             <argument type="collection">
               <argument key="healthhealthUserBundle">health\healthUserBundle\Entity</argument>
               <argument key="healthforumBundle">health\forumBundle\Entity</argument>
+              <argument key="healthLifestyleBundle">health\LifestyleBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -2373,6 +2375,7 @@
                       <argument type="collection">
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2387,6 +2390,7 @@
                       <argument type="collection">
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2394,6 +2398,21 @@
                     </service>
                   </argument>
                   <argument>health\forumBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
+                    </service>
+                  </argument>
+                  <argument>health\LifestyleBundle\Entity</argument>
                 </call>
               </service>
             </argument>
@@ -2784,6 +2803,10 @@
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/views</argument>
         <argument>healthResources</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/AdminBundle/Resources/views</argument>
+        <argument>healthAdmin</argument>
       </call>
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

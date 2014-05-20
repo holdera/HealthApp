@@ -5,7 +5,7 @@ use Symfony\Component\Routing\Route;
 
 $collection = new RouteCollection();
 
-$collection->add('health_lifestyle_homepage', new Route('/hello/{name}', array(
+$collection->add('health_lifestyle_homepage', new Route('/lifestyle', array(
     '_controller' => 'healthLifestyleBundle:Default:index',
 )));
 
