@@ -13,6 +13,7 @@ class DefaultController extends Controller
             ->getRepository('healthLifestyleBundle:Diet');
 
         $Diet = $repository->findAll();
+
         exit(\Doctrine\Common\Util\Debug::dump($Diet));
 
         return $this->render('healthLifestyleBundle:Lifestyle:lifestyle.html.twig');

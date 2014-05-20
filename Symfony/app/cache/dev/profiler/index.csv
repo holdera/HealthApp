@@ -449,3 +449,6 @@ bffae6,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle
 659428,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400607059,
 dd0a3e,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400607127,522075
 522075,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400607127,
+8dbb03,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400607824,
+dc3422,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400607888,
+df1ed0,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400607895,
