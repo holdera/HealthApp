@@ -26,7 +26,7 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="55" selection-start="384" selection-end="431" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="21" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="435">
               <folding>
                 <element signature="e#53#110#0" expanded="true" />
               </folding>
@@ -37,7 +37,19 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="400" selection-end="400" vertical-scroll-proportion="0.4458042" vertical-offset="0" max-vertical-offset="572">
+            <state line="22" column="36" selection-start="634" selection-end="634" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="572">
+              <folding>
+                <element signature="e#54#111#0" expanded="true" />
+                <marker date="1400618587000" expanded="true" signature="491:540" placeholder="SELECT n FRO..healthhealthUserBundle..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/NavigationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="32" selection-start="479" selection-end="558" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="510">
               <folding>
                 <element signature="e#54#111#0" expanded="true" />
               </folding>
@@ -48,7 +60,7 @@
       <file leaf-file-name="Navigation.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1755">
+            <state line="111" column="0" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-20.375" vertical-offset="1176" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -90,9 +102,10 @@
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/config/routing.php" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Controller/LifestyleController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/header.php" />
-        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Entity/Diet.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/NavigationController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php" />
       </list>
@@ -100,9 +113,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="267" />
-    <option name="y" value="41" />
-    <option name="width" value="921" />
+    <option name="x" value="241" />
+    <option name="y" value="22" />
+    <option name="width" value="1036" />
     <option name="height" value="693" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -341,7 +354,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="267" y="41" width="921" height="693" extended-state="0" />
+    <frame x="241" y="22" width="1036" height="693" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -350,7 +363,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29641694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20173745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1650641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -527,11 +540,6 @@
         <state line="2" column="27" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="375" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="375" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="34" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="660">
@@ -684,9 +692,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/NavigationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="32" selection-start="479" selection-end="558" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="e#54#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="55" selection-start="384" selection-end="431" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="21" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="435">
           <folding>
             <element signature="e#53#110#0" expanded="true" />
           </folding>
@@ -695,16 +719,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1755">
+        <state line="111" column="0" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-20.375" vertical-offset="1176" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="400" selection-end="400" vertical-scroll-proportion="0.4458042" vertical-offset="0" max-vertical-offset="572">
+        <state line="22" column="36" selection-start="634" selection-end="634" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="572">
           <folding>
             <element signature="e#54#111#0" expanded="true" />
+            <marker date="1400618587000" expanded="true" signature="491:540" placeholder="SELECT n FRO..healthhealthUserBundle..." />
           </folding>
         </state>
       </provider>
