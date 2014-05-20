@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new health\LifestyleBundle\healthLifestyleBundle(),
             new health\DetoxBundle\healthDetoxBundle(),
             new health\ResourcesBundle\healthResourcesBundle(),
+            new health\AdminBundle\healthAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
