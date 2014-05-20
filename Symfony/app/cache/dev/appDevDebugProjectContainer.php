@@ -2944,6 +2944,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/views', 'healthhealthUser');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/views', 'healthforum');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/views', 'healthLifestyle');
+        $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/views', 'healthDetox');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views', 'SensioDistribution');
         $instance->addPath('/Applications/MAMP/htdocs/HealthApp/Symfony/app/Resources/views');
@@ -3413,6 +3414,7 @@ class appDevDebugProjectContainer extends Container
                 'healthhealthUserBundle' => 'health\\healthUserBundle\\healthhealthUserBundle',
                 'healthforumBundle' => 'health\\forumBundle\\healthforumBundle',
                 'healthLifestyleBundle' => 'health\\LifestyleBundle\\healthLifestyleBundle',
+                'healthDetoxBundle' => 'health\\DetoxBundle\\healthDetoxBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
                 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle',

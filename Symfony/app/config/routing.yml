@@ -1,3 +1,7 @@
+health_resources:
+    resource: "@healthResourcesBundle/Resources/config/routing.php"
+    prefix:   /
+
 health_detox:
     resource: "@healthDetoxBundle/Resources/config/routing.php"
     prefix:   /
