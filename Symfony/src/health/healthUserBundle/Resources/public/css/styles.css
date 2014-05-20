@@ -11,10 +11,24 @@ header {
   padding: 10px;
   background: black; }
   header #logo {
+    color: #ebfeed;
+    padding: 0px 20px; }
+
+.top_nav {
+  margin: -40px 10px;
+  float: right; }
+  .top_nav li {
+    display: inline-block;
+    float: left;
+    padding: 7px 10px; }
+  .top_nav li a {
+    text-decoration: none;
     color: white; }
+  .top_nav li a:hover {
+    color: #4cd231; }
 
 #non-slider {
-  background-image: url("public/images/image1.png");
+  background: url("../images/image1.png") repeat-x;
   width: 1024px;
   height: 305px; }
 

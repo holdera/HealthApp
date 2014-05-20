@@ -36,18 +36,33 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
 <header>
     <h1 id=\"logo\">The Healthy Lifestyle</h1>
+
+    <nav class=\"top_nav\">
+        <ul>
+            <li><a href=\"#\">Login</a></li>
+            <li><a href=\"/HealthApp/Symfony/web/app_dev.php/lifestyle\">Lifestyle</a></li>
+            <li><a href=\"#\">Fitness</a></li>
+            <li><a href=\"#\">Detox</a></li>
+            <li><a href=\"#\">Forum</a></li>
+            <li><a href=\"#\">Chatroom</a></li>
+            <li><a href=\"#\">Resources</a></li>
+        </ul>
+    </nav>
+
 </header>
 
 <section >
 
 
-<section class=\"row container content\">
+
 
     <section id=\"non-slider\">
 
     </section>
 
-    <section class=\"col-md-6 welcome\">
+    <section class=\"container-fluid\">
+
+    <section class=\"col-md-4 welcome\">
         <h1>Change Your Lifestyle!</h1>
 
         <p>Fingerstache wayfarers mlkshk, flexitarian skateboard paleo banh mi Austin.
@@ -58,14 +73,19 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             dreamcatcher stumptown Etsy blog organic McSweeney's banjo.</p>
     </section><!--end of welcome-->
 
-    <section class=\"col-md-6\">
+        <section class=\"col-md-4\">
+            
+            <img src=\"/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/public/images/image2.png\"/>
+            </section>
+
+    <section class=\"col-md-4\">
         <h1>Login/Sign Up</h1>
 <form class=\"form-horizontal login\" method=\"post\">
     <section class=\"form-group\">
-      <label class=\"col-sm-2 control-label\" for=\"username\">Username:</label>
+      <label class=\"col-sm-3 control-label\" for=\"username\">Username:</label>
       <input type=\"text\" name=\"username\" class=\"form-control inputW\" id=\"userName\" />
 
-        <label class=\"col-sm-2 control-label\" for=\"password\">Password</label>
+        <label class=\"col-sm-3 control-label\" for=\"password\">Password:</label>
         <input type=\"password\" name=\"password\" class=\"form-control inputW\" id=\"passWord\" />
 
         </section>
@@ -176,6 +196,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  165 => 13,  160 => 12,  153 => 13,  148 => 12,  142 => 13,  137 => 12,  131 => 13,  126 => 12,  121 => 11,  118 => 10,  35 => 20,  32 => 16,  30 => 10,  20 => 2,);
+        return array (  185 => 13,  180 => 12,  173 => 13,  168 => 12,  162 => 13,  157 => 12,  151 => 13,  146 => 12,  141 => 11,  138 => 10,  35 => 20,  32 => 16,  30 => 10,  20 => 2,);
     }
 }
