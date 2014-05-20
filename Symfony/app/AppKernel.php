@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new health\healthUserBundle\healthhealthUserBundle(),
             new health\forumBundle\healthforumBundle(),
+            new health\LifestyleBundle\healthLifestyleBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

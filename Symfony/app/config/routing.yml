@@ -1,3 +1,7 @@
+health_lifestyle:
+    resource: "@healthLifestyleBundle/Resources/config/routing.php"
+    prefix:   /
+
 healthforum:
     resource: "@healthforumBundle/Resources/config/routing.yml"
     prefix:   /
