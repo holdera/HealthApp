@@ -23,13 +23,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="523" selection-end="523" vertical-scroll-proportion="0.80508476" vertical-offset="0" max-vertical-offset="435">
+            <state line="16" column="55" selection-start="384" selection-end="431" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="435">
               <folding>
                 <element signature="e#53#110#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="8" selection-start="400" selection-end="400" vertical-scroll-proportion="0.4458042" vertical-offset="0" max-vertical-offset="572">
+              <folding>
+                <element signature="e#54#111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Navigation.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1755">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,7 +70,6 @@
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/healthhealthUserExtension.php" />
         <option value="$PROJECT_DIR$/app/cache/dev/classes.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/Configuration.php" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/exercises.html" />
@@ -66,21 +85,23 @@
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Entity/navigation.php" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php" />
         <option value="$PROJECT_DIR$/src/health/forumBundle/Entity/comments.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/LifeController.php" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/config/routing.php" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Controller/LifestyleController.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/header.php" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Entity/Diet.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="78" />
+    <option name="x" value="267" />
+    <option name="y" value="41" />
     <option name="width" value="921" />
     <option name="height" value="693" />
   </component>
@@ -139,7 +160,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="healthUserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="healthUserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="healthUserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,13 +341,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="78" width="921" height="693" extended-state="0" />
+    <frame x="267" y="41" width="921" height="693" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29641694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -389,11 +502,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="7" selection-end="52" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="300" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Logger.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="216" column="51" selection-start="5100" selection-end="5100" vertical-scroll-proportion="0.28265107" vertical-offset="2945" max-vertical-offset="8670" />
@@ -525,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="283" selection-end="283" vertical-scroll-proportion="0.30054644" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/config/routing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="255">
@@ -549,20 +650,6 @@
     <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/doc/index.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="5" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-16.0" vertical-offset="756" max-vertical-offset="1755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07853403" vertical-offset="0" max-vertical-offset="573">
           <folding />
         </state>
       </provider>
@@ -590,11 +677,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07550336" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="523" selection-end="523" vertical-scroll-proportion="0.80508476" vertical-offset="0" max-vertical-offset="435">
+        <state line="16" column="55" selection-start="384" selection-end="431" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="435">
           <folding>
             <element signature="e#53#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="400" selection-end="400" vertical-scroll-proportion="0.4458042" vertical-offset="0" max-vertical-offset="572">
+          <folding>
+            <element signature="e#54#111#0" expanded="true" />
           </folding>
         </state>
       </provider>

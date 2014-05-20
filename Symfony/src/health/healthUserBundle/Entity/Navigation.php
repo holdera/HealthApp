@@ -1,6 +1,6 @@
 <?php
 
-namespace health\LifestyleBundle\Entity;
+namespace health\healthUserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
