@@ -685,3 +685,11 @@ fb99ea,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle
 eda9e2,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400636467,
 9d7997,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400636525,
 852dad,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400636601,
+eb44a0,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400643187,78a3c9
+78a3c9,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400643187,
+eb7f2a,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/,1400643225,
+af479a,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/step/0,1400643227,
+53fbbb,::1,POST,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/step/0,1400643302,
+aaaff0,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/step/1,1400643304,
+4cc9f9,::1,POST,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/step/1,1400643308,
+debf9c,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/final,1400643310,
