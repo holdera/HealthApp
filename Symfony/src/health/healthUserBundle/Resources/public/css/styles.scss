@@ -9,6 +9,7 @@ body{
 	a:hover{ color:$link;}
 	color:$main;
 	list-style-types:none;
+  li a:hover{color:$light;}
 }
 
 header{
@@ -51,10 +52,24 @@ header{
   margin:10px 0;
 }
 
+/*content styles*/
+
+#page_side{
+  margin:40px 0;
+  float: right;
+}
+.sidebar{
+  clear:both;
+}
+.main_content{
+  margin:40px 0;
+}
+/*footer styles*/
+
 footer{
   clear:both;
   background: $main;
-  height:191px;
+  height:251px;
   margin: 0;
   padding: 0;
   color:$white;
@@ -62,8 +77,11 @@ footer{
 .foot_nav{
   margin:20px 0;
   li{
-  list-style-type: none;
+    list-style-type: none;
+    text-decoration: none;
+    color:$white;
   }
+  li a:hover{ color:$link;}
 }
   .fields {
     width : 150px;

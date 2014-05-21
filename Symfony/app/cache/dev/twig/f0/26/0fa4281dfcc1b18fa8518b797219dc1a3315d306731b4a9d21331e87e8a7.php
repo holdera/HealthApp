@@ -196,39 +196,58 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     public function block_footer($context, array $blocks = array())
     {
         // line 91
-        echo "<footer class=\"row\">
+        echo "    <footer class=\"row\">
 
-    <section class=\"col-md-4 foot_nav\">
-        <ul>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-        </ul>
-    </section>
+        <section class=\"col-sm-2 foot_nav\">
+            <ul>
+                <li><a href=\"#\">home</a></li>
+                <li><a href=\"#\">lifestyle</a></li>
+                <li><a href=\"#\">recipes</a></li>
+                <li><a href=\"#\">detox</a></li>
+            </ul>
+        </section>
 
-    <section class=\"col-md-4 foot_nav\">
-        <ul>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-        </ul>
-    </section>
+        <section class=\"col-sm-2 foot_nav\">
+            <ul>
+                <li><a href=\"#\">Fitness</a></li>
+                <li><a href=\"#\">upper body</a></li>
+                <li><a href=\"#\">midsection</a></li>
+                <li><a href=\"#\">lower body</a></li>
+            </ul>
+        </section>
+
+        <section class=\"col-sm-2 foot_nav\">
+            <ul>
+                <li><a href=\"#\">forum</a></li>
+                <li><a href=\"#\">chatroom</a></li>
+                <li><a href=\"#\">login</a></li>
+                <li><a href=\"#\">register</a></li>
+            </ul>
+        </section>
+
+        <section class=\"col-sm-2 foot_nav\">
+            <ul>
+                <li><a href=\"#\">sitemap</a></li>
+                <li><a href=\"#\">privacy</a></li>
+                <li><a href=\"#\">copyright</a></li>
+
+            </ul>
+        </section>
 
 
-    <section class=\"col-md-4\">
-        <form id=\"subscribe\" method=\"post\" action=\"\">
-            <label for=\"name\">Name: </label>
-            <input type=\"text\" name=\"name\" class=\"form-control fields\">
-            <label for=\"email\">Email:</label>
-            <input type=\"text\" name=\"email\" class=\"form-control fields\">
+        <section class=\"col-sm-4\">
+            <form id=\"subscribe\" method=\"post\" action=\"\">
+                <h3>Subscribe</h3>
+                <label for=\"name\">Name: </label>
+                <input type=\"text\" name=\"name\" class=\"form-control fields\">
+                <label for=\"email\">Email:</label>
+                <input type=\"text\" name=\"email\" class=\"form-control fields\">
 
-            <input type=\"submit\" name=\"sub\" class=\"btn\" id=\"submitBut\" value=\"subscribe\">
-        </form>
-    </section>
+                <input type=\"submit\" name=\"sub\" class=\"btn\" id=\"submitBut\" value=\"subscribe\">
+            </form>
+        </section>
 
-</footer>
+    </footer>
 ";
     }
 

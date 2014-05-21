@@ -10,6 +10,7 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
         $this->parent = $this->env->loadTemplate("healthhealthUserBundle::layout.html.twig");
 
         $this->blocks = array(
+            'main_content' => array($this, 'block_main_content'),
         );
     }
 
@@ -21,6 +22,21 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
     protected function doDisplay(array $context, array $blocks = array())
     {
         $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 4
+    public function block_main_content($context, array $blocks = array())
+    {
+        // line 5
+        echo "
+   <section class=\"col-md-8 main_content\">
+
+       <h2>Lifestyle</h2>
+
+       <p>Pie liquorice halvah liquorice apple pie candy canes chupa chups bonbon. Chupa chups soufflé tart pie wafer. Brownie macaroon dragée wafer candy cookie. Macaroon lollipop pastry cheesecake sesame snaps chocolate lemon drops chocolate dragée. Pudding toffee soufflé fruitcake jelly-o chocolate. Pastry gummi bears fruitcake carrot cake sesame snaps tootsie roll lollipop.</p>
+
+   </section>
+";
     }
 
     public function getTemplateName()
@@ -35,6 +51,6 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
     public function getDebugInfo()
     {
-        return array ();
+        return array (  31 => 5,  28 => 4,);
     }
 }

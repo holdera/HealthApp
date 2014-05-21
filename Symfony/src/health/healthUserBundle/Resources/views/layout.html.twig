@@ -8,25 +8,38 @@
         <link href="{{ asset_url }}"  rel="stylesheet" >
         {% endstylesheets %}
     {% endblock %}
-
-
-    <title>{{ page-title }}</title>
 </head>
 {% endblock %}
 
 {# this is a comment#}
 
-{% block header %}
-<header> The Healthy LifeStyle</header>
-{% endblock %}
+
+    {% block header %}
+        <header>
+            <h1 id="logo">The Healthy Lifestyle</h1>
+
+            <nav class="top_nav">
+                <ul>
+                    <li><a href="/HealthApp/Symfony/web/app_dev.php/">Home</a></li>
+                    <li><a href="/HealthApp/Symfony/web/app_dev.php/lifestyle">Lifestyle</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Detox</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Chatroom</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    {% endblock %}
+
 
 
 {% block main_content %}
     <section class="row">
 
-        <section class="col-md-8 main_content">
 
-        </section>
 
     </section>
 
@@ -34,23 +47,24 @@
 
 
 {% block sideBar %}
-    <aside class="row">
+ <section class="row">
+    <aside class="col-md-4" id="page_side">
 
-        <aside class="col-md-4 sidebar">
+        <aside class="sidebar">
             <h3>Monthly Contest</h3>
             <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
                 Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
                 normcore odio gluten-free tofu ullamco. </p>
         </aside>
 
-        <aside class="col-md-4 sidebar">
+        <aside class=" sidebar">
             <h3>Monthly Contest</h3>
             <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
                 Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
                 normcore odio gluten-free tofu ullamco. </p>
         </aside>
 
-        <aside class="col-md-4 sidebar">
+        <aside class=" sidebar">
             <h3>Monthly Contest</h3>
             <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
                 Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
@@ -58,7 +72,60 @@
         </aside>
 
     </aside>
+ </section>
 {% endblock %}
 
+ <footer class="row">
+
+     <section class="col-sm-2 foot_nav">
+         <ul>
+             <li><a href="#">home</a></li>
+             <li><a href="#">lifestyle</a></li>
+             <li><a href="#">recipes</a></li>
+             <li><a href="#">detox</a></li>
+         </ul>
+     </section>
+
+     <section class="col-sm-2 foot_nav">
+         <ul>
+             <li><a href="#">Fitness</a></li>
+             <li><a href="#">upper body</a></li>
+             <li><a href="#">midsection</a></li>
+             <li><a href="#">lower body</a></li>
+         </ul>
+     </section>
+
+     <section class="col-sm-2 foot_nav">
+         <ul>
+             <li><a href="#">forum</a></li>
+             <li><a href="#">chatroom</a></li>
+             <li><a href="#">login</a></li>
+             <li><a href="#">register</a></li>
+         </ul>
+     </section>
+
+     <section class="col-sm-2 foot_nav">
+         <ul>
+             <li><a href="#">sitemap</a></li>
+             <li><a href="#">privacy</a></li>
+             <li><a href="#">copyright</a></li>
+
+         </ul>
+     </section>
+
+
+     <section class="col-sm-4">
+         <form id="subscribe" method="post" action="">
+             <h3>Subscribe</h3>
+             <label for="name">Name: </label>
+             <input type="text" name="name" class="form-control fields">
+             <label for="email">Email:</label>
+             <input type="text" name="email" class="form-control fields">
+
+             <input type="submit" name="sub" class="btn" id="submitBut" value="subscribe">
+         </form>
+     </section>
+
+ </footer>
 
 </html>
