@@ -31,6 +31,7 @@
   30 => 'Symfony\\Component\\HttpKernel\\Config\\FileLocator',
   31 => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerNameParser',
   32 => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\ControllerResolver',
+<<<<<<< HEAD
   33 => 'Twig_Environment',
   34 => 'Twig_Extension',
   35 => 'Twig_Extension_Core',
@@ -65,6 +66,8 @@
   64 => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\SecurityListener',
   65 => 'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\ConfigurationAnnotation',
 
+=======
+>>>>>>> FETCH_HEAD
   33 => 'Symfony\\Component\\Security\\Http\\AccessMap',
   34 => 'Symfony\\Component\\Security\\Http\\Firewall',
   35 => 'Symfony\\Component\\Security\\Core\\SecurityContext',
@@ -108,5 +111,8 @@
   73 => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\HttpCacheListener',
   74 => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\SecurityListener',
   75 => 'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\ConfigurationAnnotation',
+<<<<<<< HEAD
 
+=======
+>>>>>>> FETCH_HEAD
 );

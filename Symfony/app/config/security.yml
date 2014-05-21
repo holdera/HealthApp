@@ -1,10 +1,14 @@
 security:
     encoders:
         #health\healthUserBundle\Entity\Users:
+<<<<<<< HEAD
 
            # algorithm: bcrypt
            #algorithm: bcrypt
 
+=======
+            #algorithm: bcrypt
+>>>>>>> FETCH_HEAD
         Symfony\Component\Security\Core\User\User: plaintext
 
     role_hierarchy:
@@ -13,6 +17,7 @@ security:
 
     providers:
         #administrators:
+<<<<<<< HEAD
 
             #entity:{class: healthUserBundle:Users, property: username}
         in_memory:
@@ -36,6 +41,18 @@ security:
         #admin_area:
            # pattern: ^/admin
 
+=======
+            #entity:{class: healthUserBundle:Users, property: username}
+        in_memory:
+            memory:
+               users:
+                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+
+    firewalls:
+        #admin_area:
+            #pattern: ^/admin
+>>>>>>> FETCH_HEAD
             #http_basic: ~
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
@@ -51,12 +68,17 @@ security:
                 check_path: _security_check
                 login_path: _demo_login
             logout:
+<<<<<<< HEAD
                path: _demo_logout
                target: _demo
 
                 path:   _demo_logout
                 target: _demo
 
+=======
+                path:   _demo_logout
+                target: _demo
+>>>>>>> FETCH_HEAD
             #anonymous: ~
             #http_basic:
             #    realm: "Secured Demo Area"
