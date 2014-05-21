@@ -702,7 +702,7 @@ fc11d1,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,14006372
 407134,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400637224,
 728075,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400637246,
 508100,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1400640475,
-=======
+
 eb44a0,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400643187,78a3c9
 78a3c9,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400643187,
 eb7f2a,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/,1400643225,
@@ -712,14 +712,10 @@ aaaff0,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_conf
 4cc9f9,::1,POST,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/step/1,1400643308,
 debf9c,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_configurator/final,1400643310,
 42b316,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400643709,
->>>>>>> FETCH_HEAD
-<<<<<<< HEAD
+
 8cc705,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400678565,24378c
 24378c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400678566,
-<<<<<<< HEAD
-=======
+
 4990f9,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400678480,
->>>>>>> FETCH_HEAD
-=======
+
 b9dabb,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400679296,
->>>>>>> FETCH_HEAD
