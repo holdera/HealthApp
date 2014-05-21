@@ -3,11 +3,12 @@
 namespace health\healthUserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Users
  */
-class Users
+class Users implements UserInterface, \Serializable
 {
     /**
      * @var boolean
@@ -194,7 +195,7 @@ class Users
      * @param string $pword
      * @return Users
      */
-    public function setPword($pword)
+    public function setPassword($pword)
     {
         $this->pword = $pword;
     
@@ -206,7 +207,7 @@ class Users
      *
      * @return string 
      */
-    public function getPword()
+    public function getPassword()
     {
         return $this->pword;
     }
@@ -219,5 +220,47 @@ class Users
     public function getUserId()
     {
         return $this->userId;
+    }
+
+    public function getSalt()
+    {
+        return null;
+    }
+
+    public function getRoles()
+    {
+        return array('ROLE_USER');
+    }
+
+    public function erasecredentials()
+    {
+
+    }
+/**
+     * @see \Serializable::serialize()
+     */
+    public function serialize()
+    {
+        return serialize(array(
+            $this->id,
+            $this->username,
+            $this->pword,
+            // see section on salt below
+            // $this->salt,
+        ));
+    }
+
+    /**
+     * @see \Serializable::unserialize()
+     */
+    public function unserialize($serialized)
+    {
+        list (
+            $this->id,
+            $this->username,
+            $this->pword,
+            // see section on salt below
+            // $this->salt
+        ) = unserialize($serialized);
     }
 }
