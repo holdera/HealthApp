@@ -2719,6 +2719,57 @@ return sprintf('%s:%s:%s.%s.%s', $this->parameters['bundle'], $this->parameters[
 }
 }
 }
+namespace Symfony\Bundle\SecurityBundle\Security
+{
+use Symfony\Component\Security\Http\Firewall\ExceptionListener;
+class FirewallContext
+{
+private $listeners;
+private $exceptionListener;
+public function __construct(array $listeners, ExceptionListener $exceptionListener = null)
+{
+$this->listeners = $listeners;
+$this->exceptionListener = $exceptionListener;
+}
+public function getContext()
+{
+return array($this->listeners, $this->exceptionListener);
+}
+}
+}
+namespace Symfony\Component\Security\Http
+{
+use Symfony\Component\HttpFoundation\Request;
+interface FirewallMapInterface
+{
+public function getListeners(Request $request);
+}
+}
+namespace Symfony\Bundle\SecurityBundle\Security
+{
+use Symfony\Component\Security\Http\FirewallMapInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+class FirewallMap implements FirewallMapInterface
+{
+protected $container;
+protected $map;
+public function __construct(ContainerInterface $container, array $map)
+{
+$this->container = $container;
+$this->map = $map;
+}
+public function getListeners(Request $request)
+{
+foreach ($this->map as $contextId => $requestMatcher) {
+if (null === $requestMatcher || $requestMatcher->matches($request)) {
+return $this->container->get($contextId)->getContext();
+}
+}
+return array(array(), null);
+}
+}
+}
 namespace Symfony\Component\Config
 {
 class FileLocator implements FileLocatorInterface
@@ -3017,6 +3068,79 @@ return $this->name;
 public function setName($name)
 {
 $this->name = $name;
+}
+}
+}
+namespace Symfony\Component\HttpFoundation
+{
+interface RequestMatcherInterface
+{
+public function matches(Request $request);
+}
+}
+namespace Symfony\Component\HttpFoundation
+{
+class RequestMatcher implements RequestMatcherInterface
+{
+private $path;
+private $host;
+private $methods = array();
+private $ips = array();
+private $attributes = array();
+public function __construct($path = null, $host = null, $methods = null, $ips = null, array $attributes = array())
+{
+$this->matchPath($path);
+$this->matchHost($host);
+$this->matchMethod($methods);
+$this->matchIps($ips);
+foreach ($attributes as $k => $v) {
+$this->matchAttribute($k, $v);
+}
+}
+public function matchHost($regexp)
+{
+$this->host = $regexp;
+}
+public function matchPath($regexp)
+{
+$this->path = $regexp;
+}
+public function matchIp($ip)
+{
+$this->matchIps($ip);
+}
+public function matchIps($ips)
+{
+$this->ips = (array) $ips;
+}
+public function matchMethod($method)
+{
+$this->methods = array_map('strtoupper', (array) $method);
+}
+public function matchAttribute($key, $regexp)
+{
+$this->attributes[$key] = $regexp;
+}
+public function matches(Request $request)
+{
+if ($this->methods && !in_array($request->getMethod(), $this->methods)) {
+return false;
+}
+foreach ($this->attributes as $key => $pattern) {
+if (!preg_match('{'.$pattern.'}', $request->attributes->get($key))) {
+return false;
+}
+}
+if (null !== $this->path && !preg_match('{'.$this->path.'}', rawurldecode($request->getPathInfo()))) {
+return false;
+}
+if (null !== $this->host && !preg_match('{'.$this->host.'}i', $request->getHost())) {
+return false;
+}
+if (IpUtils::checkIp($request->getClientIp(), $this->ips)) {
+return true;
+}
+return count($this->ips) === 0;
 }
 }
 }
@@ -4174,6 +4298,373 @@ return array_key_exists($name, $this->parameters);
 public function setParameter($name, $parameter)
 {
 $this->parameters[$name] = $parameter;
+}
+}
+}
+namespace Symfony\Component\Security\Core\Authentication
+{
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+interface AuthenticationManagerInterface
+{
+public function authenticate(TokenInterface $token);
+}
+}
+namespace Symfony\Component\Security\Core\Authentication
+{
+use Symfony\Component\Security\Core\Event\AuthenticationFailureEvent;
+use Symfony\Component\Security\Core\Event\AuthenticationEvent;
+use Symfony\Component\Security\Core\AuthenticationEvents;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\Security\Core\Exception\AccountStatusException;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+use Symfony\Component\Security\Core\Exception\ProviderNotFoundException;
+use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface;
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+class AuthenticationProviderManager implements AuthenticationManagerInterface
+{
+private $providers;
+private $eraseCredentials;
+private $eventDispatcher;
+public function __construct(array $providers, $eraseCredentials = true)
+{
+if (!$providers) {
+throw new \InvalidArgumentException('You must at least add one authentication provider.');
+}
+$this->providers = $providers;
+$this->eraseCredentials = (bool) $eraseCredentials;
+}
+public function setEventDispatcher(EventDispatcherInterface $dispatcher)
+{
+$this->eventDispatcher = $dispatcher;
+}
+public function authenticate(TokenInterface $token)
+{
+$lastException = null;
+$result = null;
+foreach ($this->providers as $provider) {
+if (!$provider->supports($token)) {
+continue;
+}
+try {
+$result = $provider->authenticate($token);
+if (null !== $result) {
+break;
+}
+} catch (AccountStatusException $e) {
+$e->setToken($token);
+throw $e;
+} catch (AuthenticationException $e) {
+$lastException = $e;
+}
+}
+if (null !== $result) {
+if (true === $this->eraseCredentials) {
+$result->eraseCredentials();
+}
+if (null !== $this->eventDispatcher) {
+$this->eventDispatcher->dispatch(AuthenticationEvents::AUTHENTICATION_SUCCESS, new AuthenticationEvent($result));
+}
+return $result;
+}
+if (null === $lastException) {
+$lastException = new ProviderNotFoundException(sprintf('No Authentication Provider found for token of class "%s".', get_class($token)));
+}
+if (null !== $this->eventDispatcher) {
+$this->eventDispatcher->dispatch(AuthenticationEvents::AUTHENTICATION_FAILURE, new AuthenticationFailureEvent($token, $lastException));
+}
+$lastException->setToken($token);
+throw $lastException;
+}
+}
+}
+namespace Symfony\Component\Security\Core\Authorization
+{
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+interface AccessDecisionManagerInterface
+{
+public function decide(TokenInterface $token, array $attributes, $object = null);
+public function supportsAttribute($attribute);
+public function supportsClass($class);
+}
+}
+namespace Symfony\Component\Security\Core\Authorization
+{
+use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+class AccessDecisionManager implements AccessDecisionManagerInterface
+{
+private $voters;
+private $strategy;
+private $allowIfAllAbstainDecisions;
+private $allowIfEqualGrantedDeniedDecisions;
+public function __construct(array $voters, $strategy ='affirmative', $allowIfAllAbstainDecisions = false, $allowIfEqualGrantedDeniedDecisions = true)
+{
+if (!$voters) {
+throw new \InvalidArgumentException('You must at least add one voter.');
+}
+$strategyMethod ='decide'.ucfirst($strategy);
+if (!is_callable(array($this, $strategyMethod))) {
+throw new \InvalidArgumentException(sprintf('The strategy "%s" is not supported.', $strategy));
+}
+$this->voters = $voters;
+$this->strategy = $strategyMethod;
+$this->allowIfAllAbstainDecisions = (bool) $allowIfAllAbstainDecisions;
+$this->allowIfEqualGrantedDeniedDecisions = (bool) $allowIfEqualGrantedDeniedDecisions;
+}
+public function decide(TokenInterface $token, array $attributes, $object = null)
+{
+return $this->{$this->strategy}($token, $attributes, $object);
+}
+public function supportsAttribute($attribute)
+{
+foreach ($this->voters as $voter) {
+if ($voter->supportsAttribute($attribute)) {
+return true;
+}
+}
+return false;
+}
+public function supportsClass($class)
+{
+foreach ($this->voters as $voter) {
+if ($voter->supportsClass($class)) {
+return true;
+}
+}
+return false;
+}
+private function decideAffirmative(TokenInterface $token, array $attributes, $object = null)
+{
+$deny = 0;
+foreach ($this->voters as $voter) {
+$result = $voter->vote($token, $object, $attributes);
+switch ($result) {
+case VoterInterface::ACCESS_GRANTED:
+return true;
+case VoterInterface::ACCESS_DENIED:
+++$deny;
+break;
+default:
+break;
+}
+}
+if ($deny > 0) {
+return false;
+}
+return $this->allowIfAllAbstainDecisions;
+}
+private function decideConsensus(TokenInterface $token, array $attributes, $object = null)
+{
+$grant = 0;
+$deny = 0;
+$abstain = 0;
+foreach ($this->voters as $voter) {
+$result = $voter->vote($token, $object, $attributes);
+switch ($result) {
+case VoterInterface::ACCESS_GRANTED:
+++$grant;
+break;
+case VoterInterface::ACCESS_DENIED:
+++$deny;
+break;
+default:
+++$abstain;
+break;
+}
+}
+if ($grant > $deny) {
+return true;
+}
+if ($deny > $grant) {
+return false;
+}
+if ($grant == $deny && $grant != 0) {
+return $this->allowIfEqualGrantedDeniedDecisions;
+}
+return $this->allowIfAllAbstainDecisions;
+}
+private function decideUnanimous(TokenInterface $token, array $attributes, $object = null)
+{
+$grant = 0;
+foreach ($attributes as $attribute) {
+foreach ($this->voters as $voter) {
+$result = $voter->vote($token, $object, array($attribute));
+switch ($result) {
+case VoterInterface::ACCESS_GRANTED:
+++$grant;
+break;
+case VoterInterface::ACCESS_DENIED:
+return false;
+default:
+break;
+}
+}
+}
+if ($grant > 0) {
+return true;
+}
+return $this->allowIfAllAbstainDecisions;
+}
+}
+}
+namespace Symfony\Component\Security\Core\Authorization\Voter
+{
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+interface VoterInterface
+{
+const ACCESS_GRANTED = 1;
+const ACCESS_ABSTAIN = 0;
+const ACCESS_DENIED = -1;
+public function supportsAttribute($attribute);
+public function supportsClass($class);
+public function vote(TokenInterface $token, $object, array $attributes);
+}
+}
+namespace Symfony\Component\Security\Core
+{
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+interface SecurityContextInterface
+{
+const ACCESS_DENIED_ERROR ='_security.403_error';
+const AUTHENTICATION_ERROR ='_security.last_error';
+const LAST_USERNAME ='_security.last_username';
+public function getToken();
+public function setToken(TokenInterface $token = null);
+public function isGranted($attributes, $object = null);
+}
+}
+namespace Symfony\Component\Security\Core
+{
+use Symfony\Component\Security\Core\Exception\AuthenticationCredentialsNotFoundException;
+use Symfony\Component\Security\Core\Authorization\AccessDecisionManagerInterface;
+use Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface;
+use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+class SecurityContext implements SecurityContextInterface
+{
+private $token;
+private $accessDecisionManager;
+private $authenticationManager;
+private $alwaysAuthenticate;
+public function __construct(AuthenticationManagerInterface $authenticationManager, AccessDecisionManagerInterface $accessDecisionManager, $alwaysAuthenticate = false)
+{
+$this->authenticationManager = $authenticationManager;
+$this->accessDecisionManager = $accessDecisionManager;
+$this->alwaysAuthenticate = $alwaysAuthenticate;
+}
+final public function isGranted($attributes, $object = null)
+{
+if (null === $this->token) {
+throw new AuthenticationCredentialsNotFoundException('The security context contains no authentication token. One possible reason may be that there is no firewall configured for this URL.');
+}
+if ($this->alwaysAuthenticate || !$this->token->isAuthenticated()) {
+$this->token = $this->authenticationManager->authenticate($this->token);
+}
+if (!is_array($attributes)) {
+$attributes = array($attributes);
+}
+return $this->accessDecisionManager->decide($this->token, $attributes, $object);
+}
+public function getToken()
+{
+return $this->token;
+}
+public function setToken(TokenInterface $token = null)
+{
+$this->token = $token;
+}
+}
+}
+namespace Symfony\Component\Security\Core\User
+{
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
+use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
+interface UserProviderInterface
+{
+public function loadUserByUsername($username);
+public function refreshUser(UserInterface $user);
+public function supportsClass($class);
+}
+}
+namespace Symfony\Component\Security\Http
+{
+use Symfony\Component\HttpFoundation\Request;
+interface AccessMapInterface
+{
+public function getPatterns(Request $request);
+}
+}
+namespace Symfony\Component\Security\Http
+{
+use Symfony\Component\HttpFoundation\RequestMatcherInterface;
+use Symfony\Component\HttpFoundation\Request;
+class AccessMap implements AccessMapInterface
+{
+private $map = array();
+public function add(RequestMatcherInterface $requestMatcher, array $attributes = array(), $channel = null)
+{
+$this->map[] = array($requestMatcher, $attributes, $channel);
+}
+public function getPatterns(Request $request)
+{
+foreach ($this->map as $elements) {
+if (null === $elements[0] || $elements[0]->matches($request)) {
+return array($elements[1], $elements[2]);
+}
+}
+return array(null, null);
+}
+}
+}
+namespace Symfony\Component\Security\Http
+{
+use Symfony\Component\HttpKernel\KernelEvents;
+use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\FinishRequestEvent;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+class Firewall implements EventSubscriberInterface
+{
+private $map;
+private $dispatcher;
+private $exceptionListeners;
+public function __construct(FirewallMapInterface $map, EventDispatcherInterface $dispatcher)
+{
+$this->map = $map;
+$this->dispatcher = $dispatcher;
+$this->exceptionListeners = new \SplObjectStorage();
+}
+public function onKernelRequest(GetResponseEvent $event)
+{
+if (!$event->isMasterRequest()) {
+return;
+}
+list($listeners, $exceptionListener) = $this->map->getListeners($event->getRequest());
+if (null !== $exceptionListener) {
+$this->exceptionListeners[$event->getRequest()] = $exceptionListener;
+$exceptionListener->register($this->dispatcher);
+}
+foreach ($listeners as $listener) {
+$listener->handle($event);
+if ($event->hasResponse()) {
+break;
+}
+}
+}
+public function onKernelFinishRequest(FinishRequestEvent $event)
+{
+$request = $event->getRequest();
+if (isset($this->exceptionListeners[$request])) {
+$this->exceptionListeners[$request]->unregister($this->dispatcher);
+unset($this->exceptionListeners[$request]);
+}
+}
+public static function getSubscribedEvents()
+{
+return array(
+KernelEvents::REQUEST => array('onKernelRequest', 8),
+KernelEvents::FINISH_REQUEST =>'onKernelFinishRequest',
+);
 }
 }
 }

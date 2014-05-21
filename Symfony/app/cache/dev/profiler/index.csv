@@ -715,3 +715,4 @@ debf9c,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_conf
 >>>>>>> FETCH_HEAD
 8cc705,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400678565,24378c
 24378c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400678566,
+b9dabb,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400679296,
