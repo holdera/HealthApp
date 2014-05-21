@@ -10,11 +10,37 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         $this->parent = false;
 
         $this->blocks = array(
+            'head' => array($this, 'block_head'),
             'stylesheets' => array($this, 'block_stylesheets'),
+            'header' => array($this, 'block_header'),
+            'home_content' => array($this, 'block_home_content'),
+            'footer' => array($this, 'block_footer'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        $this->displayBlock('head', $context, $blocks);
+        // line 22
+        echo "
+";
+        // line 23
+        $this->displayBlock('header', $context, $blocks);
+        // line 41
+        echo "
+";
+        // line 42
+        $this->displayBlock('home_content', $context, $blocks);
+        // line 89
+        echo "
+";
+        // line 90
+        $this->displayBlock('footer', $context, $blocks);
+    }
+
+    // line 1
+    public function block_head($context, array $blocks = array())
     {
         // line 2
         echo "<head>
@@ -33,105 +59,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     ";
         // line 20
         echo "</head>
-
-<header>
-    <h1 id=\"logo\">The Healthy Lifestyle</h1>
-
-    <nav class=\"top_nav\">
-        <ul>
-            <li><a href=\"#\">Login</a></li>
-            <li><a href=\"/HealthApp/Symfony/web/app_dev.php/lifestyle\">Lifestyle</a></li>
-            <li><a href=\"#\">Fitness</a></li>
-            <li><a href=\"#\">Detox</a></li>
-            <li><a href=\"#\">Forum</a></li>
-            <li><a href=\"#\">Chatroom</a></li>
-            <li><a href=\"#\">Resources</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<section >
-
-
-
-
-    <section id=\"non-slider\">
-
-    </section>
-
-    <section class=\"container-fluid\">
-
-    <section class=\"col-md-4 welcome\">
-        <h1>Change Your Lifestyle!</h1>
-
-        <p>Fingerstache wayfarers mlkshk, flexitarian skateboard paleo banh mi Austin.
-            Fingerstache synth gastropub art party cornhole sriracha, iPhone Odd Future. Blue Bottle church-key roof party
-            fingerstache tofu banh mi. Jean shorts ethical craft beer, Thundercats hella ennui tote bag High Life Wes Anderson.
-            Ethical seitan cliche, chillwave artisan Odd Future iPhone lo-fi art party fingerstache flexitarian locavore meh kale chips.
-            Williamsburg Tumblr kitsch bicycle rights, Shoreditch craft beer distillery. Banh mi YOLO quinoa, Banksy Neutra drinking vinegar
-            dreamcatcher stumptown Etsy blog organic McSweeney's banjo.</p>
-    </section><!--end of welcome-->
-
-        <section class=\"col-md-4\">
-            
-            <img src=\"/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/public/images/image2.png\"/>
-            </section>
-
-    <section class=\"col-md-4\">
-        <h1>Login/Sign Up</h1>
-<form class=\"form-horizontal login\" method=\"post\">
-    <section class=\"form-group\">
-      <label class=\"col-sm-3 control-label\" for=\"username\">Username:</label>
-      <input type=\"text\" name=\"username\" class=\"form-control inputW\" id=\"userName\" />
-
-        <label class=\"col-sm-3 control-label\" for=\"password\">Password:</label>
-        <input type=\"password\" name=\"password\" class=\"form-control inputW\" id=\"passWord\" />
-
-        </section>
-
-        <input type=\"submit\" class=\"btn btn-default\" name=\"submit\" id=\"subMit\" />
-
-</form>
-    </section><!--end of homeIMG-->
-
-</section><!--end of row-->
-
-    </section><!--container fluid ends-->
-
-<footer class=\"row\">
-
-    <section class=\"col-md-4 foot_nav\">
-        <ul>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-        </ul>
-    </section>
-
-    <section class=\"col-md-4 foot_nav\">
-        <ul>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-            <li>links</li>
-        </ul>
-    </section>
-
-
-    <section class=\"col-md-4\">
-        <form id=\"subscribe\" method=\"post\" action=\"\">
-            <label for=\"name\">Name: </label>
-            <input type=\"text\" name=\"name\" class=\"form-control fields\">
-            <label for=\"email\">Email:</label>
-            <input type=\"text\" name=\"email\" class=\"form-control fields\">
-
-            <input type=\"submit\" name=\"sub\" class=\"btn\" id=\"submitBut\" value=\"subscribe\">
-        </form>
-    </section>
-
-</footer>";
+";
     }
 
     // line 10
@@ -189,6 +117,121 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         unset($context["asset_url"]);
     }
 
+    // line 23
+    public function block_header($context, array $blocks = array())
+    {
+        // line 24
+        echo "<header>
+    <h1 id=\"logo\">The Healthy Lifestyle</h1>
+
+    <nav class=\"top_nav\">
+        <ul>
+            <li><a href=\"#\">Login</a></li>
+            <li><a href=\"/HealthApp/Symfony/web/app_dev.php/lifestyle\">Lifestyle</a></li>
+            <li><a href=\"#\">Fitness</a></li>
+            <li><a href=\"#\">Detox</a></li>
+            <li><a href=\"#\">Forum</a></li>
+            <li><a href=\"#\">Chatroom</a></li>
+            <li><a href=\"#\">Resources</a></li>
+        </ul>
+    </nav>
+
+</header>
+";
+    }
+
+    // line 42
+    public function block_home_content($context, array $blocks = array())
+    {
+        // line 43
+        echo "<section >
+
+    <section id=\"non-slider\">
+
+    </section>
+
+    <section class=\"container-fluid\">
+
+    <section class=\"col-md-4 welcome\">
+        <h1>Change Your Lifestyle!</h1>
+
+        <p>Fingerstache wayfarers mlkshk, flexitarian skateboard paleo banh mi Austin.
+            Fingerstache synth gastropub art party cornhole sriracha, iPhone Odd Future. Blue Bottle church-key roof party
+            fingerstache tofu banh mi. Jean shorts ethical craft beer, Thundercats hella ennui tote bag High Life Wes Anderson.
+            Ethical seitan cliche, chillwave artisan Odd Future iPhone lo-fi art party fingerstache flexitarian locavore meh kale chips.
+            Williamsburg Tumblr kitsch bicycle rights, Shoreditch craft beer distillery. Banh mi YOLO quinoa, Banksy Neutra drinking vinegar
+            dreamcatcher stumptown Etsy blog organic McSweeney's banjo.</p>
+    </section><!--end of welcome-->
+
+        <section class=\"col-md-4\">
+
+            <img src=\"/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/public/images/image2.png\"/>
+            </section>
+
+    <section class=\"col-md-4\">
+        <h1>Login/Sign Up</h1>
+<form class=\"form-horizontal login\" method=\"post\">
+    <section class=\"form-group\">
+      <label class=\"col-sm-3 control-label\" for=\"username\">Username:</label>
+      <input type=\"text\" name=\"username\" class=\"form-control inputW\" id=\"userName\" />
+
+        <label class=\"col-sm-3 control-label\" for=\"password\">Password:</label>
+        <input type=\"password\" name=\"password\" class=\"form-control inputW\" id=\"passWord\" />
+
+        </section>
+
+        <input type=\"submit\" class=\"btn btn-default\" name=\"submit\" id=\"subMit\" />
+
+</form>
+    </section><!--end of homeIMG-->
+
+</section><!--end of row-->
+
+    </section><!--container fluid ends-->
+
+";
+    }
+
+    // line 90
+    public function block_footer($context, array $blocks = array())
+    {
+        // line 91
+        echo "<footer class=\"row\">
+
+    <section class=\"col-md-4 foot_nav\">
+        <ul>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+        </ul>
+    </section>
+
+    <section class=\"col-md-4 foot_nav\">
+        <ul>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+            <li>links</li>
+        </ul>
+    </section>
+
+
+    <section class=\"col-md-4\">
+        <form id=\"subscribe\" method=\"post\" action=\"\">
+            <label for=\"name\">Name: </label>
+            <input type=\"text\" name=\"name\" class=\"form-control fields\">
+            <label for=\"email\">Email:</label>
+            <input type=\"text\" name=\"email\" class=\"form-control fields\">
+
+            <input type=\"submit\" name=\"sub\" class=\"btn\" id=\"submitBut\" value=\"subscribe\">
+        </form>
+    </section>
+
+</footer>
+";
+    }
+
     public function getTemplateName()
     {
         return "healthhealthUserBundle:Default:index.html.twig";
@@ -196,6 +239,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  185 => 13,  180 => 12,  173 => 13,  168 => 12,  162 => 13,  157 => 12,  151 => 13,  146 => 12,  141 => 11,  138 => 10,  35 => 20,  32 => 16,  30 => 10,  20 => 2,);
+        return array (  199 => 91,  196 => 90,  147 => 43,  144 => 42,  124 => 24,  121 => 23,  113 => 13,  108 => 12,  101 => 13,  96 => 12,  90 => 13,  85 => 12,  79 => 13,  74 => 12,  69 => 11,  66 => 10,  61 => 20,  58 => 16,  56 => 10,  46 => 2,  43 => 1,  39 => 90,  36 => 89,  34 => 42,  31 => 41,  29 => 23,  26 => 22,  24 => 1,);
     }
 }

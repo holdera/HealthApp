@@ -1,8 +1,7 @@
-<!DOCTYPE html>
- <html>
-<head>
  {% block head %}
-
+ <!DOCTYPE html>
+ <html>
+ <head>
     {% block stylesheets %}
         {% stylesheets '@healthhealthUserBundle/Resources/public/css/*' filter='cssrewrite' %}
         <link href="{{ asset_url  }}"  rel="stylesheet">
@@ -10,10 +9,10 @@
         {% endstylesheets %}
     {% endblock %}
 
-{% endblock %}
+
     <title>{{ page-title }}</title>
 </head>
-
+{% endblock %}
 
 {# this is a comment#}
 
@@ -61,9 +60,5 @@
     </aside>
 {% endblock %}
 
-
-{% block footer %}
-
-{% endblock %}
 
 </html>

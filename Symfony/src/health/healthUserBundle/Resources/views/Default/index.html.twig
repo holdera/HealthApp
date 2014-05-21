@@ -1,4 +1,4 @@
-{#extends '::layout.html.twig' #}
+{% block head %}
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="health, fitness, exercise, lifestyle, healthy, weightloss">
@@ -18,7 +18,9 @@
         <script src="{{ asset('js/jquery.stellar.min.js') }}"
     {% endblock %}#}
 </head>
+{% endblock %}
 
+{% block header %}
 <header>
     <h1 id="logo">The Healthy Lifestyle</h1>
 
@@ -35,11 +37,10 @@
     </nav>
 
 </header>
+{% endblock %}
 
+{% block home_content %}
 <section >
-
-
-
 
     <section id="non-slider">
 
@@ -59,7 +60,7 @@
     </section><!--end of welcome-->
 
         <section class="col-md-4">
-            
+
             <img src="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/public/images/image2.png"/>
             </section>
 
@@ -84,6 +85,9 @@
 
     </section><!--container fluid ends-->
 
+{% endblock %}
+
+{% block footer %}
 <footer class="row">
 
     <section class="col-md-4 foot_nav">
@@ -117,3 +121,4 @@
     </section>
 
 </footer>
+{% endblock %}
