@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="13" selection-start="4900" selection-end="4900" vertical-scroll-proportion="-21.083334" vertical-offset="1609" max-vertical-offset="2220">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,19 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lifestyle.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-16.25" vertical-offset="225" max-vertical-offset="2040">
+            <state line="67" column="30" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.94755244" vertical-offset="463" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
@@ -65,15 +47,6 @@
         <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="10" selection-start="841" selection-end="841" vertical-scroll-proportion="0.3989071" vertical-offset="741" max-vertical-offset="1515">
               <folding />
             </state>
           </provider>
@@ -126,16 +99,16 @@
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Entity/Navigation.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="150" />
+    <option name="x" value="3" />
+    <option name="y" value="57" />
     <option name="width" value="1272" />
     <option name="height" value="693" />
   </component>
@@ -585,7 +558,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="150" width="1272" height="693" extended-state="0" />
+    <frame x="3" y="57" width="1272" height="693" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -931,23 +904,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="141" column="13" selection-start="4900" selection-end="4900" vertical-scroll-proportion="-21.083334" vertical-offset="1609" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1165" selection-end="1165" vertical-scroll-proportion="-16.25" vertical-offset="225" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
@@ -962,6 +921,20 @@
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="10" selection-start="841" selection-end="841" vertical-scroll-proportion="0.3989071" vertical-offset="741" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="30" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.94755244" vertical-offset="463" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>

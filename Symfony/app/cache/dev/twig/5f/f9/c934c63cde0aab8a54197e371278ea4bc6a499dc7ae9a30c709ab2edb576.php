@@ -227,14 +227,14 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         </aside>
 
         <aside class=\" sidebar\">
-            <h3>Monthly Contest</h3>
+            <h3>Latest Posts</h3>
             <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
                 Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
                 normcore odio gluten-free tofu ullamco. </p>
         </aside>
 
         <aside class=\" sidebar\">
-            <h3>Monthly Contest</h3>
+            <h3>Latest Recipes</h3>
             <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
                 Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
                 normcore odio gluten-free tofu ullamco. </p>
@@ -252,6 +252,6 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
     public function getDebugInfo()
     {
-        return array (  219 => 50,  216 => 49,  206 => 40,  203 => 39,  182 => 18,  179 => 17,  175 => 10,  169 => 8,  164 => 7,  157 => 8,  152 => 7,  146 => 8,  141 => 7,  135 => 8,  130 => 7,  125 => 6,  122 => 5,  117 => 11,  115 => 5,  110 => 2,  107 => 1,  49 => 77,  47 => 49,  43 => 47,  41 => 39,  36 => 36,  34 => 17,  30 => 15,  27 => 13,  24 => 1,  42 => 10,  39 => 9,  32 => 4,  29 => 3,);
+        return array (  219 => 50,  216 => 49,  206 => 40,  203 => 39,  182 => 18,  179 => 17,  175 => 10,  169 => 8,  164 => 7,  157 => 8,  152 => 7,  146 => 8,  141 => 7,  135 => 8,  130 => 7,  125 => 6,  122 => 5,  117 => 11,  115 => 5,  110 => 2,  107 => 1,  49 => 77,  47 => 49,  43 => 47,  41 => 39,  36 => 36,  34 => 17,  30 => 15,  27 => 13,  24 => 1,);
     }
 }
