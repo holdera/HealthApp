@@ -2719,6 +2719,57 @@ return sprintf('%s:%s:%s.%s.%s', $this->parameters['bundle'], $this->parameters[
 }
 }
 }
+namespace Symfony\Bundle\SecurityBundle\Security
+{
+use Symfony\Component\Security\Http\Firewall\ExceptionListener;
+class FirewallContext
+{
+private $listeners;
+private $exceptionListener;
+public function __construct(array $listeners, ExceptionListener $exceptionListener = null)
+{
+$this->listeners = $listeners;
+$this->exceptionListener = $exceptionListener;
+}
+public function getContext()
+{
+return array($this->listeners, $this->exceptionListener);
+}
+}
+}
+namespace Symfony\Component\Security\Http
+{
+use Symfony\Component\HttpFoundation\Request;
+interface FirewallMapInterface
+{
+public function getListeners(Request $request);
+}
+}
+namespace Symfony\Bundle\SecurityBundle\Security
+{
+use Symfony\Component\Security\Http\FirewallMapInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+class FirewallMap implements FirewallMapInterface
+{
+protected $container;
+protected $map;
+public function __construct(ContainerInterface $container, array $map)
+{
+$this->container = $container;
+$this->map = $map;
+}
+public function getListeners(Request $request)
+{
+foreach ($this->map as $contextId => $requestMatcher) {
+if (null === $requestMatcher || $requestMatcher->matches($request)) {
+return $this->container->get($contextId)->getContext();
+}
+}
+return array(array(), null);
+}
+}
+}
 namespace Symfony\Component\Config
 {
 class FileLocator implements FileLocatorInterface
@@ -3017,6 +3068,79 @@ return $this->name;
 public function setName($name)
 {
 $this->name = $name;
+}
+}
+}
+namespace Symfony\Component\HttpFoundation
+{
+interface RequestMatcherInterface
+{
+public function matches(Request $request);
+}
+}
+namespace Symfony\Component\HttpFoundation
+{
+class RequestMatcher implements RequestMatcherInterface
+{
+private $path;
+private $host;
+private $methods = array();
+private $ips = array();
+private $attributes = array();
+public function __construct($path = null, $host = null, $methods = null, $ips = null, array $attributes = array())
+{
+$this->matchPath($path);
+$this->matchHost($host);
+$this->matchMethod($methods);
+$this->matchIps($ips);
+foreach ($attributes as $k => $v) {
+$this->matchAttribute($k, $v);
+}
+}
+public function matchHost($regexp)
+{
+$this->host = $regexp;
+}
+public function matchPath($regexp)
+{
+$this->path = $regexp;
+}
+public function matchIp($ip)
+{
+$this->matchIps($ip);
+}
+public function matchIps($ips)
+{
+$this->ips = (array) $ips;
+}
+public function matchMethod($method)
+{
+$this->methods = array_map('strtoupper', (array) $method);
+}
+public function matchAttribute($key, $regexp)
+{
+$this->attributes[$key] = $regexp;
+}
+public function matches(Request $request)
+{
+if ($this->methods && !in_array($request->getMethod(), $this->methods)) {
+return false;
+}
+foreach ($this->attributes as $key => $pattern) {
+if (!preg_match('{'.$pattern.'}', $request->attributes->get($key))) {
+return false;
+}
+}
+if (null !== $this->path && !preg_match('{'.$this->path.'}', rawurldecode($request->getPathInfo()))) {
+return false;
+}
+if (null !== $this->host && !preg_match('{'.$this->host.'}i', $request->getHost())) {
+return false;
+}
+if (IpUtils::checkIp($request->getClientIp(), $this->ips)) {
+return true;
+}
+return count($this->ips) === 0;
 }
 }
 }
@@ -4178,7 +4302,10 @@ $this->parameters[$name] = $parameter;
 }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> FETCH_HEAD
 namespace Symfony\Component\Security\Core\Authentication
 {
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
@@ -4546,6 +4673,9 @@ KernelEvents::FINISH_REQUEST =>'onKernelFinishRequest',
 }
 }
 }
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 namespace
 {
