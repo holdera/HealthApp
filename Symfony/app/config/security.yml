@@ -2,7 +2,11 @@ security:
     encoders:
         #health\healthUserBundle\Entity\Users:
 <<<<<<< HEAD
+<<<<<<< HEAD
            # algorithm: bcrypt
+=======
+            #algorithm: bcrypt
+>>>>>>> FETCH_HEAD
 =======
             #algorithm: bcrypt
 >>>>>>> FETCH_HEAD
@@ -15,7 +19,11 @@ security:
     providers:
         #administrators:
 <<<<<<< HEAD
+<<<<<<< HEAD
             #entity:{class: healthUserBundle:Users, property: username}
+=======
+           # entity:{class: healthUserBundle:Users, property: username}
+>>>>>>> FETCH_HEAD
         in_memory:
             memory:
                 users:
@@ -25,6 +33,7 @@ security:
     firewalls:
         #admin_area:
             #pattern: ^/admin
+<<<<<<< HEAD
 =======
            # entity:{class: healthUserBundle:Users, property: username}
         in_memory:
@@ -42,6 +51,13 @@ security:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
+=======
+            #http_basic: ~
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+>>>>>>> FETCH_HEAD
         login:
             pattern:  ^/demo/secured/login$
             security: false
@@ -53,8 +69,13 @@ security:
                 login_path: _demo_login
             logout:
 <<<<<<< HEAD
+<<<<<<< HEAD
                path: _demo_logout
                target: _demo
+=======
+                path:   _demo_logout
+                target: _demo
+>>>>>>> FETCH_HEAD
 =======
                 path:   _demo_logout
                 target: _demo
