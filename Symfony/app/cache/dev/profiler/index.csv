@@ -714,7 +714,6 @@ debf9c,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_conf
 42b316,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400643709,
 >>>>>>> FETCH_HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 8cc705,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400678565,24378c
 24378c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1400678566,
 <<<<<<< HEAD
@@ -723,7 +722,4 @@ debf9c,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/_conf
 >>>>>>> FETCH_HEAD
 =======
 b9dabb,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400679296,
->>>>>>> FETCH_HEAD
-=======
-c8997e,::1,GET,http://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1400685314,
 >>>>>>> FETCH_HEAD
