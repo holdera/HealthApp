@@ -23,89 +23,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="classes.php.meta" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.php.meta">
+      <file leaf-file-name="loginController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/loginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="58298" selection-end="58298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="NavigationController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/NavigationController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="13" selection-start="460" selection-end="460" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="510">
-=======
-      <file leaf-file-name="classes.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6292" column="54" selection-start="251449" selection-end="251449" vertical-scroll-proportion="-3.4812164" vertical-offset="96326" max-vertical-offset="96945">
->>>>>>> FETCH_HEAD
               <folding>
-                <element signature="e#6608#6627#0" expanded="true" />
-                <element signature="e#10020#10084#0" expanded="true" />
-                <element signature="e#19191#19228#0" expanded="true" />
-                <element signature="e#27985#28024#0" expanded="true" />
-                <element signature="e#31295#31356#0" expanded="true" />
-                <element signature="e#35684#35752#0" expanded="true" />
-                <element signature="e#38121#38188#0" expanded="true" />
-                <element signature="e#41076#41137#0" expanded="true" />
-                <element signature="e#44747#44815#0" expanded="true" />
-                <element signature="e#45137#45205#0" expanded="true" />
-                <element signature="e#46550#46618#0" expanded="true" />
-                <element signature="e#52547#52592#0" expanded="true" />
-                <element signature="e#55564#55583#0" expanded="true" />
-                <element signature="e#57045#57078#0" expanded="true" />
-                <element signature="e#58742#58777#0" expanded="true" />
-                <element signature="e#59472#59506#0" expanded="true" />
-                <element signature="e#67694#67747#0" expanded="true" />
-                <element signature="e#72493#72521#0" expanded="true" />
-                <element signature="e#76688#76716#0" expanded="true" />
-                <element signature="e#78515#78568#0" expanded="true" />
-                <element signature="e#79572#79658#0" expanded="true" />
-                <element signature="e#80570#80629#0" expanded="true" />
-                <element signature="e#80949#80994#0" expanded="true" />
-                <element signature="e#81295#81361#0" expanded="true" />
-                <element signature="e#86324#86390#0" expanded="true" />
-                <element signature="e#88471#88537#0" expanded="true" />
-                <element signature="e#89134#89196#0" expanded="true" />
-                <element signature="e#89585#89637#0" expanded="true" />
-                <element signature="e#96837#96888#0" expanded="true" />
-                <element signature="e#100271#100332#0" expanded="true" />
-                <element signature="e#102218#102268#0" expanded="true" />
-                <element signature="e#103841#103902#0" expanded="true" />
-                <element signature="e#109235#109292#0" expanded="true" />
-                <element signature="e#125507#125584#0" expanded="true" />
-                <element signature="e#131258#131323#0" expanded="true" />
-                <element signature="e#139624#139697#0" expanded="true" />
-                <element signature="e#143755#143815#0" expanded="true" />
-                <element signature="e#144642#144701#0" expanded="true" />
-                <element signature="e#145658#145686#0" expanded="true" />
-                <element signature="e#150600#150653#0" expanded="true" />
-                <element signature="e#151598#151651#0" expanded="true" />
-                <element signature="e#153345#153398#0" expanded="true" />
-                <element signature="e#154637#154690#0" expanded="true" />
-                <element signature="e#155421#155474#0" expanded="true" />
-                <element signature="e#156747#156793#0" expanded="true" />
-                <element signature="e#169037#169109#0" expanded="true" />
-                <element signature="e#169368#169437#0" expanded="true" />
-                <element signature="e#172838#172909#0" expanded="true" />
-                <element signature="e#178427#178516#0" expanded="true" />
-                <element signature="e#180366#180438#0" expanded="true" />
-                <element signature="e#180969#181030#0" expanded="true" />
-                <element signature="e#181768#181814#0" expanded="true" />
+                <element signature="e#54#111#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="security.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="8" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="780">
+            <state line="45" column="8" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.96258503" vertical-offset="109" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -120,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.47202796" vertical-offset="0" max-vertical-offset="1575">
+            <state line="18" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1575">
               <folding />
             </state>
           </provider>
@@ -138,8 +79,6 @@
           </provider>
         </entry>
       </file>
-=======
->>>>>>> FETCH_HEAD
     </leaf>
   </component>
   <component name="FindManager">
@@ -153,6 +92,7 @@
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
         <option value="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/database.yml" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/healthhealthUserExtension.php" />
+        <option value="$PROJECT_DIR$/app/cache/dev/classes.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/DependencyInjection/Configuration.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/config/routing.yml" />
@@ -182,30 +122,15 @@
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/logs/dev.log" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-        <option value="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log" />
-        <option value="$PROJECT_DIR$/app/cache/dev/classes.map" />
-        <option value="$PROJECT_DIR$/app/cache/dev/classes.php.meta" />
-        <option value="$PROJECT_DIR$/app/cache/dev/classes.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
     <option name="x" value="100" />
     <option name="y" value="22" />
     <option name="width" value="1103" />
-    <option name="height" value="716" />
-=======
-    <option name="x" value="-18" />
-    <option name="y" value="150" />
-    <option name="width" value="1272" />
-    <option name="height" value="693" />
->>>>>>> FETCH_HEAD
+    <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -262,7 +187,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -410,9 +334,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-=======
-              <option name="myItemId" value="app" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -446,11 +367,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
+              <option name="myItemId" value="health" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -480,23 +401,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
+              <option name="myItemId" value="health" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="healthUserBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-=======
-              <option name="myItemId" value="dev" />
->>>>>>> FETCH_HEAD
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,15 +445,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profiler" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -597,11 +520,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="100" y="22" width="1103" height="716" extended-state="6" />
-=======
-    <frame x="-18" y="150" width="1272" height="693" extended-state="0" />
->>>>>>> FETCH_HEAD
+    <frame x="100" y="22" width="1103" height="708" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -609,11 +528,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25929284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3215409" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> FETCH_HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1650641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -621,11 +536,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -667,7 +582,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="25" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150" />
@@ -721,8 +635,6 @@
         <state line="53" column="17" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.6921642" vertical-offset="424" max-vertical-offset="1020" />
       </provider>
     </entry>
-=======
->>>>>>> FETCH_HEAD
     <entry file="file://$PROJECT_DIR$/app/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550" />
@@ -868,104 +780,25 @@
         <state line="21" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="0.5506993" vertical-offset="0" max-vertical-offset="572" />
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="225">
-=======
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="5" selection-start="595" selection-end="595" vertical-scroll-proportion="0.28846154" vertical-offset="435" max-vertical-offset="1515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="29" selection-start="2645" selection-end="2645" vertical-scroll-proportion="0.7316637" vertical-offset="641" max-vertical-offset="2220" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/AdminBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3146853" vertical-offset="0" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.26223776" vertical-offset="0" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/AdminBundle/DependencyInjection/healthAdminExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/AdminBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Config/Definition/ArrayNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="366" column="38" selection-start="10251" selection-end="10251" vertical-scroll-proportion="0.3864043" vertical-offset="5139" max-vertical-offset="5805" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/NavigationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="460" selection-end="460" vertical-scroll-proportion="0.4458042" vertical-offset="0" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/loginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49947" column="0" selection-start="8677454" selection-end="8677454" vertical-scroll-proportion="1342.6613" vertical-offset="0" max-vertical-offset="749310">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/AdminBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
-=======
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="25" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.8238255" vertical-offset="424" max-vertical-offset="1080">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="7" selection-start="288" selection-end="288" vertical-scroll-proportion="0.3146853" vertical-offset="0" max-vertical-offset="572" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/profiler/index.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="721" column="0" selection-start="64425" selection-end="64425" vertical-scroll-proportion="19.451439" vertical-offset="0" max-vertical-offset="10905">
-          <folding />
-        </state>
->>>>>>> FETCH_HEAD
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.26223776" vertical-offset="0" max-vertical-offset="572" />
@@ -984,29 +817,10 @@
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="31" selection-start="74" selection-end="74" vertical-scroll-proportion="0.049099836" vertical-offset="0" max-vertical-offset="611">
-=======
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="60180">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="8" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="780">
-=======
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php.meta">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/NavigationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="13" selection-start="460" selection-end="460" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="510">
@@ -1024,108 +838,24 @@
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="104" selection-start="2418" selection-end="2418" vertical-scroll-proportion="-11.208333" vertical-offset="676" max-vertical-offset="2235">
-=======
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8783542" vertical-offset="491" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerCompiler.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="27977" selection-end="27977" vertical-scroll-proportion="4.271012" vertical-offset="0" max-vertical-offset="5880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="6852" selection-end="6852" vertical-scroll-proportion="0.81546575" vertical-offset="1186" max-vertical-offset="1755">
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.47202796" vertical-offset="0" max-vertical-offset="1575">
-=======
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.php.meta">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="58298" selection-end="58298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
->>>>>>> FETCH_HEAD
+        <state line="18" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/app/cache/dev/classes.php">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6292" column="54" selection-start="251449" selection-end="251449" vertical-scroll-proportion="-3.4812164" vertical-offset="96326" max-vertical-offset="96945">
-          <folding>
-            <element signature="e#6608#6627#0" expanded="true" />
-            <element signature="e#10020#10084#0" expanded="true" />
-            <element signature="e#19191#19228#0" expanded="true" />
-            <element signature="e#27985#28024#0" expanded="true" />
-            <element signature="e#31295#31356#0" expanded="true" />
-            <element signature="e#35684#35752#0" expanded="true" />
-            <element signature="e#38121#38188#0" expanded="true" />
-            <element signature="e#41076#41137#0" expanded="true" />
-            <element signature="e#44747#44815#0" expanded="true" />
-            <element signature="e#45137#45205#0" expanded="true" />
-            <element signature="e#46550#46618#0" expanded="true" />
-            <element signature="e#52547#52592#0" expanded="true" />
-            <element signature="e#55564#55583#0" expanded="true" />
-            <element signature="e#57045#57078#0" expanded="true" />
-            <element signature="e#58742#58777#0" expanded="true" />
-            <element signature="e#59472#59506#0" expanded="true" />
-            <element signature="e#67694#67747#0" expanded="true" />
-            <element signature="e#72493#72521#0" expanded="true" />
-            <element signature="e#76688#76716#0" expanded="true" />
-            <element signature="e#78515#78568#0" expanded="true" />
-            <element signature="e#79572#79658#0" expanded="true" />
-            <element signature="e#80570#80629#0" expanded="true" />
-            <element signature="e#80949#80994#0" expanded="true" />
-            <element signature="e#81295#81361#0" expanded="true" />
-            <element signature="e#86324#86390#0" expanded="true" />
-            <element signature="e#88471#88537#0" expanded="true" />
-            <element signature="e#89134#89196#0" expanded="true" />
-            <element signature="e#89585#89637#0" expanded="true" />
-            <element signature="e#96837#96888#0" expanded="true" />
-            <element signature="e#100271#100332#0" expanded="true" />
-            <element signature="e#102218#102268#0" expanded="true" />
-            <element signature="e#103841#103902#0" expanded="true" />
-            <element signature="e#109235#109292#0" expanded="true" />
-            <element signature="e#125507#125584#0" expanded="true" />
-            <element signature="e#131258#131323#0" expanded="true" />
-            <element signature="e#139624#139697#0" expanded="true" />
-            <element signature="e#143755#143815#0" expanded="true" />
-            <element signature="e#144642#144701#0" expanded="true" />
-            <element signature="e#145658#145686#0" expanded="true" />
-            <element signature="e#150600#150653#0" expanded="true" />
-            <element signature="e#151598#151651#0" expanded="true" />
-            <element signature="e#153345#153398#0" expanded="true" />
-            <element signature="e#154637#154690#0" expanded="true" />
-            <element signature="e#155421#155474#0" expanded="true" />
-            <element signature="e#156747#156793#0" expanded="true" />
-            <element signature="e#169037#169109#0" expanded="true" />
-            <element signature="e#169368#169437#0" expanded="true" />
-            <element signature="e#172838#172909#0" expanded="true" />
-            <element signature="e#178427#178516#0" expanded="true" />
-            <element signature="e#180366#180438#0" expanded="true" />
-            <element signature="e#180969#181030#0" expanded="true" />
-            <element signature="e#181768#181814#0" expanded="true" />
-          </folding>
+        <state line="45" column="8" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.96258503" vertical-offset="109" max-vertical-offset="780">
+          <folding />
         </state>
       </provider>
     </entry>
->>>>>>> FETCH_HEAD
   </component>
 </project>
 

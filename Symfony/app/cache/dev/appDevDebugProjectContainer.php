@@ -1792,11 +1792,6 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> FETCH_HEAD
      * Gets the 'security.encoder_factory' service.
      *
      * This service is shared.
@@ -1895,10 +1890,6 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
      * Gets the 'security.secure_random' service.
      *
      * This service is shared.

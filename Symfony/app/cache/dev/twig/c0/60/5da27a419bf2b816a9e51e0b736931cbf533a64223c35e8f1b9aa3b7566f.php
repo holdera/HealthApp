@@ -24,11 +24,7 @@ class __TwigTemplate_c0605da27a419bf2b816a9e51e0b736931cbf533a64223c35e8f1b9aa3b
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 3
-<<<<<<< HEAD
         $context["__internal_d699d456634f5a87b86e03b04b5072187cd639b38db4f980baa5adb5cf2af890"] = $this;
-=======
-        $context["__internal_8f6d6d6b562b34cab5d0a010a1abf8b11d2526619111d9aa70a87e1cc96be451"] = $this;
->>>>>>> FETCH_HEAD
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -172,11 +168,7 @@ class __TwigTemplate_c0605da27a419bf2b816a9e51e0b736931cbf533a64223c35e8f1b9aa3b
             foreach ($context['_seq'] as $context["formName"] => $context["formData"]) {
                 // line 96
                 echo "                    ";
-<<<<<<< HEAD
                 echo $context["__internal_d699d456634f5a87b86e03b04b5072187cd639b38db4f980baa5adb5cf2af890"]->getform_tree_entry((isset($context["formName"]) ? $context["formName"] : $this->getContext($context, "formName")), (isset($context["formData"]) ? $context["formData"] : $this->getContext($context, "formData")));
-=======
-                echo $context["__internal_8f6d6d6b562b34cab5d0a010a1abf8b11d2526619111d9aa70a87e1cc96be451"]->getform_tree_entry((isset($context["formName"]) ? $context["formName"] : $this->getContext($context, "formName")), (isset($context["formData"]) ? $context["formData"] : $this->getContext($context, "formData")));
->>>>>>> FETCH_HEAD
                 echo "
                 ";
             }
@@ -194,11 +186,7 @@ class __TwigTemplate_c0605da27a419bf2b816a9e51e0b736931cbf533a64223c35e8f1b9aa3b
             foreach ($context['_seq'] as $context["formName"] => $context["formData"]) {
                 // line 102
                 echo "                ";
-<<<<<<< HEAD
                 echo $context["__internal_d699d456634f5a87b86e03b04b5072187cd639b38db4f980baa5adb5cf2af890"]->getform_tree_details((isset($context["formName"]) ? $context["formName"] : $this->getContext($context, "formName")), (isset($context["formData"]) ? $context["formData"] : $this->getContext($context, "formData")));
-=======
-                echo $context["__internal_8f6d6d6b562b34cab5d0a010a1abf8b11d2526619111d9aa70a87e1cc96be451"]->getform_tree_details((isset($context["formName"]) ? $context["formName"] : $this->getContext($context, "formName")), (isset($context["formData"]) ? $context["formData"] : $this->getContext($context, "formData")));
->>>>>>> FETCH_HEAD
                 echo "
             ";
             }
