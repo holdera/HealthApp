@@ -12,6 +12,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'stylesheets' => array($this, 'block_stylesheets'),
+            'javascript' => array($this, 'block_javascript'),
             'header' => array($this, 'block_header'),
             'home_content' => array($this, 'block_home_content'),
             'footer' => array($this, 'block_footer'),
@@ -57,6 +58,8 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         // line 16
         echo "
     ";
+        // line 17
+        $this->displayBlock('javascript', $context, $blocks);
         // line 20
         echo "</head>
 ";
@@ -115,6 +118,16 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     ";
         }
         unset($context["asset_url"]);
+    }
+
+    // line 17
+    public function block_javascript($context, array $blocks = array())
+    {
+        // line 18
+        echo "        <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery.stellar.min.js"), "html", null, true);
+        echo "\"></script>
+    ";
     }
 
     // line 23
@@ -262,6 +275,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  203 => 92,  200 => 91,  170 => 64,  147 => 43,  144 => 42,  124 => 24,  121 => 23,  113 => 13,  108 => 12,  101 => 13,  96 => 12,  90 => 13,  85 => 12,  79 => 13,  74 => 12,  69 => 11,  66 => 10,  61 => 20,  58 => 16,  56 => 10,  46 => 2,  43 => 1,  39 => 91,  36 => 90,  34 => 42,  31 => 41,  29 => 23,  26 => 22,  24 => 1,);
+        return array (  216 => 92,  213 => 91,  183 => 64,  160 => 43,  157 => 42,  137 => 24,  134 => 23,  127 => 18,  124 => 17,  116 => 13,  111 => 12,  104 => 13,  99 => 12,  93 => 13,  88 => 12,  82 => 13,  77 => 12,  72 => 11,  69 => 10,  64 => 20,  62 => 17,  59 => 16,  57 => 10,  47 => 2,  44 => 1,  40 => 91,  37 => 90,  35 => 42,  32 => 41,  30 => 23,  27 => 22,  25 => 1,);
     }
 }
