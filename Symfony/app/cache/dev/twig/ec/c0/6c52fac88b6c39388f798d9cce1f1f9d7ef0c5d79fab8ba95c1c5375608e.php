@@ -24,7 +24,11 @@ class __TwigTemplate_ecc06c52fac88b6c39388f798d9cce1f1f9d7ef0c5d79fab8ba95c1c537
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 3
+<<<<<<< HEAD
         $context["__internal_c7ed2d923f22f3650ccab197ca135a9c4afd5100a1c7b0e936f5341214af6c7a"] = $this;
+=======
+        $context["__internal_98fc1eb65a036af6d93d5965f8ec524f156f9a31f32f4785851f69e4efe89518"] = $this;
+>>>>>>> FETCH_HEAD
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
@@ -84,7 +88,11 @@ class __TwigTemplate_ecc06c52fac88b6c39388f798d9cce1f1f9d7ef0c5d79fab8ba95c1c537
             echo "</code></td>
                 <td><code>";
             // line 34
+<<<<<<< HEAD
             echo $context["__internal_c7ed2d923f22f3650ccab197ca135a9c4afd5100a1c7b0e936f5341214af6c7a"]->getdisplay_listener((isset($context["listener"]) ? $context["listener"] : $this->getContext($context, "listener")));
+=======
+            echo $context["__internal_98fc1eb65a036af6d93d5965f8ec524f156f9a31f32f4785851f69e4efe89518"]->getdisplay_listener((isset($context["listener"]) ? $context["listener"] : $this->getContext($context, "listener")));
+>>>>>>> FETCH_HEAD
             echo "</code></td>
             </tr>
         ";
@@ -122,7 +130,11 @@ class __TwigTemplate_ecc06c52fac88b6c39388f798d9cce1f1f9d7ef0c5d79fab8ba95c1c537
                 echo "</code></td>
                     <td><code>";
                 // line 51
+<<<<<<< HEAD
                 echo $context["__internal_c7ed2d923f22f3650ccab197ca135a9c4afd5100a1c7b0e936f5341214af6c7a"]->getdisplay_listener($this->getAttribute((isset($context["listeners"]) ? $context["listeners"] : $this->getContext($context, "listeners")), (isset($context["listener"]) ? $context["listener"] : $this->getContext($context, "listener")), array(), "array"));
+=======
+                echo $context["__internal_98fc1eb65a036af6d93d5965f8ec524f156f9a31f32f4785851f69e4efe89518"]->getdisplay_listener($this->getAttribute((isset($context["listeners"]) ? $context["listeners"] : $this->getContext($context, "listeners")), (isset($context["listener"]) ? $context["listener"] : $this->getContext($context, "listener")), array(), "array"));
+>>>>>>> FETCH_HEAD
                 echo "</code></td>
                 </tr>
             ";

@@ -1633,6 +1633,11 @@
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
       <argument type="service" id="request_stack"/>
     </service>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> FETCH_HEAD
     <service id="security.context" class="Symfony\Component\Security\Core\SecurityContext">
       <argument type="service" id="security.authentication.manager"/>
       <argument type="service" id="security.access.decision_manager"/>
@@ -1980,6 +1985,10 @@
         </service>
       </argument>
     </service>
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
     <service id="twig" class="Twig_Environment">
       <argument type="service" id="twig.loader"/>
       <argument type="collection">
