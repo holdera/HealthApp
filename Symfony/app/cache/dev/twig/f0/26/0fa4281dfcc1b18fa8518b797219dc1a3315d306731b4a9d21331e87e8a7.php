@@ -23,20 +23,20 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     {
         // line 1
         $this->displayBlock('head', $context, $blocks);
-        // line 22
-        echo "
-";
         // line 23
+        echo "
+";
+        // line 24
         $this->displayBlock('header', $context, $blocks);
-        // line 41
-        echo "
-";
         // line 42
-        $this->displayBlock('home_content', $context, $blocks);
-        // line 90
         echo "
 ";
+        // line 43
+        $this->displayBlock('home_content', $context, $blocks);
         // line 91
+        echo "
+";
+        // line 92
         $this->displayBlock('footer', $context, $blocks);
     }
 
@@ -60,7 +60,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     ";
         // line 17
         $this->displayBlock('javascript', $context, $blocks);
-        // line 20
+        // line 21
         echo "</head>
 ";
     }
@@ -127,13 +127,17 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         echo "        <script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery.stellar.min.js"), "html", null, true);
         echo "\"></script>
+        <script src=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery-2.1.1.js"), "html", null, true);
+        echo "\"></script>
     ";
     }
 
-    // line 23
+    // line 24
     public function block_header($context, array $blocks = array())
     {
-        // line 24
+        // line 25
         echo "<header>
     <h1 id=\"logo\">The Healthy Lifestyle</h1>
 
@@ -153,10 +157,10 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
     }
 
-    // line 42
+    // line 43
     public function block_home_content($context, array $blocks = array())
     {
-        // line 43
+        // line 44
         echo "<section >
 
     <section id=\"non-slider\">
@@ -179,7 +183,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
         <section class=\"col-md-4\">
 
             <img src=\"";
-        // line 64
+        // line 65
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/apple.png"), "html", null, true);
         echo "\" alt=\"apple\" class=\"apple\"/>
 
@@ -209,10 +213,10 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
     }
 
-    // line 91
+    // line 92
     public function block_footer($context, array $blocks = array())
     {
-        // line 92
+        // line 93
         echo "    <footer class=\"row\">
 
         <section class=\"col-sm-2 foot_nav\">
@@ -275,6 +279,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  216 => 92,  213 => 91,  183 => 64,  160 => 43,  157 => 42,  137 => 24,  134 => 23,  127 => 18,  124 => 17,  116 => 13,  111 => 12,  104 => 13,  99 => 12,  93 => 13,  88 => 12,  82 => 13,  77 => 12,  72 => 11,  69 => 10,  64 => 20,  62 => 17,  59 => 16,  57 => 10,  47 => 2,  44 => 1,  40 => 91,  37 => 90,  35 => 42,  32 => 41,  30 => 23,  27 => 22,  25 => 1,);
+        return array (  220 => 93,  217 => 92,  187 => 65,  164 => 44,  161 => 43,  141 => 25,  138 => 24,  132 => 19,  127 => 18,  124 => 17,  116 => 13,  111 => 12,  104 => 13,  99 => 12,  93 => 13,  88 => 12,  82 => 13,  77 => 12,  72 => 11,  69 => 10,  64 => 21,  62 => 17,  59 => 16,  57 => 10,  47 => 2,  44 => 1,  40 => 92,  37 => 91,  35 => 43,  32 => 42,  30 => 24,  27 => 23,  25 => 1,);
     }
 }
