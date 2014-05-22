@@ -32,10 +32,10 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
         // line 42
         $this->displayBlock('home_content', $context, $blocks);
-        // line 89
+        // line 90
         echo "
 ";
-        // line 90
+        // line 91
         $this->displayBlock('footer', $context, $blocks);
     }
 
@@ -165,7 +165,11 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
         <section class=\"col-md-4\">
 
-            <img src=\"/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/public/images/image2.png\"/>
+            <img src=\"";
+        // line 64
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/apple.png"), "html", null, true);
+        echo "\" alt=\"apple\" class=\"apple\"/>
+
             </section>
 
     <section class=\"col-md-4\">
@@ -192,10 +196,10 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
     }
 
-    // line 90
+    // line 91
     public function block_footer($context, array $blocks = array())
     {
-        // line 91
+        // line 92
         echo "    <footer class=\"row\">
 
         <section class=\"col-sm-2 foot_nav\">
@@ -258,6 +262,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  199 => 91,  196 => 90,  147 => 43,  144 => 42,  124 => 24,  121 => 23,  113 => 13,  108 => 12,  101 => 13,  96 => 12,  90 => 13,  85 => 12,  79 => 13,  74 => 12,  69 => 11,  66 => 10,  61 => 20,  58 => 16,  56 => 10,  46 => 2,  43 => 1,  39 => 90,  36 => 89,  34 => 42,  31 => 41,  29 => 23,  26 => 22,  24 => 1,);
+        return array (  203 => 92,  200 => 91,  170 => 64,  147 => 43,  144 => 42,  124 => 24,  121 => 23,  113 => 13,  108 => 12,  101 => 13,  96 => 12,  90 => 13,  85 => 12,  79 => 13,  74 => 12,  69 => 11,  66 => 10,  61 => 20,  58 => 16,  56 => 10,  46 => 2,  43 => 1,  39 => 91,  36 => 90,  34 => 42,  31 => 41,  29 => 23,  26 => 22,  24 => 1,);
     }
 }

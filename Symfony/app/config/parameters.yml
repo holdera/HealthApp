@@ -1,7 +1,7 @@
 parameters:
     database_driver: pdo_mysql
-    database_host: '50.62.209.8:3306'
-    database_port: null
+    database_host: '50.62.209.8'
+    database_port: 3306
     database_name: healthApp
     database_user: APSquared
     database_password: APSquared1234

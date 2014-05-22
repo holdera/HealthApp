@@ -1,0 +1,72 @@
+/*
+Syntax error: Invalid CSS after "...-image:{{ asset": expected "{", was "('bundles/healt..."
+        on line 39 of styles.scss
+
+34:     color:$white;
+35:   }
+36:   li a:hover{ color:$link;}
+37: }
+38: #non-slider{
+39:   background-image:{{ asset('bundles/healthhealthuser/images/image1.png') }} );
+40:   width:1024px;
+41:   height:305px;
+42: }
+43: .login{
+44:   padding:10px 0;
+
+Backtrace:
+styles.scss:39
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1147:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:534:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:543:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:543:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:893:in `nested_properties!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:866:in `declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:582:in `block in declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:543:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:443:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:326:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/bin/scss:13:in `<top (required)>'
+/usr/bin/scss:23:in `load'
+/usr/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...-image:{{ asset\": expected \"{\", was \"('bundles/healt...\"\A         on line 39 of styles.scss\A \A 34:     color:$white;\A 35:   }\A 36:   li a:hover{ color:$link;}\A 37: }\A 38: #non-slider{\A 39:   background-image:{{ asset('bundles/healthhealthuser/images/image1.png') }} );\A 40:   width:1024px;\A 41:   height:305px;\A 42: }\A 43: .login{\A 44:   padding:10px 0;"; }

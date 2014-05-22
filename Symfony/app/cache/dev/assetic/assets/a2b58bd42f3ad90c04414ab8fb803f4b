@@ -1,0 +1,96 @@
+$link:#4cd231;
+$light:#ebfeed;
+$main:#000;
+$white:#fff;
+
+body{
+  margin:0;
+  padding:0;
+	a:hover{ color:$link;}
+	color:$main;
+	list-style-types:none;
+  li a:hover{color:$light;}
+}
+
+header{
+  margin:-20px 0;
+  padding: 10px;
+  background: $main;
+  #logo{
+    color:$light;
+    padding: 0px 20px;
+  }
+}
+.top_nav{
+  margin:-40px 10px;
+  float:right;
+  li{
+    display:inline-block;
+    float: left;
+    padding: 7px 10px;
+  }
+  li a {
+  text-decoration: none;
+    color:$white;
+  }
+  li a:hover{ color:$link;}
+}
+#non-slider{
+  background-image:url('../../Resources/public/css/{{ asset('bundles/healthhealthuser/images/image1.png') }})';
+  width:1024px;
+  height:305px;
+}
+.login{
+  padding:10px 0;
+  height:200px;
+}
+.inputW{
+  width:200px;
+  margin:10px 0;
+}
+#subMit{
+  margin:10px 0;
+}
+
+/*content styles*/
+
+#page_side{
+  margin:40px 0;
+  float: right;
+}
+.sidebar{
+  clear:both;
+}
+.main_content{
+  margin:40px 0;
+}
+/*footer styles*/
+
+footer{
+  clear:both;
+  background: $main;
+  height:251px;
+  margin: 0;
+  padding: 0;
+  color:$white;
+}
+.foot_nav{
+  margin:20px 0;
+  li{
+    list-style-type: none;
+    text-decoration: none;
+    color:$white;
+  }
+  li a:hover{ color:$link;}
+}
+  .fields {
+    width : 150px;
+    height:30px;
+    display: block;
+    margin: 7px 0;
+    color:$main;
+}
+#submitBut{
+  color:$main;
+  //background: #b6efab;
+}

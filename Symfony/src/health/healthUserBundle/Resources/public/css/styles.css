@@ -4,16 +4,16 @@ body {
   color: black;
   list-style-types: none; }
   body a:hover {
-    color: #4cd231; }
+    color: #fbf202; }
   body li a:hover {
     color: #ebfeed; }
 
 header {
   margin: -20px 0;
   padding: 10px;
-  background: black; }
+  background: #481d70; }
   header #logo {
-    color: #ebfeed;
+    color: white;
     padding: 0px 20px; }
 
 .top_nav {
@@ -27,12 +27,15 @@ header {
     text-decoration: none;
     color: white; }
   .top_nav li a:hover {
-    color: #4cd231; }
+    color: #fbf202; }
 
 #non-slider {
-  background: url("../images/image1.png") no-repeat;
+  background-image: url("bundles/healthhealthuser/images/image1.png");
   width: 1024px;
   height: 305px; }
+
+.apple {
+  border-radius: 30%; }
 
 .login {
   padding: 10px 0;
@@ -59,7 +62,7 @@ header {
 /*footer styles*/
 footer {
   clear: both;
-  background: black;
+  background: #481d70;
   height: 251px;
   margin: 0;
   padding: 0;
@@ -72,14 +75,14 @@ footer {
     text-decoration: none;
     color: white; }
   .foot_nav li a:hover {
-    color: #4cd231; }
+    color: #fbf202; }
 
 .fields {
   width: 150px;
   height: 30px;
   display: block;
   margin: 7px 0;
-  color: black; }
+  color: #481d70; }
 
 #submitBut {
-  color: black; }
+  color: #481d70; }

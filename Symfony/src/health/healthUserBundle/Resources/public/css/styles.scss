@@ -1,13 +1,14 @@
-$link:#4cd231;
+$link:#fbf202;
 $light:#ebfeed;
-$main:#000;
+$main:#481d70;
+$text:#000;
 $white:#fff;
 
 body{
   margin:0;
   padding:0;
 	a:hover{ color:$link;}
-	color:$main;
+	color:$text;
 	list-style-types:none;
   li a:hover{color:$light;}
 }
@@ -17,7 +18,7 @@ header{
   padding: 10px;
   background: $main;
   #logo{
-    color:$light;
+    color:$white;
     padding: 0px 20px;
   }
 }
@@ -36,9 +37,12 @@ header{
   li a:hover{ color:$link;}
 }
 #non-slider{
-  background:url('../images/image1.png') no-repeat;
+  background-image:url('bundles/healthhealthuser/images/image1.png');
   width:1024px;
   height:305px;
+}
+.apple{
+  border-radius: 30%;
 }
 .login{
   padding:10px 0;
