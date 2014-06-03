@@ -10,13 +10,21 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $repository = $this->getDoctrine()
-            ->getRepository('healthLifestyleBundle:Diet');
+          ->getRepository('healthLifestyleBundle:Diet');
 
-        $Diet = $repository->findAll();
+         //$Diet = $repository->findAll();
 
-      //  exit(\Doctrine\Common\Util\Debug::dump($Diet));
+        $query = $repository->createQueryBuilder('d')
+                ->where("d.id = :id")
+                ->setParameter('id', 1)
+                ->getQuery();
 
-        return $this->render('healthLifestyleBundle:Lifestyle:lifestyle.html.twig');
+        $life = $query->getResult();
+
+
+
+
+        return $this->render('healthLifestyleBundle:Lifestyle:lifestyle.html.twig', array('diet' =>$life));
     }
 
 

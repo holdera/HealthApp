@@ -29,11 +29,11 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">50.62.209.8</parameter>
-    <parameter key="database_port">3306</parameter>
-    <parameter key="database_name">healthApp</parameter>
-    <parameter key="database_user">APSquared</parameter>
-    <parameter key="database_password">APSquared1234</parameter>
+    <parameter key="database_host">localhost</parameter>
+    <parameter key="database_port">8889</parameter>
+    <parameter key="database_name">healthdb</parameter>
+    <parameter key="database_user">root</parameter>
+    <parameter key="database_password">root</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">127.0.0.1</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -2295,11 +2295,11 @@
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">50.62.209.8</argument>
-        <argument key="port">3306</argument>
-        <argument key="dbname">healthApp</argument>
-        <argument key="user">APSquared</argument>
-        <argument key="password">APSquared1234</argument>
+        <argument key="host">localhost</argument>
+        <argument key="port">8889</argument>
+        <argument key="dbname">healthdb</argument>
+        <argument key="user">root</argument>
+        <argument key="password">root</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
       </argument>

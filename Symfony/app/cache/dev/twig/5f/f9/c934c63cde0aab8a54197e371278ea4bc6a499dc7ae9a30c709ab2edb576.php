@@ -13,6 +13,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
             'head' => array($this, 'block_head'),
             'stylesheets' => array($this, 'block_stylesheets'),
             'header' => array($this, 'block_header'),
+            'visual_heading' => array($this, 'block_visual_heading'),
             'main_content' => array($this, 'block_main_content'),
             'sideBar' => array($this, 'block_sideBar'),
         );
@@ -34,18 +35,22 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         $this->displayBlock('header', $context, $blocks);
         // line 36
         echo "
-
-
-";
-        // line 39
-        $this->displayBlock('main_content', $context, $blocks);
-        // line 47
+ ";
+        // line 37
+        $this->displayBlock('visual_heading', $context, $blocks);
+        // line 40
         echo "
 
 ";
-        // line 49
+        // line 42
+        $this->displayBlock('main_content', $context, $blocks);
+        // line 50
+        echo "
+
+";
+        // line 52
         $this->displayBlock('sideBar', $context, $blocks);
-        // line 77
+        // line 80
         echo "
  <footer class=\"row\">
 
@@ -199,10 +204,18 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
     ";
     }
 
-    // line 39
+    // line 37
+    public function block_visual_heading($context, array $blocks = array())
+    {
+        // line 38
+        echo "
+ ";
+    }
+
+    // line 42
     public function block_main_content($context, array $blocks = array())
     {
-        // line 40
+        // line 43
         echo "    <section class=\"row\">
 
 
@@ -212,12 +225,12 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 ";
     }
 
-    // line 49
+    // line 52
     public function block_sideBar($context, array $blocks = array())
     {
-        // line 50
+        // line 53
         echo " <section class=\"row\">
-    <aside class=\"col-md-4\" id=\"page_side\">
+    <aside class=\"col-md-3\" id=\"page_side\">
 
         <aside class=\"sidebar\">
             <h3>Monthly Contest</h3>
@@ -252,6 +265,6 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
     public function getDebugInfo()
     {
-        return array (  219 => 50,  216 => 49,  206 => 40,  203 => 39,  182 => 18,  179 => 17,  175 => 10,  169 => 8,  164 => 7,  157 => 8,  152 => 7,  146 => 8,  141 => 7,  135 => 8,  130 => 7,  125 => 6,  122 => 5,  117 => 11,  115 => 5,  110 => 2,  107 => 1,  49 => 77,  47 => 49,  43 => 47,  41 => 39,  36 => 36,  34 => 17,  30 => 15,  27 => 13,  24 => 1,);
+        return array (  232 => 53,  229 => 52,  219 => 43,  216 => 42,  211 => 38,  208 => 37,  187 => 18,  184 => 17,  180 => 10,  174 => 8,  169 => 7,  162 => 8,  157 => 7,  151 => 8,  146 => 7,  140 => 8,  135 => 7,  130 => 6,  127 => 5,  122 => 11,  120 => 5,  115 => 2,  112 => 1,  54 => 80,  52 => 52,  48 => 50,  46 => 42,  42 => 40,  40 => 37,  37 => 36,  35 => 17,  31 => 15,  28 => 13,  25 => 1,);
     }
 }

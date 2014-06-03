@@ -175,11 +175,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'health_resources_homepage')), array (  '_controller' => 'health\\ResourcesBundle\\Controller\\DefaultController::indexAction',));
             }
 
-            // health_detox_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'health_detox_homepage')), array (  '_controller' => 'health\\DetoxBundle\\Controller\\DefaultController::indexAction',));
-            }
+        }
 
+        // health_detox_homepage
+        if ($pathinfo === '/detox') {
+            return array (  '_controller' => 'health\\DetoxBundle\\Controller\\DefaultController::indexAction',  '_route' => 'health_detox_homepage',);
         }
 
         // health_lifestyle_homepage

@@ -1,13 +1,55 @@
 {%  extends 'healthhealthUserBundle::layout.html.twig' %}
 
+{% block visual_heading %}
+
+
+{% endblock %}
 
 {% block main_content %}
 
-   <section class="col-md-8 main_content">
+   <section class="col-md-9 main_content">
 
        <h2>Lifestyle</h2>
+        <p>
+       {% for diets in diet %}
+          <p> {{ diets.content }}</p>
 
-       <p>Pie liquorice halvah liquorice apple pie candy canes chupa chups bonbon. Chupa chups soufflé tart pie wafer. Brownie macaroon dragée wafer candy cookie. Macaroon lollipop pastry cheesecake sesame snaps chocolate lemon drops chocolate dragée. Pudding toffee soufflé fruitcake jelly-o chocolate. Pastry gummi bears fruitcake carrot cake sesame snaps tootsie roll lollipop.</p>
+        {% endfor %}
+       </p>
+
+       <section class="col-md-4">
+
+           <h3>Ideal Way of Eating</h3>
+
+            <a href="HealthApp/Symfony/web/app_dev.php/diet">
+                <p>Here's a sample day of how one should eat to live a healthy balanced lifestyle and lose weight
+                </p></a>
+
+       </section>
+
+       <section class="col-md-4">
+
+           <h3>More Green = More Lean</h3>
+
+           <a href="HealthApp/Symfony/web/app_dev.php/diet">
+           <p>Find out the the green foods that are not only delicious but will help burn that fat
+               and reveal your toned sleek body
+           </p></a>
+       </section>
+
+       <section class="col-md-4">
+
+           <h3>Healthy Cheat Generator</h3>
+
+           <a href="HealthApp/Symfony/web/app_dev.php/diet">
+               <p>Cheat days can fuel your body but also make you lose track, this generator will help
+                   give you belly friendly cheat meals sweet enough to satisfy your craving
+               </p></a>
+       </section>
+
 
    </section>
+
+
+
 {% endblock %}

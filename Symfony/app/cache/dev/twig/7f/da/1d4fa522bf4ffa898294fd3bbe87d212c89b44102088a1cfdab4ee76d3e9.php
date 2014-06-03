@@ -10,6 +10,7 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
         $this->parent = $this->env->loadTemplate("healthhealthUserBundle::layout.html.twig");
 
         $this->blocks = array(
+            'visual_heading' => array($this, 'block_visual_heading'),
             'main_content' => array($this, 'block_main_content'),
         );
     }
@@ -24,18 +25,77 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 4
+    // line 3
+    public function block_visual_heading($context, array $blocks = array())
+    {
+        // line 4
+        echo "
+
+";
+    }
+
+    // line 8
     public function block_main_content($context, array $blocks = array())
     {
-        // line 5
+        // line 9
         echo "
-   <section class=\"col-md-8 main_content\">
+   <section class=\"col-md-9 main_content\">
 
        <h2>Lifestyle</h2>
+        <p>
+       ";
+        // line 14
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["diet"]) ? $context["diet"] : $this->getContext($context, "diet")));
+        foreach ($context['_seq'] as $context["_key"] => $context["diets"]) {
+            // line 15
+            echo "          <p> ";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["diets"]) ? $context["diets"] : $this->getContext($context, "diets")), "content"), "html", null, true);
+            echo "</p>
 
-       <p>Pie liquorice halvah liquorice apple pie candy canes chupa chups bonbon. Chupa chups soufflé tart pie wafer. Brownie macaroon dragée wafer candy cookie. Macaroon lollipop pastry cheesecake sesame snaps chocolate lemon drops chocolate dragée. Pudding toffee soufflé fruitcake jelly-o chocolate. Pastry gummi bears fruitcake carrot cake sesame snaps tootsie roll lollipop.</p>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['diets'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 18
+        echo "       </p>
+
+       <section class=\"col-md-4\">
+
+           <h3>Ideal Way of Eating</h3>
+
+            <a href=\"HealthApp/Symfony/web/app_dev.php/diet\">
+                <p>Here's a sample day of how one should eat to live a healthy balanced lifestyle and lose weight
+                </p></a>
+
+       </section>
+
+       <section class=\"col-md-4\">
+
+           <h3>More Green = More Lean</h3>
+
+           <a href=\"HealthApp/Symfony/web/app_dev.php/diet\">
+           <p>Find out the the green foods that are not only delicious but will help burn that fat
+               and reveal your toned sleek body
+           </p></a>
+       </section>
+
+       <section class=\"col-md-4\">
+
+           <h3>Healthy Cheat Generator</h3>
+
+           <a href=\"HealthApp/Symfony/web/app_dev.php/diet\">
+               <p>Cheat days can fuel your body but also make you lose track, this generator will help
+                   give you belly friendly cheat meals sweet enough to satisfy your craving
+               </p></a>
+       </section>
+
 
    </section>
+
+
+
 ";
     }
 
@@ -51,6 +111,6 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
     public function getDebugInfo()
     {
-        return array (  31 => 5,  28 => 4,);
+        return array (  62 => 18,  52 => 15,  48 => 14,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
     }
 }
