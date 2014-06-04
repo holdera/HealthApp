@@ -275,11 +275,14 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
            <span class=\"arrows\"> >> </span>
        </section><!--end for slider-->
 
-
+        <input type=\"button\" class=\"btn allBtn\" value=\"Back\" onclick=\"goBack();\" />
 
     </section><!--end of main content-->
 
     <script>
+
+        function goBack() {history.back();}
+
         \$(document).ready(function(){
             \$('.arrows').click(function(){
                 \$('').load(\"medo\");

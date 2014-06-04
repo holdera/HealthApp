@@ -23,20 +23,20 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     {
         // line 1
         $this->displayBlock('head', $context, $blocks);
-        // line 23
-        echo "
-";
         // line 24
+        echo "
+";
+        // line 25
         $this->displayBlock('header', $context, $blocks);
-        // line 42
-        echo "
-";
         // line 43
-        $this->displayBlock('home_content', $context, $blocks);
-        // line 174
         echo "
 ";
+        // line 44
+        $this->displayBlock('home_content', $context, $blocks);
         // line 175
+        echo "
+";
+        // line 176
         $this->displayBlock('footer', $context, $blocks);
     }
 
@@ -55,12 +55,12 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
         // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 16
+        // line 17
         echo "
     ";
-        // line 17
+        // line 18
         $this->displayBlock('javascript', $context, $blocks);
-        // line 21
+        // line 22
         echo "</head>
 ";
     }
@@ -81,9 +81,13 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 14
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
     ";
             // asset "4f9dc43_1"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_styles_2.css");
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_innerPage_2.css");
             // line 12
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
@@ -92,15 +96,53 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 14
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
     ";
             // asset "4f9dc43_2"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_2") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_styles_3.css");
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_2") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_innerPage_3.css");
             // line 12
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\">
         <link href=\"";
             // line 13
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 14
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+    ";
+            // asset "4f9dc43_3"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_3") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_styles_4.css");
+            // line 12
+            echo "        <link href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\">
+        <link href=\"";
+            // line 13
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 14
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+    ";
+            // asset "4f9dc43_4"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_4f9dc43_4") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/4f9dc43_part_1_styles_5.css");
+            // line 12
+            echo "        <link href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\">
+        <link href=\"";
+            // line 13
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 14
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
     ";
@@ -115,29 +157,33 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             // line 13
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 14
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
     ";
         }
         unset($context["asset_url"]);
     }
 
-    // line 17
+    // line 18
     public function block_javascript($context, array $blocks = array())
     {
-        // line 18
+        // line 19
         echo "        <script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery.stellar.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
-        // line 19
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery-2.1.1.js"), "html", null, true);
         echo "\"></script>
     ";
     }
 
-    // line 24
+    // line 25
     public function block_header($context, array $blocks = array())
     {
-        // line 25
+        // line 26
         echo "<header>
     <h1 id=\"logo\">The Healthy Lifestyle</h1>
 
@@ -157,16 +203,16 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
     }
 
-    // line 43
+    // line 44
     public function block_home_content($context, array $blocks = array())
     {
-        // line 44
+        // line 45
         echo "<section >
 
     <section id=\"non-slider\">
 
         <img src=\"";
-        // line 48
+        // line 49
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/nonslider2.png"), "html", null, true);
         echo "\" class=\"slider\" alt=\"health\" />
 
@@ -174,22 +220,22 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
         <section class=\"social-icons\"\">
             <a href=\"https://www.facebook.com/\"><img src=\"";
-        // line 53
+        // line 54
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/facebook.png"), "html", null, true);
         echo "\" alt=\"facebook\" /></a>
 
             <a href=\"https://www.twitter.com/\"><img src=\"";
-        // line 55
+        // line 56
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/twitter.png"), "html", null, true);
         echo "\" alt=\"facebook\" /></a>
 
             <a href=\"https://www.youtube.com/\"><img src=\"";
-        // line 57
+        // line 58
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/pinterest.png"), "html", null, true);
         echo "\" alt=\"facebook\" /></a>
 
             <a href=\"https://www.tumblr.com/\"><img src=\"";
-        // line 59
+        // line 60
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/tumblr.png"), "html", null, true);
         echo "\" alt=\"facebook\" /></a>
         </section>
@@ -282,7 +328,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             <section class=\"col-md-4\">
 
                 <img src=\"";
-        // line 149
+        // line 150
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/run.png"), "html", null, true);
         echo "\" alt=\"running\" class=\"hL\"/>
 
@@ -298,7 +344,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
             <section class=\"col-md-4\">
 
                 <img src=\"";
-        // line 162
+        // line 163
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/apple.png"), "html", null, true);
         echo "\" alt=\"apple\" class=\"apple\"/>
 
@@ -314,10 +360,10 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 ";
     }
 
-    // line 175
+    // line 176
     public function block_footer($context, array $blocks = array())
     {
-        // line 176
+        // line 177
         echo "    <footer class=\"row\">
 
         <section class=\"col-sm-2 foot_nav\">
@@ -383,6 +429,6 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
     public function getDebugInfo()
     {
-        return array (  321 => 176,  318 => 175,  302 => 162,  286 => 149,  193 => 59,  188 => 57,  183 => 55,  178 => 53,  170 => 48,  164 => 44,  161 => 43,  141 => 25,  138 => 24,  132 => 19,  127 => 18,  124 => 17,  116 => 13,  111 => 12,  104 => 13,  99 => 12,  93 => 13,  88 => 12,  82 => 13,  77 => 12,  72 => 11,  69 => 10,  64 => 21,  62 => 17,  59 => 16,  57 => 10,  47 => 2,  44 => 1,  40 => 175,  37 => 174,  35 => 43,  32 => 42,  30 => 24,  27 => 23,  25 => 1,);
+        return array (  367 => 177,  364 => 176,  348 => 163,  332 => 150,  239 => 60,  234 => 58,  229 => 56,  224 => 54,  216 => 49,  210 => 45,  207 => 44,  187 => 26,  184 => 25,  178 => 20,  173 => 19,  170 => 18,  162 => 14,  158 => 13,  153 => 12,  146 => 14,  142 => 13,  137 => 12,  131 => 14,  127 => 13,  122 => 12,  116 => 14,  112 => 13,  107 => 12,  101 => 14,  97 => 13,  92 => 12,  86 => 14,  82 => 13,  77 => 12,  72 => 11,  69 => 10,  64 => 22,  62 => 18,  59 => 17,  57 => 10,  47 => 2,  44 => 1,  40 => 176,  37 => 175,  35 => 44,  32 => 43,  30 => 25,  27 => 24,  25 => 1,);
     }
 }

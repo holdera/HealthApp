@@ -30,6 +30,18 @@ Exercise:
     path: /exercise
     defaults: {_controller: healthhealthUserBundle:Exercise:show}
 
+Detox:
+    path: /detox
+    defaults: {_controller: healthDetoxBundle:Detox:show}
+
+Forum:
+    path: /forum
+    defaults: {_controller: healthforumBundle:Forum:show }
+
+Resource:
+    path: /resource
+    defaults: {_controller: healthResourcesBundle:Resource:show }
+
 Sample:
     path: /healthsample
     defaults: {_controller: healthLifestyleBundle:Sample:show }

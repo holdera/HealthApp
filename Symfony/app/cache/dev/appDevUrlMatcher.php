@@ -40,15 +40,28 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                         return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_0',);
                     }
 
-                    if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_styles_')) {
+                    if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_innerPage_')) {
                         // _assetic_4f9dc43_1
-                        if ($pathinfo === '/css/4f9dc43_part_1_styles_2.css') {
+                        if ($pathinfo === '/css/4f9dc43_part_1_innerPage_2.css') {
                             return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_1',);
                         }
 
                         // _assetic_4f9dc43_2
-                        if ($pathinfo === '/css/4f9dc43_part_1_styles_3.css') {
+                        if ($pathinfo === '/css/4f9dc43_part_1_innerPage_3.css') {
                             return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_2',);
+                        }
+
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_styles_')) {
+                        // _assetic_4f9dc43_3
+                        if ($pathinfo === '/css/4f9dc43_part_1_styles_4.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 3,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_3',);
+                        }
+
+                        // _assetic_4f9dc43_4
+                        if ($pathinfo === '/css/4f9dc43_part_1_styles_5.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 4,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_4',);
                         }
 
                     }
@@ -254,6 +267,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // Exercise
         if ($pathinfo === '/exercise') {
             return array (  '_controller' => 'health\\healthUserBundle\\Controller\\ExerciseController::showAction',  '_route' => 'Exercise',);
+        }
+
+        // Detox
+        if ($pathinfo === '/detox') {
+            return array (  '_controller' => 'health\\DetoxBundle\\Controller\\DetoxController::showAction',  '_route' => 'Detox',);
+        }
+
+        // Forum
+        if ($pathinfo === '/forum') {
+            return array (  '_controller' => 'health\\forumBundle\\Controller\\ForumController::showAction',  '_route' => 'Forum',);
+        }
+
+        // Resource
+        if ($pathinfo === '/resource') {
+            return array (  '_controller' => 'health\\ResourcesBundle\\Controller\\ResourceController::showAction',  '_route' => 'Resource',);
         }
 
         // Sample

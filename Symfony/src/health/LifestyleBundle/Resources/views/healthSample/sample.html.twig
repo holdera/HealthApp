@@ -65,11 +65,14 @@
            <span class="arrows"> >> </span>
        </section><!--end for slider-->
 
-
+        <input type="button" class="btn allBtn" value="Back" onclick="goBack();" />
 
     </section><!--end of main content-->
 
     <script>
+
+        function goBack() {history.back();}
+
         $(document).ready(function(){
             $('.arrows').click(function(){
                 $('').load("medo");
