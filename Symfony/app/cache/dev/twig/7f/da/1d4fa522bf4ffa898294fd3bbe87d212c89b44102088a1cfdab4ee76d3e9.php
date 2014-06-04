@@ -65,7 +65,7 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
            <h3>Ideal Way of Eating</h3>
 
-            <a href=\"HealthApp/Symfony/web/app_dev.php/diet\">
+            <a href=\"/HealthApp/Symfony/web/app_dev.php/healthsample\">
                 <p>Here's a sample day of how one should eat to live a healthy balanced lifestyle and lose weight
                 </p></a>
 
@@ -75,7 +75,7 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
            <h3>More Green = More Lean</h3>
 
-           <a href=\"HealthApp/Symfony/web/app_dev.php/diet\">
+           <a href=\"/HealthApp/Symfony/web/app_dev.php/greenlean\">
            <p>Find out the the green foods that are not only delicious but will help burn that fat
                and reveal your toned sleek body
            </p></a>
@@ -85,7 +85,7 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
            <h3>Healthy Cheat Generator</h3>
 
-           <a href=\"HealthApp/Symfony/web/app_dev.php/diet\">
+           <a href=\"/HealthApp/Symfony/web/app_dev.php/cheat-generator\">
                <p>Cheat days can fuel your body but also make you lose track, this generator will help
                    give you belly friendly cheat meals sweet enough to satisfy your craving
                </p></a>

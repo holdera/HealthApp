@@ -29,3 +29,15 @@ life:
 Exercise:
     path: /exercise
     defaults: {_controller: healthhealthUserBundle:Exercise:show}
+
+Sample:
+    path: /healthsample
+    defaults: {_controller: healthLifestyleBundle:Sample:show }
+
+Greens:
+    path: /greenlean
+    defaults: {_controller: healthLifestyleBundle:Greens:show }
+
+Cheat:
+    path: /cheat-generator
+    defaults: {_controller: healthLifestyleBundle:Cheat:show }

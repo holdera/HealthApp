@@ -427,6 +427,7 @@
     <parameter key="assetic.cache_dir">/Applications/MAMP/htdocs/HealthApp/Symfony/app/cache/dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection">
       <parameter>healthhealthUserBundle</parameter>
+      <parameter>healthLifestyleBundle</parameter>
     </parameter>
     <parameter key="assetic.twig_extension.class">Symfony\Bundle\AsseticBundle\Twig\AsseticExtension</parameter>
     <parameter key="assetic.twig_formula_loader.class">Assetic\Extension\Twig\TwigFormulaLoader</parameter>
@@ -2117,6 +2118,7 @@
             <argument type="collection"/>
             <argument type="collection">
               <argument>healthhealthUserBundle</argument>
+              <argument>healthLifestyleBundle</argument>
             </argument>
             <argument type="service" id="assetic.value_supplier.default" on-invalid="null"/>
           </service>
@@ -2217,6 +2219,33 @@
                   <argument type="service" id="templating.loader"/>
                   <argument>healthhealthUserBundle</argument>
                   <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+            </argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+      <call method="addResource">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="collection">
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>healthLifestyleBundle</argument>
+                  <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/app/Resources/healthLifestyleBundle/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>healthLifestyleBundle</argument>
+                  <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>

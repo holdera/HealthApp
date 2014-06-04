@@ -1,0 +1,68 @@
+{%  extends 'healthhealthUserBundle::layout.html.twig' %}
+
+{% block visual_heading %}
+
+
+{% endblock %}
+
+{% block main_content %}
+    <section class="col-md-9 main_content">
+        <h2>Cheat Meal</h2>
+
+        <p>Cheat meals are so important in your lifestyle. Not only do they confuse your body
+        with the release of hormones, they leave you content so you stay on your healthy lifestyle
+        and don't feel constricted, However because cheat meals are only once a week, make sure
+        you don't regret it. But remember, it is a cheat meal, not a cheat day. Have that cheat
+        meal before 7pm if you can. Here ya go!</p>
+
+        <script>
+
+            for(count = 1; count <= 7; ++count){
+                document.write(count);
+            }
+
+        </script>
+
+        <form class="allForms" method="post" action="">
+
+            <label>Favorite Types of Food:</label>
+                <select name="types" onchange="getType();" id="cTypes">
+                    <option value="1">Sweet</option>
+                    <option value="2">Savory</option>
+                    <option value="3">Salt</option>
+                    <option value="4">All</option>
+                </select>
+
+            <p id="chosen"></p>
+        </form>
+
+
+
+    </section>
+    you prefer  sweet
+    savory
+    salt
+    all
+
+    if sweet
+    try:
+    frozen yogurt
+    gelato
+    healthy cheesecake
+    doughnut
+    cookies(2)
+    regular sized chocolate bar
+
+
+    salt
+    french fries (small to medium)
+    extra buttery popcorn
+    chips + dip
+    fried chicken
+
+    savory
+    pasta
+    lasagna
+    burger
+    pizza (max 3 slices if before 3pm), 1 or after 3pm
+{% endblock %}

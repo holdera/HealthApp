@@ -27,27 +27,72 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $context = $this->context;
         $request = $this->request;
 
-        if (0 === strpos($pathinfo, '/css/4f9dc43')) {
-            // _assetic_4f9dc43
-            if ($pathinfo === '/css/4f9dc43.css') {
-                return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_4f9dc43',);
-            }
-
-            if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_')) {
-                // _assetic_4f9dc43_0
-                if ($pathinfo === '/css/4f9dc43_part_1_bootstrap.min_1.css') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_0',);
+        if (0 === strpos($pathinfo, '/css')) {
+            if (0 === strpos($pathinfo, '/css/4f9dc43')) {
+                // _assetic_4f9dc43
+                if ($pathinfo === '/css/4f9dc43.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_4f9dc43',);
                 }
 
-                if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_styles_')) {
-                    // _assetic_4f9dc43_1
-                    if ($pathinfo === '/css/4f9dc43_part_1_styles_2.css') {
-                        return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_1',);
+                if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_')) {
+                    // _assetic_4f9dc43_0
+                    if ($pathinfo === '/css/4f9dc43_part_1_bootstrap.min_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_0',);
                     }
 
-                    // _assetic_4f9dc43_2
-                    if ($pathinfo === '/css/4f9dc43_part_1_styles_3.css') {
-                        return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_2',);
+                    if (0 === strpos($pathinfo, '/css/4f9dc43_part_1_styles_')) {
+                        // _assetic_4f9dc43_1
+                        if ($pathinfo === '/css/4f9dc43_part_1_styles_2.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_1',);
+                        }
+
+                        // _assetic_4f9dc43_2
+                        if ($pathinfo === '/css/4f9dc43_part_1_styles_3.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '4f9dc43',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_4f9dc43_2',);
+                        }
+
+                    }
+
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/css/8b11947')) {
+                // _assetic_8b11947
+                if ($pathinfo === '/css/8b11947.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '8b11947',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_8b11947',);
+                }
+
+                if (0 === strpos($pathinfo, '/css/8b11947_part_1_')) {
+                    // _assetic_8b11947_0
+                    if ($pathinfo === '/css/8b11947_part_1_bootstrap.min_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '8b11947',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_8b11947_0',);
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/8b11947_part_1_life_styles_')) {
+                        // _assetic_8b11947_1
+                        if ($pathinfo === '/css/8b11947_part_1_life_styles_2.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '8b11947',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_8b11947_1',);
+                        }
+
+                        // _assetic_8b11947_2
+                        if ($pathinfo === '/css/8b11947_part_1_life_styles_3.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '8b11947',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_8b11947_2',);
+                        }
+
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/8b11947_part_1_styles_')) {
+                        // _assetic_8b11947_3
+                        if ($pathinfo === '/css/8b11947_part_1_styles_4.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '8b11947',  'pos' => 3,  '_format' => 'css',  '_route' => '_assetic_8b11947_3',);
+                        }
+
+                        // _assetic_8b11947_4
+                        if ($pathinfo === '/css/8b11947_part_1_styles_5.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '8b11947',  'pos' => 4,  '_format' => 'css',  '_route' => '_assetic_8b11947_4',);
+                        }
+
                     }
 
                 }
@@ -209,6 +254,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // Exercise
         if ($pathinfo === '/exercise') {
             return array (  '_controller' => 'health\\healthUserBundle\\Controller\\ExerciseController::showAction',  '_route' => 'Exercise',);
+        }
+
+        // Sample
+        if ($pathinfo === '/healthsample') {
+            return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\SampleController::showAction',  '_route' => 'Sample',);
+        }
+
+        // Greens
+        if ($pathinfo === '/greenlean') {
+            return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\GreensController::showAction',  '_route' => 'Greens',);
+        }
+
+        // Cheat
+        if ($pathinfo === '/cheat-generator') {
+            return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\CheatController::showAction',  '_route' => 'Cheat',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

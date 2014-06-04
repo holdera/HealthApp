@@ -9,17 +9,7 @@ class LifestyleController extends Controller
 {
     public function showAction()
     {
-        $repository = $this->getDoctrine()
-            ->getRepository('healthLifestyleBundle:Diet');
-
-        $Diet = $repository->findAll();
-        exit(\Doctrine\Common\Util\Debug::dump($Diet));
-
+        return $this->render('healthLifestyleBundle:Lifestyle:sample.html.twig');
     }
+
 }
-/**
- * Created by PhpStorm.
- * User: alannahholder
- * Date: 2014-05-20
- * Time: 12:42 PM
- */ 

@@ -1,0 +1,82 @@
+{%  extends 'healthhealthUserBundle::layout.html.twig' %}
+
+{% block head %}
+
+    {% block stylesheets %}
+        {% stylesheets '@healthLifestyleBundle/Resources/public/css/*' filter='cssrewrite' %}
+        <link href="{{ asset_url  }}"  rel="stylesheet">
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        {% endstylesheets %}
+    {% endblock %}
+
+    {% block javascripts  %}
+        <script src="{{ asset('bundles/healthlifestyle/js/jquery-1.11.1.js') }}"></script>
+    {% endblock %}
+
+    {% endblock %}
+
+{% block visual_heading %}
+
+
+{% endblock %}
+
+{% block main_content %}
+
+    <section class="col-md-9 main_content">
+
+       <section class="slider">
+           <article class="slide1">
+
+            {% for lifeS in life %}
+                <h3>{{ lifeS.contentTitle }}</h3>
+        <p> {{ lifeS.content }}</p>
+
+        {% endfor %}
+           </article>
+
+           <article class="slide2">
+
+               {% for snackS in snack %}
+                   <h3>{{ snackS.contentTitle }}</h3>
+                   <p> {{ snackS.content }}</p>
+
+               {% endfor %}
+           </article>
+
+           <article class="slide3">
+
+               {% for lunchS in lunch %}
+                   <h3>{{ lunchS.contentTitle }}</h3>
+                   <p> {{ lunchS.content }}</p>
+
+               {% endfor %}
+           </article>
+
+           <article class="slide4">
+
+               {% for dinnerS in dinner %}
+                   <h3>{{ dinnerS.contentTitle }}</h3>
+                   <p> {{ dinnerS.content }}</p>
+
+               {% endfor %}
+           </article>
+
+           <span class="arrows"> >> </span>
+       </section><!--end for slider-->
+
+
+
+    </section><!--end of main content-->
+
+    <script>
+        $(document).ready(function(){
+            $('.arrows').click(function(){
+                $('').load("medo");
+            });
+        });
+    </script>
+
+
+
+{% endblock %}

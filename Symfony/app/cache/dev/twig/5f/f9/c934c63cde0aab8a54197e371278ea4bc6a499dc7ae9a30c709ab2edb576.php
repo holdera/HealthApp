@@ -191,7 +191,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
                 <ul>
                     <li><a href=\"/HealthApp/Symfony/web/app_dev.php/\">Home</a></li>
                     <li><a href=\"/HealthApp/Symfony/web/app_dev.php/lifestyle\">Lifestyle</a></li>
-                    <li><a href=\"#\">Fitness</a></li>
+                    <li><a href=\"/HealthApp/Symfony/web/app_dev.php/exercise\">Fitness</a></li>
                     <li><a href=\"#\">Detox</a></li>
                     <li><a href=\"#\">Forum</a></li>
                     <li><a href=\"#\">Chatroom</a></li>
