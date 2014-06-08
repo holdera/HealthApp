@@ -1,9 +1,9 @@
+health_resources:
+   resource: "@healthResourcesBundle/Resources/config/routing.php"
+
+
 health_admin:
     resource: "@healthAdminBundle/Resources/config/routing.php"
-    prefix:   /
-
-health_resources:
-    resource: "@healthResourcesBundle/Resources/config/routing.php"
     prefix:   /
 
 health_detox:

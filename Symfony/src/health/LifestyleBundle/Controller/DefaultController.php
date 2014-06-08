@@ -12,7 +12,7 @@ class DefaultController extends Controller
         $repository = $this->getDoctrine()
           ->getRepository('healthLifestyleBundle:Diet');
 
-         //$Diet = $repository->findAll();
+         //$Diet = $repository->findAll ();
 
         $query = $repository->createQueryBuilder('d')
                 ->where("d.id = :id")

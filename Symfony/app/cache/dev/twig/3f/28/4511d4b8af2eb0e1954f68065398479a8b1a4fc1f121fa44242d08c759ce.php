@@ -33,6 +33,8 @@ class __TwigTemplate_3f284511d4b8af2eb0e1954f68065398479a8b1a4fc1f121fa44242d08c
 
         <h1>Resources</h1>
 
+        <p>Text will go here</p>
+
 
 
     </section>

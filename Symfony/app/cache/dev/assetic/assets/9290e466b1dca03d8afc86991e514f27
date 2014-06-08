@@ -1,0 +1,14 @@
+#health-slider {
+  width: 80%;
+  height: 300px;
+  border: solid thin #ccc; }
+  #health-slider .content-slider {
+    width: 400px; }
+
+.allBtn {
+  padding: 10px;
+  background-color: #481d70;
+  color: white;
+  font-size: 18px; }
+  .allBtn :hover {
+    color: #fbf202; }

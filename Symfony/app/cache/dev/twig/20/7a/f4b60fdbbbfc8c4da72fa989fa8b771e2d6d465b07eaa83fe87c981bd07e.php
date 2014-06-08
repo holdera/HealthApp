@@ -12,9 +12,9 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'stylesheets' => array($this, 'block_stylesheets'),
-            'javascripts' => array($this, 'block_javascripts'),
             'visual_heading' => array($this, 'block_visual_heading'),
             'main_content' => array($this, 'block_main_content'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -36,12 +36,7 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
     ";
         // line 5
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 12
-        echo "
-    ";
         // line 13
-        $this->displayBlock('javascripts', $context, $blocks);
-        // line 16
         echo "
     ";
     }
@@ -66,6 +61,10 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
             // line 9
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
         ";
             // asset "8b11947_1"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_8b11947_1") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/8b11947_part_1_life_styles_2.css");
@@ -79,6 +78,10 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
             echo "\"  rel=\"stylesheet\" >
         <link href=\"";
             // line 9
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
         ";
@@ -96,9 +99,13 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
             // line 9
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
         ";
             // asset "8b11947_3"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_8b11947_3") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/8b11947_part_1_styles_4.css");
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_8b11947_3") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/8b11947_part_1_liquid-slider_4.css");
             // line 7
             echo "        <link href=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
@@ -109,6 +116,10 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
             echo "\"  rel=\"stylesheet\" >
         <link href=\"";
             // line 9
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
         ";
@@ -124,6 +135,29 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
             echo "\"  rel=\"stylesheet\" >
         <link href=\"";
             // line 9
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        ";
+            // asset "8b11947_5"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_8b11947_5") : $this->env->getExtension('assets')->getAssetUrl("_controller/css/8b11947_part_1_styles_6.css");
+            // line 7
+            echo "        <link href=\"";
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\">
+        <link href=\"";
+            // line 8
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 9
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
         ";
@@ -142,157 +176,165 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
             // line 9
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"  rel=\"stylesheet\" >
+        <link href=\"";
+            // line 10
+            echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
+            echo "\"  rel=\"stylesheet\" >
         ";
         }
         unset($context["asset_url"]);
-        // line 11
+        // line 12
         echo "    ";
     }
 
-    // line 13
-    public function block_javascripts($context, array $blocks = array())
-    {
-        // line 14
-        echo "        <script src=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthlifestyle/js/jquery-1.11.1.js"), "html", null, true);
-        echo "\"></script>
-    ";
-    }
-
-    // line 19
+    // line 16
     public function block_visual_heading($context, array $blocks = array())
     {
-        // line 20
+        // line 17
         echo "
 
 ";
     }
 
-    // line 24
+    // line 21
     public function block_main_content($context, array $blocks = array())
     {
-        // line 25
+        // line 22
         echo "
     <section class=\"col-md-9 main_content\">
 
-       <section class=\"slider\">
-           <article class=\"slide1\">
+        <section id=\"health-slider\" class=\"liquid-slider\">
+            <section class=\"content-slider\">
 
-            ";
-        // line 31
+                ";
+        // line 28
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["life"]) ? $context["life"] : $this->getContext($context, "life")));
         foreach ($context['_seq'] as $context["_key"] => $context["lifeS"]) {
-            // line 32
-            echo "                <h3>";
+            // line 29
+            echo "                <h2 class=\"title\">";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["lifeS"]) ? $context["lifeS"] : $this->getContext($context, "lifeS")), "contentTitle"), "html", null, true);
-            echo "</h3>
-        <p> ";
-            // line 33
+            echo "</h2>
+                    <p> ";
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["lifeS"]) ? $context["lifeS"] : $this->getContext($context, "lifeS")), "content"), "html", null, true);
             echo "</p>
 
-        ";
+                ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['lifeS'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
-        echo "           </article>
+        // line 32
+        echo "</section>
+            <section>
 
-           <article class=\"slide2\">
-
-               ";
-        // line 40
+                ";
+        // line 35
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["snack"]) ? $context["snack"] : $this->getContext($context, "snack")));
         foreach ($context['_seq'] as $context["_key"] => $context["snackS"]) {
-            // line 41
-            echo "                   <h3>";
+            // line 36
+            echo "                <h2 class=\"title\">";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["snackS"]) ? $context["snackS"] : $this->getContext($context, "snackS")), "contentTitle"), "html", null, true);
-            echo "</h3>
-                   <p> ";
-            // line 42
+            echo "</h2>
+                    <p> ";
+            // line 37
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["snackS"]) ? $context["snackS"] : $this->getContext($context, "snackS")), "content"), "html", null, true);
             echo "</p>
 
-               ";
+                ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['snackS'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 45
-        echo "           </article>
+        // line 39
+        echo "</section>
+            <section>
 
-           <article class=\"slide3\">
-
-               ";
-        // line 49
+                ";
+        // line 42
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["lunch"]) ? $context["lunch"] : $this->getContext($context, "lunch")));
         foreach ($context['_seq'] as $context["_key"] => $context["lunchS"]) {
-            // line 50
-            echo "                   <h3>";
+            // line 43
+            echo "                <h2 class=\"title\">";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["lunchS"]) ? $context["lunchS"] : $this->getContext($context, "lunchS")), "contentTitle"), "html", null, true);
-            echo "</h3>
-                   <p> ";
-            // line 51
+            echo "</h2>
+                    <p> ";
+            // line 44
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["lunchS"]) ? $context["lunchS"] : $this->getContext($context, "lunchS")), "content"), "html", null, true);
             echo "</p>
 
-               ";
+                ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['lunchS'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 54
-        echo "           </article>
+        // line 47
+        echo "            </section>
+            <section>
 
-           <article class=\"slide4\">
-
-               ";
-        // line 58
+                ";
+        // line 50
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["dinner"]) ? $context["dinner"] : $this->getContext($context, "dinner")));
         foreach ($context['_seq'] as $context["_key"] => $context["dinnerS"]) {
-            // line 59
-            echo "                   <h3>";
+            // line 51
+            echo "                <h2 class=\"title\">";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["dinnerS"]) ? $context["dinnerS"] : $this->getContext($context, "dinnerS")), "contentTitle"), "html", null, true);
-            echo "</h3>
-                   <p> ";
-            // line 60
+            echo "</h2>
+                    <p> ";
+            // line 52
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["dinnerS"]) ? $context["dinnerS"] : $this->getContext($context, "dinnerS")), "content"), "html", null, true);
             echo "</p>
 
-               ";
+                ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['dinnerS'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 63
-        echo "           </article>
+        // line 55
+        echo "            </section>
+        </section>
 
-           <span class=\"arrows\"> >> </span>
-       </section><!--end for slider-->
 
         <input type=\"button\" class=\"btn allBtn\" value=\"Back\" onclick=\"goBack();\" />
 
     </section><!--end of main content-->
-
-    <script>
-
+    ";
+        // line 62
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 67
+        echo "   <script>
+        \$(function(){
+            \$('#health-slider').liquidSlider();
+        });
         function goBack() {history.back();}
 
-        \$(document).ready(function(){
-            \$('.arrows').click(function(){
-                \$('').load(\"medo\");
-            });
-        });
     </script>
 
 
 
 ";
+    }
+
+    // line 62
+    public function block_javascripts($context, array $blocks = array())
+    {
+        // line 63
+        echo "        <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthlifestyle/js/jquery-1.11.1.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 64
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthlifestyle/js/jquery.liquid-slider.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 65
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthlifestyle/js/jquery.touchSwipe.js"), "html", null, true);
+        echo "\"></script>
+    ";
     }
 
     public function getTemplateName()
@@ -307,6 +349,6 @@ class __TwigTemplate_207af4b60fdbbbfc8c4da72fa989fa8b771e2d6d465b07eaa83fe87c981
 
     public function getDebugInfo()
     {
-        return array (  273 => 63,  264 => 60,  259 => 59,  255 => 58,  249 => 54,  240 => 51,  235 => 50,  231 => 49,  225 => 45,  216 => 42,  211 => 41,  207 => 40,  201 => 36,  192 => 33,  187 => 32,  183 => 31,  175 => 25,  172 => 24,  166 => 20,  163 => 19,  156 => 14,  153 => 13,  149 => 11,  143 => 9,  139 => 8,  134 => 7,  127 => 9,  123 => 8,  118 => 7,  112 => 9,  108 => 8,  103 => 7,  97 => 9,  93 => 8,  88 => 7,  82 => 9,  78 => 8,  73 => 7,  67 => 9,  63 => 8,  58 => 7,  53 => 6,  50 => 5,  45 => 16,  43 => 13,  40 => 12,  38 => 5,  35 => 4,  32 => 3,);
+        return array (  335 => 65,  331 => 64,  326 => 63,  323 => 62,  309 => 67,  307 => 62,  298 => 55,  289 => 52,  284 => 51,  280 => 50,  275 => 47,  266 => 44,  261 => 43,  257 => 42,  252 => 39,  243 => 37,  238 => 36,  234 => 35,  229 => 32,  220 => 30,  215 => 29,  211 => 28,  203 => 22,  200 => 21,  194 => 17,  191 => 16,  187 => 12,  181 => 10,  177 => 9,  173 => 8,  168 => 7,  161 => 10,  157 => 9,  153 => 8,  148 => 7,  142 => 10,  138 => 9,  134 => 8,  129 => 7,  123 => 10,  119 => 9,  115 => 8,  110 => 7,  104 => 10,  100 => 9,  96 => 8,  91 => 7,  85 => 10,  81 => 9,  77 => 8,  72 => 7,  66 => 10,  62 => 9,  58 => 8,  53 => 7,  48 => 6,  45 => 5,  40 => 13,  38 => 5,  35 => 4,  32 => 3,);
     }
 }
