@@ -38,6 +38,10 @@ class __TwigTemplate_a44a68adad6b91d6603e39d7fce2bd9d69faa8e7690b25745c71f270836
                 <th>Newbies</th>
                 <th>Posts</th>
             </tr>
+            <tr>
+                <td>new here</td>
+                <td>date time</td>
+            </tr>
         </table>
 
         <table>

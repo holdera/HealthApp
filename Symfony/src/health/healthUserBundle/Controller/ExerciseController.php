@@ -8,7 +8,12 @@ class ExerciseController extends Controller
 {
     public function showAction()
     {
-        return $this->render('healthhealthUserBundle:Exercises:exercises.html.twig');
+        $repository=$this->getDoctrine()
+            ->getRepository('healthhealthUserBundle:Exercises');
+
+        $all = $repository->findAll();
+
+        return $this->render('healthhealthUserBundle:Exercises:exercises.html.twig', array('all'=>$all));
     }
 
 }

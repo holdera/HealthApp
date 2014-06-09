@@ -24,8 +24,8 @@
                     <label class="question">{{ quest.questions }}</label>
                         </li>
 
-                    <input type="radio" value="1" name="answer1"><label>{{ quest.answer1 }}</label>
-                    <input type="radio" value="2" name="answer2"><label>{{ quest.answer2 }}</label>
+                    <input type="radio" value="1" name="answer1" id="answer1"><label>{{ quest.answer1 }}</label>
+                    <input type="radio" value="2" name="answer1" id="answer2"><label>{{ quest.answer2 }}</label>
                 {% endfor  %}
 
                 {% for quest2 in question2 %}
@@ -33,61 +33,61 @@
                      <label class="question">{{ quest2.questions }}</label>
                         </li>
 
-                    <input type="radio" value="3" name="answer3"><label>{{ quest2.answer1 }}</label>
-                    <input type="radio" value="4" name="answer4"><label>{{ quest2.answer2 }}</label>
-                    <input type="radio" value="5" name="answer5"><label>{{ quest2.answer3 }}</label>
-                    <input type="radio" value="6" name="answer6"><label>{{ quest2.answer4 }}</label>
+                    <input type="radio" value="3" name="answer2" id="answer3"><label>{{ quest2.answer1 }}</label>
+                    <input type="radio" value="4" name="answer2" id="answer4"><label>{{ quest2.answer2 }}</label>
+                    <input type="radio" value="5" name="answer2" id="answer5"><label>{{ quest2.answer3 }}</label>
+                    <input type="radio" value="6" name="answer2" id="answer6"><label>{{ quest2.answer4 }}</label>
                 {% endfor  %}
 
                 {% for quest3 in question3 %}
                         <li>
                             <label class="question">{{ quest3.questions }}</label>
                         </li>
-                    <input type="radio" value="7" name="answer7"><label>{{ quest3.answer1 }}</label>
-                    <input type="radio" value="8" name="answer8"><label>{{ quest3.answer2 }}</label>
-                    <input type="radio" value="9" name="answer9"><label>{{ quest3.answer3 }}</label>
-                    <input type="radio" value="10" name="answer10"><label>{{ quest3.answer4 }}</label>
+                    <input type="radio" value="7" name="answer3" id="answer7"><label>{{ quest3.answer1 }}</label>
+                    <input type="radio" value="8" name="answer3" id="answer8"><label>{{ quest3.answer2 }}</label>
+                    <input type="radio" value="9" name="answer3" id="answer9"><label>{{ quest3.answer3 }}</label>
+                    <input type="radio" value="10" name="answer3" id="answer10"><label>{{ quest3.answer4 }}</label>
                 {% endfor  %}
 
                 {% for quest4 in question4 %}
                         <li>
                             <label class="question">{{ quest4.questions }}</label>
                         </li>
-                    <input type="radio" value="11" name="answer11"><label>{{ quest4.answer1 }}</label>
-                    <input type="radio" value="12" name="answer12"><label>{{ quest4.answer2 }}</label>
-                    <input type="radio" value="13" name="answer13"><label>{{ quest4.answer3 }}</label>
-                    <input type="radio" value="14" name="answer14"><label>{{ quest4.answer4 }}</label>
+                    <input type="radio" value="11" name="answer4" id="answer11"><label>{{ quest4.answer1 }}</label>
+                    <input type="radio" value="12" name="answer4" id="answer12"><label>{{ quest4.answer2 }}</label>
+                    <input type="radio" value="13" name="answer4" id="answer13"><label>{{ quest4.answer3 }}</label>
+                    <input type="radio" value="14" name="answer4" id="answer14"><label>{{ quest4.answer4 }}</label>
                 {% endfor  %}
 
                 {% for quest5 in question5 %}
                         <li>
                             <label class="question">{{ quest5.questions }}</label>
                         </li>
-                    <input type="radio" value="15" name="answer15"><label>{{ quest5.answer1 }}</label>
-                    <input type="radio" value="16" name="answer16"><label>{{ quest5.answer2 }}</label>
-                    <input type="radio" value="17" name="answer17"><label>{{ quest5.answer3 }}</label>
+                    <input type="radio" value="15" name="answer5" id="answer15"><label>{{ quest5.answer1 }}</label>
+                    <input type="radio" value="16" name="answer5" id="answer16"><label>{{ quest5.answer2 }}</label>
+                    <input type="radio" value="17" name="answer5" id="answer17"><label>{{ quest5.answer3 }}</label>
                 {% endfor  %}
 
                 {% for quest6 in question6 %}
                         <li>
                             <label class="question">{{ quest6.questions }}</label>
                         </li>
-                    <input type="radio" value="18" name="answer18"><label>{{ quest6.answer1 }}</label>
-                    <input type="radio" value="19" name="answer19"><label>{{ quest6.answer2 }}</label>
-                    <input type="radio" value="20" name="answer20"><label>{{ quest6.answer3 }}</label>
-                    <input type="radio" value="21" name="answer21"><label>{{ quest6.answer4 }}</label>
+                    <input type="radio" value="18" name="answer6" id="answer18"><label>{{ quest6.answer1 }}</label>
+                    <input type="radio" value="19" name="answer6" id="answer19"><label>{{ quest6.answer2 }}</label>
+                    <input type="radio" value="20" name="answer6" id="answer20"><label>{{ quest6.answer3 }}</label>
+                    <input type="radio" value="21" name="answer6" id="answer21"><label>{{ quest6.answer4 }}</label>
 
                     </ol>
                 {% endfor  %}
 
-                 <input type="submit" id="sub" value="submit" class="btn allBtn" name="submit_info">
+                 <input type="submit" id="sub" value="submit" onclick="giveDetox();" class="btn allBtn" name="submit_info">
 
             </form>
 
 
 
             <section id="detoxResult">
-                Yeah
+
             </section>
 
         </section>
@@ -98,7 +98,7 @@
         <script src="{{ asset('bundles/healthdetox/js/jquery-1.11.1.js') }}"></script>
     {% endblock %}
     <script>
-        $(document).ready(function(){
+       /* $(document).ready(function(){
 
             $('#sub').click(function(){
                 $('#detoxResult').load('/HealthApp/Symfony/web/app_dev.php/vegan');

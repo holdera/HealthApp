@@ -13,7 +13,7 @@ class VeganController extends Controller
 
         $query = $repository->createQueryBuilder('a')
             ->where("a.id = :id")
-            ->setParameter('id', 1)
+            ->setParameter('id', 2)
             ->getQuery();
 
         $vegan = $query->getResult();

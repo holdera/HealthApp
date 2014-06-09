@@ -59,11 +59,11 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
             echo "</label>
                         </li>
 
-                    <input type=\"radio\" value=\"1\" name=\"answer1\"><label>";
+                    <input type=\"radio\" value=\"1\" name=\"answer1\" id=\"answer1\"><label>";
             // line 27
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest"]) ? $context["quest"] : $this->getContext($context, "quest")), "answer1"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"2\" name=\"answer2\"><label>";
+                    <input type=\"radio\" value=\"2\" name=\"answer1\" id=\"answer2\"><label>";
             // line 28
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest"]) ? $context["quest"] : $this->getContext($context, "quest")), "answer2"), "html", null, true);
             echo "</label>
@@ -87,19 +87,19 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
             echo "</label>
                         </li>
 
-                    <input type=\"radio\" value=\"3\" name=\"answer3\"><label>";
+                    <input type=\"radio\" value=\"3\" name=\"answer2\" id=\"answer3\"><label>";
             // line 36
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest2"]) ? $context["quest2"] : $this->getContext($context, "quest2")), "answer1"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"4\" name=\"answer4\"><label>";
+                    <input type=\"radio\" value=\"4\" name=\"answer2\" id=\"answer4\"><label>";
             // line 37
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest2"]) ? $context["quest2"] : $this->getContext($context, "quest2")), "answer2"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"5\" name=\"answer5\"><label>";
+                    <input type=\"radio\" value=\"5\" name=\"answer2\" id=\"answer5\"><label>";
             // line 38
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest2"]) ? $context["quest2"] : $this->getContext($context, "quest2")), "answer3"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"6\" name=\"answer6\"><label>";
+                    <input type=\"radio\" value=\"6\" name=\"answer2\" id=\"answer6\"><label>";
             // line 39
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest2"]) ? $context["quest2"] : $this->getContext($context, "quest2")), "answer4"), "html", null, true);
             echo "</label>
@@ -122,19 +122,19 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest3"]) ? $context["quest3"] : $this->getContext($context, "quest3")), "questions"), "html", null, true);
             echo "</label>
                         </li>
-                    <input type=\"radio\" value=\"7\" name=\"answer7\"><label>";
+                    <input type=\"radio\" value=\"7\" name=\"answer3\" id=\"answer7\"><label>";
             // line 46
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest3"]) ? $context["quest3"] : $this->getContext($context, "quest3")), "answer1"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"8\" name=\"answer8\"><label>";
+                    <input type=\"radio\" value=\"8\" name=\"answer3\" id=\"answer8\"><label>";
             // line 47
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest3"]) ? $context["quest3"] : $this->getContext($context, "quest3")), "answer2"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"9\" name=\"answer9\"><label>";
+                    <input type=\"radio\" value=\"9\" name=\"answer3\" id=\"answer9\"><label>";
             // line 48
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest3"]) ? $context["quest3"] : $this->getContext($context, "quest3")), "answer3"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"10\" name=\"answer10\"><label>";
+                    <input type=\"radio\" value=\"10\" name=\"answer3\" id=\"answer10\"><label>";
             // line 49
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest3"]) ? $context["quest3"] : $this->getContext($context, "quest3")), "answer4"), "html", null, true);
             echo "</label>
@@ -157,19 +157,19 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest4"]) ? $context["quest4"] : $this->getContext($context, "quest4")), "questions"), "html", null, true);
             echo "</label>
                         </li>
-                    <input type=\"radio\" value=\"11\" name=\"answer11\"><label>";
+                    <input type=\"radio\" value=\"11\" name=\"answer4\" id=\"answer11\"><label>";
             // line 56
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest4"]) ? $context["quest4"] : $this->getContext($context, "quest4")), "answer1"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"12\" name=\"answer12\"><label>";
+                    <input type=\"radio\" value=\"12\" name=\"answer4\" id=\"answer12\"><label>";
             // line 57
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest4"]) ? $context["quest4"] : $this->getContext($context, "quest4")), "answer2"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"13\" name=\"answer13\"><label>";
+                    <input type=\"radio\" value=\"13\" name=\"answer4\" id=\"answer13\"><label>";
             // line 58
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest4"]) ? $context["quest4"] : $this->getContext($context, "quest4")), "answer3"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"14\" name=\"answer14\"><label>";
+                    <input type=\"radio\" value=\"14\" name=\"answer4\" id=\"answer14\"><label>";
             // line 59
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest4"]) ? $context["quest4"] : $this->getContext($context, "quest4")), "answer4"), "html", null, true);
             echo "</label>
@@ -192,15 +192,15 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest5"]) ? $context["quest5"] : $this->getContext($context, "quest5")), "questions"), "html", null, true);
             echo "</label>
                         </li>
-                    <input type=\"radio\" value=\"15\" name=\"answer15\"><label>";
+                    <input type=\"radio\" value=\"15\" name=\"answer5\" id=\"answer15\"><label>";
             // line 66
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest5"]) ? $context["quest5"] : $this->getContext($context, "quest5")), "answer1"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"16\" name=\"answer16\"><label>";
+                    <input type=\"radio\" value=\"16\" name=\"answer5\" id=\"answer16\"><label>";
             // line 67
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest5"]) ? $context["quest5"] : $this->getContext($context, "quest5")), "answer2"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"17\" name=\"answer17\"><label>";
+                    <input type=\"radio\" value=\"17\" name=\"answer5\" id=\"answer17\"><label>";
             // line 68
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest5"]) ? $context["quest5"] : $this->getContext($context, "quest5")), "answer3"), "html", null, true);
             echo "</label>
@@ -223,19 +223,19 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest6"]) ? $context["quest6"] : $this->getContext($context, "quest6")), "questions"), "html", null, true);
             echo "</label>
                         </li>
-                    <input type=\"radio\" value=\"18\" name=\"answer18\"><label>";
+                    <input type=\"radio\" value=\"18\" name=\"answer6\" id=\"answer18\"><label>";
             // line 75
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest6"]) ? $context["quest6"] : $this->getContext($context, "quest6")), "answer1"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"19\" name=\"answer19\"><label>";
+                    <input type=\"radio\" value=\"19\" name=\"answer6\" id=\"answer19\"><label>";
             // line 76
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest6"]) ? $context["quest6"] : $this->getContext($context, "quest6")), "answer2"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"20\" name=\"answer20\"><label>";
+                    <input type=\"radio\" value=\"20\" name=\"answer6\" id=\"answer20\"><label>";
             // line 77
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest6"]) ? $context["quest6"] : $this->getContext($context, "quest6")), "answer3"), "html", null, true);
             echo "</label>
-                    <input type=\"radio\" value=\"21\" name=\"answer21\"><label>";
+                    <input type=\"radio\" value=\"21\" name=\"answer6\" id=\"answer21\"><label>";
             // line 78
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["quest6"]) ? $context["quest6"] : $this->getContext($context, "quest6")), "answer4"), "html", null, true);
             echo "</label>
@@ -248,14 +248,14 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 82
         echo "
-                 <input type=\"submit\" id=\"sub\" value=\"submit\" class=\"btn allBtn\" name=\"submit_info\">
+                 <input type=\"submit\" id=\"sub\" value=\"submit\" onclick=\"giveDetox();\" class=\"btn allBtn\" name=\"submit_info\">
 
             </form>
 
 
 
             <section id=\"detoxResult\">
-                Yeah
+
             </section>
 
         </section>
@@ -266,7 +266,7 @@ class __TwigTemplate_6b3fac8822a7aff71250342d15233e36cc77355de0617976d520ce82e06
         $this->displayBlock('javascripts', $context, $blocks);
         // line 100
         echo "    <script>
-        \$(document).ready(function(){
+       /* \$(document).ready(function(){
 
             \$('#sub').click(function(){
                 \$('#detoxResult').load('/HealthApp/Symfony/web/app_dev.php/vegan');

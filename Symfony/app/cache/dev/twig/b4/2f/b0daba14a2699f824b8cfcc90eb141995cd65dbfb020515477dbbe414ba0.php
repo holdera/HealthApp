@@ -48,6 +48,22 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
         leaving you flaby and not toned. Click on a body part below to see which exercises you can do to build
         lean muscle and burn fat.</p>
 
+    ";
+        // line 19
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["all"]) ? $context["all"] : $this->getContext($context, "all")));
+        foreach ($context['_seq'] as $context["_key"] => $context["alls"]) {
+            // line 20
+            echo "        <h4>";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alls"]) ? $context["alls"] : $this->getContext($context, "alls")), "bodyPart"), "html", null, true);
+            echo "</h4>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['alls'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 22
+        echo "
 
     </section>
 
@@ -68,6 +84,6 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
 
     public function getDebugInfo()
     {
-        return array (  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
+        return array (  66 => 22,  57 => 20,  53 => 19,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
     }
 }

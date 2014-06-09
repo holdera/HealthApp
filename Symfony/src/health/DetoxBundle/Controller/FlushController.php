@@ -8,7 +8,16 @@ class FlushController extends Controller
 {
     public function showAction()
     {
+        $repository=$this->getDoctrine()
+            ->getRepository('healthDetoxBundle:DetoxTypes');
 
-        return $this->render('healthDetoxBundle:flush:flush.html.twig');
+        $query = $repository->createQueryBuilder('f')
+            ->where("f.id = :id")
+            ->setParameter('id', 3)
+            ->getQuery();
+
+        $flush = $query->getResult();
+
+        return $this->render('healthDetoxBundle:flush:flush.html.twig',array('flush'=> $flush));
     }
 }
