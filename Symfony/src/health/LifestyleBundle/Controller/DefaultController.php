@@ -22,8 +22,6 @@ class DefaultController extends Controller
         $life = $query->getResult();
 
 
-
-
         return $this->render('healthLifestyleBundle:Lifestyle:lifestyle.html.twig', array('diet' =>$life));
     }
 

@@ -12,22 +12,98 @@
             that contributes to bloating; ads water, and of course weight gain. Detoxing is a great way to cleanse
             your body of these toxins, and be healthier on the inside. It also helps in cancer and disease prevention.</p>
 
-         <p>To find the detox that’s the right fit for you fill out this questionnaire.</p>
+         <p>To find the detox that’s the right fit for you, fill out this questionnaire.</p>
+
+        <section class="col-md-8 questions">
+
+            <form action="" method="post" class="allForms">
+
+                {% for quest in question %}
+                    <ol>
+                        <li>
+                    <label class="question">{{ quest.questions }}</label>
+                        </li>
+
+                    <input type="radio" value="1" name="answer1"><label>{{ quest.answer1 }}</label>
+                    <input type="radio" value="2" name="answer2"><label>{{ quest.answer2 }}</label>
+                {% endfor  %}
+
+                {% for quest2 in question2 %}
+                        <li>
+                     <label class="question">{{ quest2.questions }}</label>
+                        </li>
+
+                    <input type="radio" value="3" name="answer3"><label>{{ quest2.answer1 }}</label>
+                    <input type="radio" value="4" name="answer4"><label>{{ quest2.answer2 }}</label>
+                    <input type="radio" value="5" name="answer5"><label>{{ quest2.answer3 }}</label>
+                    <input type="radio" value="6" name="answer6"><label>{{ quest2.answer4 }}</label>
+                {% endfor  %}
+
+                {% for quest3 in question3 %}
+                        <li>
+                            <label class="question">{{ quest3.questions }}</label>
+                        </li>
+                    <input type="radio" value="7" name="answer7"><label>{{ quest3.answer1 }}</label>
+                    <input type="radio" value="8" name="answer8"><label>{{ quest3.answer2 }}</label>
+                    <input type="radio" value="9" name="answer9"><label>{{ quest3.answer3 }}</label>
+                    <input type="radio" value="10" name="answer10"><label>{{ quest3.answer4 }}</label>
+                {% endfor  %}
+
+                {% for quest4 in question4 %}
+                        <li>
+                            <label class="question">{{ quest4.questions }}</label>
+                        </li>
+                    <input type="radio" value="11" name="answer11"><label>{{ quest4.answer1 }}</label>
+                    <input type="radio" value="12" name="answer12"><label>{{ quest4.answer2 }}</label>
+                    <input type="radio" value="13" name="answer13"><label>{{ quest4.answer3 }}</label>
+                    <input type="radio" value="14" name="answer14"><label>{{ quest4.answer4 }}</label>
+                {% endfor  %}
+
+                {% for quest5 in question5 %}
+                        <li>
+                            <label class="question">{{ quest5.questions }}</label>
+                        </li>
+                    <input type="radio" value="15" name="answer15"><label>{{ quest5.answer1 }}</label>
+                    <input type="radio" value="16" name="answer16"><label>{{ quest5.answer2 }}</label>
+                    <input type="radio" value="17" name="answer17"><label>{{ quest5.answer3 }}</label>
+                {% endfor  %}
+
+                {% for quest6 in question6 %}
+                        <li>
+                            <label class="question">{{ quest6.questions }}</label>
+                        </li>
+                    <input type="radio" value="18" name="answer18"><label>{{ quest6.answer1 }}</label>
+                    <input type="radio" value="19" name="answer19"><label>{{ quest6.answer2 }}</label>
+                    <input type="radio" value="20" name="answer20"><label>{{ quest6.answer3 }}</label>
+                    <input type="radio" value="21" name="answer21"><label>{{ quest6.answer4 }}</label>
+
+                    </ol>
+                {% endfor  %}
+
+                 <input type="submit" id="sub" value="submit" class="btn allBtn" name="submit_info">
+
+            </form>
+
+
+
+            <section id="detoxResult">
+                Yeah
+            </section>
+
+        </section>
     </section>
 
-    <section class="col-md-8 questons">
+    {% block javascripts  %}
+        <script src="{{ asset('bundles/healthdetox/js/detoxQ.js') }}"></script>
+        <script src="{{ asset('bundles/healthdetox/js/jquery-1.11.1.js') }}"></script>
+    {% endblock %}
+    <script>
+        $(document).ready(function(){
 
-        <form action="get_info.php" method="post" class="allForms">
+            $('#sub').click(function(){
+                $('#detoxResult').load('/HealthApp/Symfony/web/app_dev.php/vegan');
+            });
 
-            
-            <label class="question"></label>
-            <input type="radio" value="1"><label>Yes</label>
-
-
-
-            <input type="submit" value="submit" class="btn allBtn" name="submit_info">
-
-        </form>
-
-    </section>
+        });
+    </script>
 {% endblock %}

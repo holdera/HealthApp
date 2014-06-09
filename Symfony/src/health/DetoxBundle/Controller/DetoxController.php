@@ -9,14 +9,10 @@ class DetoxController extends Controller
     public function showAction()
     {
         $repository=$this->getDoctrine()
-                    ->getRepository('healthDetoxBundle');
+                    ->getRepository('healthDetoxBundle:detoxQuestions');
 
-        $query = $repository->createQueryBuilder('dt')
-                ->where('dq_id : dt.id' )
-                ->getQuery();
+        $ques = $repository->findAll();
 
-        $detox = $query->getResult();
-
-        return $this->render('healthDetoxBundle:Detox:detox.html.twig', array('questions' => $detox));
+        return $this->render('healthDetoxBundle:Detox:detox.html.twig', array('questions'=> $ques));
     }
 }

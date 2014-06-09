@@ -5,10 +5,9 @@
       <generator strategy="IDENTITY"/>
     </id>
     <field name="questions" type="text" column="questions" nullable="false"/>
-    <field name="option1" type="string" column="option1" length="100" nullable="false"/>
-    <field name="option2" type="string" column="option2" length="100" nullable="false"/>
-    <field name="option3" type="string" column="option3" length="100" nullable="true"/>
-    <field name="option4" type="string" column="option4" length="100" nullable="true"/>
-    <field name="answer" type="string" column="answer" length="100" nullable="false"/>
+    <field name="answer1" type="text" column="answer1" nullable="false"/>
+    <field name="answer2" type="text" column="answer2" nullable="false"/>
+    <field name="answer3" type="text" column="answer3" nullable="true"/>
+    <field name="answer4" type="text" column="answer4" nullable="true"/>
   </entity>
 </doctrine-mapping>

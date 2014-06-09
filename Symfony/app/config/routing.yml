@@ -34,6 +34,18 @@ Detox:
     path: /detox
     defaults: {_controller: healthDetoxBundle:Detox:show}
 
+Flush:
+    path: /flush
+    defaults: {_controller: healthDetoxBundle:flush:show}
+
+Liquid:
+    path: /liquid
+    defaults: {_controller: healthDetoxBundle:liquid:show}
+
+Vegan:
+    path: /vegan
+    defaults: {_controller: healthDetoxBundle:vegan:show}
+
 Forum:
     path: /forum
     defaults: {_controller: healthforumBundle:Forum:show }

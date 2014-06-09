@@ -29,7 +29,7 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">localhost</parameter>
+    <parameter key="database_host">127.0.0.1</parameter>
     <parameter key="database_port">8889</parameter>
     <parameter key="database_name">healthdb</parameter>
     <parameter key="database_user">root</parameter>
@@ -2324,7 +2324,7 @@
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">localhost</argument>
+        <argument key="host">127.0.0.1</argument>
         <argument key="port">8889</argument>
         <argument key="dbname">healthdb</argument>
         <argument key="user">root</argument>
@@ -2390,6 +2390,7 @@
               <argument key="healthhealthUserBundle">health\healthUserBundle\Entity</argument>
               <argument key="healthforumBundle">health\forumBundle\Entity</argument>
               <argument key="healthLifestyleBundle">health\LifestyleBundle\Entity</argument>
+              <argument key="healthDetoxBundle">health\DetoxBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -2429,6 +2430,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2444,6 +2446,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2459,6 +2462,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2466,6 +2470,22 @@
                     </service>
                   </argument>
                   <argument>health\LifestyleBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
+                    </service>
+                  </argument>
+                  <argument>health\DetoxBundle\Entity</argument>
                 </call>
               </service>
             </argument>

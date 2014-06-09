@@ -282,6 +282,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\DetoxBundle\\Controller\\DetoxController::showAction',  '_route' => 'Detox',);
         }
 
+        // Flush
+        if ($pathinfo === '/flush') {
+            return array (  '_controller' => 'health\\DetoxBundle\\Controller\\flushController::showAction',  '_route' => 'Flush',);
+        }
+
+        // Liquid
+        if ($pathinfo === '/liquid') {
+            return array (  '_controller' => 'health\\DetoxBundle\\Controller\\liquidController::showAction',  '_route' => 'Liquid',);
+        }
+
+        // Vegan
+        if ($pathinfo === '/vegan') {
+            return array (  '_controller' => 'health\\DetoxBundle\\Controller\\veganController::showAction',  '_route' => 'Vegan',);
+        }
+
         // Forum
         if ($pathinfo === '/forum') {
             return array (  '_controller' => 'health\\forumBundle\\Controller\\ForumController::showAction',  '_route' => 'Forum',);
