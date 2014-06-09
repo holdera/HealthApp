@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="health\LifestyleBundle\Entity\Greens" table="greens">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="green" type="string" column="green" length="50" nullable="false"/>
+    <field name="gContent" type="text" column="g_content" nullable="false"/>
+    <field name="gPicture" type="string" column="g_picture" length="100" nullable="true"/>
+  </entity>
+</doctrine-mapping>

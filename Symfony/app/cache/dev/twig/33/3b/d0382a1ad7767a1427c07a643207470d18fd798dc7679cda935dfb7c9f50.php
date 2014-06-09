@@ -12,6 +12,7 @@ class __TwigTemplate_333bd0382a1ad7767a1427c07a643207470d18fd798dc7679cda935dfb7
         $this->blocks = array(
             'visual_heading' => array($this, 'block_visual_heading'),
             'main_content' => array($this, 'block_main_content'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -39,65 +40,67 @@ class __TwigTemplate_333bd0382a1ad7767a1427c07a643207470d18fd798dc7679cda935dfb7
     {
         // line 9
         echo "    <section class=\"col-md-9 main_content\">
-        <h2>Cheat Meal</h2>
+        <h2>BMI Calculator</h2>
 
-        <p>Cheat meals are so important in your lifestyle. Not only do they confuse your body
-        with the release of hormones, they leave you content so you stay on your healthy lifestyle
-        and don't feel constricted, However because cheat meals are only once a week, make sure
-        you don't regret it. But remember, it is a cheat meal, not a cheat day. Have that cheat
-        meal before 7pm if you can. Here ya go!</p>
+     <form>
+         <label>Weight (lbs):</label>
+         <input type=\"text\" id=\"weight\">
 
-        <script>
+         <label>Height (inches)</label>
+         <input type=\"text\" id=\"height\">
 
-            for(count = 1; count <= 7; ++count){
-                document.write(count);
-            }
+         <input type=\"button\" id=\"submit\" onclick=\"calcBMI();\" class=\"btn\" value=\"calculate\" />
 
-        </script>
+     </form>
 
-        <form class=\"allForms\" method=\"post\" action=\"\">
+        <section>
+            <p id=\"bmiResults\"></p>
+            <p id=\"results\"></p>
+        </section>
 
-            <label>Favorite Types of Food:</label>
-                <select name=\"types\" onchange=\"getType();\" id=\"cTypes\">
-                    <option value=\"1\">Sweet</option>
-                    <option value=\"2\">Savory</option>
-                    <option value=\"3\">Salt</option>
-                    <option value=\"4\">All</option>
-                </select>
+        <p id=\"bmiResults\"></p>
 
-            <p id=\"chosen\"></p>
+        <form>
+            <label>Age:</label>
+            <input type=\"text\" id=\"age\">
+
+            <input type=\"button\" id=\"submit\" onclick=\"calcBPM();\" value=\"calculate\" class=\"btn\" />
+
         </form>
 
+        <section>
+            <p id=\"ageResults\"></p>
+        </section>
 
+        <input type=\"button\" class=\"btn allBtn\" value=\"Back\" onclick=\"goBack();\" />
+    </section><!--end of container-->
 
-    </section>
-    you prefer  sweet
-    savory
-    salt
-    all
+    ";
+        // line 45
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 49
+        echo "
+    <script>
 
-    if sweet
-    try:
-    frozen yogurt
-    gelato
-    healthy cheesecake
-    doughnut
-    cookies(2)
-    regular sized chocolate bar
+        function goBack() {history.back();}
 
+    </script>
 
-    salt
-    french fries (small to medium)
-    extra buttery popcorn
-    chips + dip
-    fried chicken
-
-    savory
-    pasta
-    lasagna
-    burger
-    pizza (max 3 slices if before 3pm), 1 or after 3pm
 ";
+    }
+
+    // line 45
+    public function block_javascripts($context, array $blocks = array())
+    {
+        // line 46
+        echo "        <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthlifestyle/js/jquery-1.11.1.js"), "html", null, true);
+        echo "\"></script>
+        <script src=\"";
+        // line 47
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthlifestyle/js/cheat.js"), "html", null, true);
+        echo "\"></script>
+    ";
     }
 
     public function getTemplateName()
@@ -112,6 +115,6 @@ class __TwigTemplate_333bd0382a1ad7767a1427c07a643207470d18fd798dc7679cda935dfb7
 
     public function getDebugInfo()
     {
-        return array (  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
+        return array (  101 => 47,  96 => 46,  93 => 45,  82 => 49,  80 => 45,  42 => 9,  39 => 8,  33 => 4,  30 => 3,);
     }
 }

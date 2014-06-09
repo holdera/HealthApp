@@ -7,60 +7,50 @@
 
 {% block main_content %}
     <section class="col-md-9 main_content">
-        <h2>Cheat Meal</h2>
+        <h2>BMI Calculator</h2>
 
-        <p>Cheat meals are so important in your lifestyle. Not only do they confuse your body
-        with the release of hormones, they leave you content so you stay on your healthy lifestyle
-        and don't feel constricted, However because cheat meals are only once a week, make sure
-        you don't regret it. But remember, it is a cheat meal, not a cheat day. Have that cheat
-        meal before 7pm if you can. Here ya go!</p>
+     <form>
+         <label>Weight (lbs):</label>
+         <input type="text" id="weight">
 
-        <script>
+         <label>Height (inches)</label>
+         <input type="text" id="height">
 
+         <input type="button" id="submit" onclick="calcBMI();" class="btn" value="calculate" />
 
+     </form>
 
-        </script>
+        <section>
+            <p id="bmiResults"></p>
+            <p id="results"></p>
+        </section>
 
-        <form class="allForms" method="post" action="">
+        <p id="bmiResults"></p>
 
-            <label>Favorite Types of Food:</label>
-                <select name="types" onchange="getType();" id="cTypes">
-                    <option value="1">Sweet</option>
-                    <option value="2">Savory</option>
-                    <option value="3">Salt</option>
-                    <option value="4">All</option>
-                </select>
+        <form>
+            <label>Age:</label>
+            <input type="text" id="age">
 
-            <p id="chosen"></p>
+            <input type="button" id="submit" onclick="calcBPM();" value="calculate" class="btn" />
+
         </form>
 
+        <section>
+            <p id="ageResults"></p>
+        </section>
 
+        <input type="button" class="btn allBtn" value="Back" onclick="goBack();" />
+    </section><!--end of container-->
 
-    </section>
-    you prefer  sweet
-    savory
-    salt
-    all
+    {% block javascripts  %}
+        <script src="{{ asset('bundles/healthlifestyle/js/jquery-1.11.1.js') }}"></script>
+        <script src="{{ asset('bundles/healthlifestyle/js/cheat.js') }}"></script>
+    {% endblock %}
 
-    if sweet
-    try:
-    frozen yogurt
-    gelato
-    healthy cheesecake
-    doughnut
-    cookies(2)
-    regular sized chocolate bar
+    <script>
 
+        function goBack() {history.back();}
 
-    salt
-    french fries (small to medium)
-    extra buttery popcorn
-    chips + dip
-    fried chicken
+    </script>
 
-    savory
-    pasta
-    lasagna
-    burger
-    pizza (max 3 slices if before 3pm), 1 or after 3pm
 {% endblock %}

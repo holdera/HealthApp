@@ -1,0 +1,11 @@
+#health-slider {
+  border: solid thin #ccc; }
+  #health-slider .content-slider {
+    width: 400px; }
+
+.headers {
+  border-bottom: 1px solid #ccc;
+  padding: 9px 0; }
+
+.links {
+  clear: both; }

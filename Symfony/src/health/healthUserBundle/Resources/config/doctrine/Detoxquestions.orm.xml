@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="health\healthUserBundle\Entity\Detoxquestions" table="detoxQuestions">
+    <id name="dqId" type="integer" column="dq_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="questions" type="text" column="questions" nullable="false"/>
+    <field name="option1" type="string" column="option1" length="100" nullable="false"/>
+    <field name="option2" type="string" column="option2" length="100" nullable="false"/>
+    <field name="option3" type="string" column="option3" length="100" nullable="true"/>
+    <field name="option4" type="string" column="option4" length="100" nullable="true"/>
+    <field name="answer" type="string" column="answer" length="100" nullable="false"/>
+  </entity>
+</doctrine-mapping>

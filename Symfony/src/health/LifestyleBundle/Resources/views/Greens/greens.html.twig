@@ -1,5 +1,18 @@
 {%  extends 'healthhealthUserBundle::layout.html.twig' %}
 
+{% block head %}
+
+    {% block stylesheets %}
+        {% stylesheets '@healthLifestyleBundle/Resources/public/css/*' filter='cssrewrite' %}
+        <link href="{{ asset_url  }}"  rel="stylesheet">
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        {% endstylesheets %}
+    {% endblock %}
+
+{% endblock %}
+
 {% block visual_heading %}
 
 
@@ -8,10 +21,52 @@
 {% block main_content %}
 
     <section class="col-md-9 main_content">
-green and lean
 
+        <section id="kale" class="col-md-4">
+            {% for kale in greens %}
+                <h2 class="title">{{ kale.green }}</h2>
+                <p> {{ kale.gContent }}</p>
+
+            {% endfor %}
+        </section>
+
+        <section id="spinach" class="col-md-4">
+            {% for spin in spinach %}
+                <h2 class="title">{{ spin.green }}</h2>
+                <p> {{ spin.gContent }}</p>
+
+            {% endfor %}
+        </section>
+
+        <section id="collards" class="col-md-4">
+            {% for coll in collards %}
+                <h2 class="title">{{ coll.green }}</h2>
+                <p> {{ coll.gContent }}</p>
+
+            {% endfor %}
+        </section>
+
+<section class="row">
+        <section class="helpful col-md-8">
+            <h2 class="headers">Helpful Links</h2>
+
+            {% for link in glink %}
+            <span class="links">
+                <a href="{{ link.webUrl }}" target="_blank">
+
+                    {{ link.webName }}</a>
+            </span>
+
+            {% endfor %}
+        </section>
     </section>
 
+        <input type="button" class="btn allBtn" value="Back" onclick="goBack();" />
 
+    </section><!-- end of content container-->
+    <script>
 
+        function goBack() {history.back();}
+
+    </script>
 {% endblock %}

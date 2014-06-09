@@ -1,6 +1,6 @@
 parameters:
     database_driver: pdo_mysql
-    database_host: 'localhost' #'50.62.209.8'
+    database_host: 'localhost' #'50.62.209.8' #'127.0.0.1'
     database_port: 8889 #3306
     database_name: healthdb #healthApp
     database_user: root #APSquared
