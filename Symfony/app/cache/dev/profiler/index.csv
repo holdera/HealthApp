@@ -1749,3 +1749,10 @@ d8e4d4,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,14023480
 ff0023,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1402350269,
 a72a3e,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/detox,1402352398,
 df751e,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402353303,
+5d5fa5,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402501413,
+33bbff,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402501422,
+6ba674,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1402501426,
+3250a4,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/detox,1402501428,
+15a52b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402501436,
+dec5cb,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402501440,2345a3
+2345a3,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402501440,
