@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="innerPage.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="innerPage.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/innerPage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="1" selection-start="396" selection-end="396" vertical-scroll-proportion="0.7867133" vertical-offset="0" max-vertical-offset="615">
+            <state line="30" column="1" selection-start="396" selection-end="396" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forum.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forum.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="555">
+            <state line="25" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="0.6555944" vertical-offset="0" max-vertical-offset="572">
               <folding />
             </state>
           </provider>
@@ -134,7 +134,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
+    <option name="x" value="-313" />
     <option name="y" value="22" />
     <option name="width" value="1269" />
     <option name="height" value="693" />
@@ -377,15 +377,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="22" width="1269" height="693" extended-state="0" />
-    <editor active="false" />
+    <frame x="-313" y="22" width="1269" height="693" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2214342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2214342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1650641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -674,16 +674,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/innerPage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="555">
+        <state line="30" column="1" selection-start="396" selection-end="396" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/innerPage.scss">
+    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="396" selection-end="396" vertical-scroll-proportion="0.7867133" vertical-offset="0" max-vertical-offset="615">
+        <state line="25" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="0.6555944" vertical-offset="0" max-vertical-offset="572">
           <folding />
         </state>
       </provider>

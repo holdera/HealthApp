@@ -22,6 +22,7 @@
       <parameter key="healthDetoxBundle">health\DetoxBundle\healthDetoxBundle</parameter>
       <parameter key="healthResourcesBundle">health\ResourcesBundle\healthResourcesBundle</parameter>
       <parameter key="healthAdminBundle">health\AdminBundle\healthAdminBundle</parameter>
+      <parameter key="healthuserBundle">health\userBundle\healthuserBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -2880,6 +2881,10 @@
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/AdminBundle/Resources/views</argument>
         <argument>healthAdmin</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/userBundle/Resources/views</argument>
+        <argument>healthuser</argument>
       </call>
       <call method="addPath">
         <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

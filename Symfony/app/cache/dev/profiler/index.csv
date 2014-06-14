@@ -1770,3 +1770,7 @@ bd1333,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,140
 dd7098,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402675123,
 d4a8bc,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402675129,
 a9ff4c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402761697,
+3aa14b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402771786,
+9df739,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402771790,
+fc5f4b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402771792,
+13eed6,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402771802,
