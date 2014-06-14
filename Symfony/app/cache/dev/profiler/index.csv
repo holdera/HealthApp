@@ -1756,3 +1756,17 @@ df751e,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,140
 15a52b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402501436,
 dec5cb,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402501440,2345a3
 2345a3,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402501440,
+d93a0b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402674889,
+a21a8c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402674913,
+e99170,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/cheat-generator,1402674915,
+e55004,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/greenlean,1402674949,
+57cdd6,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1402674960,
+c72e95,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/detox,1402674968,
+278d38,::1,POST,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/detox,1402675069,
+d003e3,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402675073,
+d222d5,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1402675106,
+bd1333,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402675119,
+2f6a08,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402675123,dd7098
+dd7098,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/chat,1402675123,
+d4a8bc,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402675129,
+a9ff4c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402761697,

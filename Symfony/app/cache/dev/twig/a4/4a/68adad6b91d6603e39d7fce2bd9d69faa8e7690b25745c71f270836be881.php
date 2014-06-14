@@ -33,33 +33,25 @@ class __TwigTemplate_a44a68adad6b91d6603e39d7fce2bd9d69faa8e7690b25745c71f270836
 
         <h1>Health Forum</h1>
 
-        <table>
-            <tr>
-                <th>Newbies</th>
-                <th>Posts</th>
-            </tr>
-            <tr>
-                <td>new here</td>
-                <td>date time</td>
-            </tr>
-        </table>
+        <ul>
+            <li class=\"forum-title\">Newbies</li>
+            <li>Introduce yourself</li>
+        </ul>
 
-        <table>
-            <tr>
-                <th>Topics</th>
-                <th>The Latest</th>
-            </tr>
-            <tr>
-                <td>Weight-loss</td>
-            </tr>
-            <tr>
-                <td>Fitness</td>
-            </tr>
-            <tr>
-                <td>Transformations</td>
-            </tr>
+      <ul>
+          <li class=\"forum-title\">Topics</li>
+          <li>Weightloss</li>
+          <li>transformations</li>
+          <li>Eating</li>
+          <li>Fitness</li>
+      </ul>
 
-        </table>
+        <ul>
+            <li class=\"forum-title\">Diet</li>
+            <li>Detoxes</li>
+            <li>Vegan</li>
+            <li>Miscellaneous</li>
+        </ul>
 
 
     </section>
