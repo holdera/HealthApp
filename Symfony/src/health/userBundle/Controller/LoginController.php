@@ -22,7 +22,7 @@ class LoginController extends Controller
 			$username = $request->get('username');
 			$password = $request->get('password');
 			$remember = $request->get('remember');
-			$user = $repository->findOneBy(array('email' => $username, 'password => $password'));
+			$user = $repository->findOneBy(array('email' => $username, 'password' => $password));
 			if($user)
 			{
 				if($remember == 'remember-me')
@@ -32,7 +32,7 @@ class LoginController extends Controller
 					$login->setPassword($password);
 					$session->set('login', $login);
 				}
-				return $this->render('healthuserBundle:Login:welcome.html.twig', array('name' => $user->getFirstName()));
+				return $this->render('healthuserBundle:Login:welcome.html.twig', array('name' => $user->getFirstName(), $session->set('userid', $user->getEmail())));
 			}
 			else
 			{
@@ -57,8 +57,16 @@ class LoginController extends Controller
 					return $this->render('healthuserBundle:Login:login.html.twig', array('name' =>'Invalid username or password'));
 				}
 			}
-			return $this->render('healthuserBundle:Login:login.html.twig', array('name' =>'Invalid username or password'));
+			return $this->render('healthuserBundle:Login:login.html.twig');
 		}
+	}
+
+
+	public function logoutAction(Request $request)
+	{
+		$session = $this->getRequest()->getSession();
+		$session->clear();
+		return $this->render('healthuserBundle:Login:login.html.twig');
 	}
 }
 
