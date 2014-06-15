@@ -382,17 +382,9 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\CheatController::showAction',  '_route' => 'Cheat',);
         }
 
-        if (0 === strpos($pathinfo, '/register')) {
-            // register_register
-            if ($pathinfo === '/register') {
-                return array (  '_controller' => 'health\\userBundle\\Controller\\RegisterController::registerAction',  '_route' => 'register_register',);
-            }
-
-            // account_create
-            if ($pathinfo === '/register/create') {
-                return array (  '_controller' => 'health\\userBundle\\Controller\\RegisterController::createAction',  '_route' => 'account_create',);
-            }
-
+        // register_register
+        if ($pathinfo === '/register') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RegisterController::registerAction',  '_route' => 'register_register',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {

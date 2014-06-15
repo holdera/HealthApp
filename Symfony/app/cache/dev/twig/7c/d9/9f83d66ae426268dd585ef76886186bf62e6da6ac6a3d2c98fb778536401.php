@@ -257,25 +257,35 @@ class __TwigTemplate_7cd99f83d66ae426268dd585ef76886186bf62e6da6ac6a3d2c98fb7785
             <h2 class=\"form-signin-heading\">LogIn</h2>
             <input type=\"text\" id=\"username\" class=\"input-block-level\" name=\"username\" placeholder=\"Username\" data-trigger=\"change\" data-required=\"true\">
             <input type=\"password\" id=\"password\" class=\"input-block-level\" name=\"password\" placeholder=\"Password\" data-trigger=\"change\" data-required=\"true\">
-            <button class=\"btn btn-large btn-primary\" type=\"submit\">Login</button>
+            <br />
+            <label class=\"checkbox\" name=\"remember\" value=\"remember-me\">Remember me</label>
+            <button class=\"btn btn-large btn-primary\" type=\"submit\">Login</button><br />
+            <a href =\"";
+        // line 64
+        echo $this->env->getExtension('routing')->getPath("register_register");
+        echo "\">Sign Up</a>
+            <a href =\"";
+        // line 65
+        echo $this->env->getExtension('routing')->getPath("Recover_recover");
+        echo "\">Recover Password</a>
            
         </form>
 
     </div> 
     
     ";
-        // line 67
+        // line 71
         if (array_key_exists("name", $context)) {
-            // line 68
+            // line 72
             echo "    <div class=\"alert-info fade in\">
         <strong>";
-            // line 69
+            // line 73
             echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
             echo "</strong>
     </div>
     ";
         }
-        // line 71
+        // line 75
         echo "  
     </section>
 ";
@@ -293,6 +303,6 @@ class __TwigTemplate_7cd99f83d66ae426268dd585ef76886186bf62e6da6ac6a3d2c98fb7785
 
     public function getDebugInfo()
     {
-        return array (  279 => 71,  273 => 69,  270 => 68,  268 => 67,  255 => 57,  249 => 53,  246 => 52,  240 => 48,  237 => 47,  200 => 12,  194 => 10,  190 => 9,  186 => 8,  181 => 7,  174 => 10,  170 => 9,  166 => 8,  161 => 7,  155 => 10,  151 => 9,  147 => 8,  142 => 7,  136 => 10,  132 => 9,  128 => 8,  123 => 7,  117 => 10,  113 => 9,  109 => 8,  104 => 7,  98 => 10,  94 => 9,  90 => 8,  85 => 7,  79 => 10,  75 => 9,  71 => 8,  66 => 7,  60 => 10,  56 => 9,  52 => 8,  47 => 7,  43 => 6,  40 => 5,  34 => 4,  31 => 3,);
+        return array (  289 => 75,  283 => 73,  280 => 72,  278 => 71,  269 => 65,  265 => 64,  255 => 57,  249 => 53,  246 => 52,  240 => 48,  237 => 47,  200 => 12,  194 => 10,  190 => 9,  186 => 8,  181 => 7,  174 => 10,  170 => 9,  166 => 8,  161 => 7,  155 => 10,  151 => 9,  147 => 8,  142 => 7,  136 => 10,  132 => 9,  128 => 8,  123 => 7,  117 => 10,  113 => 9,  109 => 8,  104 => 7,  98 => 10,  94 => 9,  90 => 8,  85 => 7,  79 => 10,  75 => 9,  71 => 8,  66 => 7,  60 => 10,  56 => 9,  52 => 8,  47 => 7,  43 => 6,  40 => 5,  34 => 4,  31 => 3,);
     }
 }

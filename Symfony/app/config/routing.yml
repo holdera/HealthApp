@@ -74,10 +74,6 @@ register_register:
     path: /register
     defaults: { _controller: healthuserBundle:Register:register }
 
-account_create:
-    path: /register/create
-    defaults: { _controller: healthuserBundle:Register:create }
-
 Login_login:
     path: /login
     defaults: { _controller: healthuserBundle:Login:index }
