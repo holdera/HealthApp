@@ -11,8 +11,7 @@ body {
 header {
   margin: -20px 0;
   padding: 10px;
-  background: #481d70;
-  position: fixed; }
+  background: #481d70; }
   header #logo {
     color: white;
     padding: 0px 20px; }

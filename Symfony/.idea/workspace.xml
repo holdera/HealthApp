@@ -71,19 +71,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="52" selection-start="282" selection-end="282" vertical-scroll-proportion="0.13686131" vertical-offset="30" max-vertical-offset="2145">
+            <state line="7" column="52" selection-start="282" selection-end="282" vertical-scroll-proportion="-3.125" vertical-offset="30" max-vertical-offset="2145">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="17" selection-start="278" selection-end="278" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="2820">
+            <state line="19" column="20" selection-start="260" selection-end="260" vertical-scroll-proportion="0.5080214" vertical-offset="0" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
@@ -917,16 +917,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="278" selection-end="278" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="2820">
+        <state line="7" column="52" selection-start="282" selection-end="282" vertical-scroll-proportion="-3.125" vertical-offset="30" max-vertical-offset="2145">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/public/css/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="282" selection-end="282" vertical-scroll-proportion="0.13686131" vertical-offset="30" max-vertical-offset="2145">
+        <state line="19" column="20" selection-start="260" selection-end="260" vertical-scroll-proportion="0.5080214" vertical-offset="0" max-vertical-offset="2805">
           <folding />
         </state>
       </provider>
