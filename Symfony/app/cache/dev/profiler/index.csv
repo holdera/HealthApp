@@ -134,3 +134,5 @@ e5c7b2,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/cpas
 485f6c,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1402961503,
 829f14,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1402961639,
 >>>>>>> FETCH_HEAD
+5b7d62,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962277,5418a4
+5418a4,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962277,
