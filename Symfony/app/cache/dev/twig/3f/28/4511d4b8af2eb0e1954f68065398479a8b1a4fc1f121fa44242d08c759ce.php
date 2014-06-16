@@ -33,33 +33,25 @@ class __TwigTemplate_3f284511d4b8af2eb0e1954f68065398479a8b1a4fc1f121fa44242d08c
 
         <h1>Resources</h1>
 
-       <section class=\"col-md-4\">
+       <section class=\"col-md-6\">
 
-           <h2>Find a Gym</h2>
+           <a href=\"/HealthApp/Symfony/web/app_dev.php/findgym\"><h2>Find a Gym</h2>
            <p>
                Have you decided to start working out but you do not know where. Click here to find the closes health clubs
                in your areas.
-           </p>
+           </p></a>
        </section>
 
-        <section class=\"col-md-4\">
 
-            <h2>Diet Reviews</h2>
 
+        <section class=\"col-md-6\">
+
+            <a href=\"/HealthApp/Symfony/web/app_dev.php/videos\"><h2>Top Workout Videos</h2>
             <p>
                 Have you decided to start working out but you do not know where. Click here to find the closes health clubs
                 in your areas.
             </p>
-
-        </section>
-
-        <section class=\"col-md-4\">
-
-            <h2>Top Workout Videos</h2>
-            <p>
-                Have you decided to start working out but you do not know where. Click here to find the closes health clubs
-                in your areas.
-            </p>
+                </a>
         </section>
 
 

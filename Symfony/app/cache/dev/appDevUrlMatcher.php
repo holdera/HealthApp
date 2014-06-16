@@ -342,6 +342,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\ResourcesBundle\\Controller\\GymController::showAction',  '_route' => 'Finder',);
         }
 
+        // Video
+        if ($pathinfo === '/videos') {
+            return array (  '_controller' => 'health\\ResourcesBundle\\Controller\\VideoController::showAction',  '_route' => 'Video',);
+        }
+
         // Sample
         if ($pathinfo === '/healthsample') {
             return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\SampleController::showAction',  '_route' => 'Sample',);

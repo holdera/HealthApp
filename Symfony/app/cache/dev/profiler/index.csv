@@ -68,3 +68,9 @@ e6c8ca,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym?f
 566572,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym?fitness=gym&getPlaces=Submit&where=toronto,1402953316,
 f83cd7,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/marker.png,1402953333,40afcd
 40afcd,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/marker.png,1402953334,
+8793ea,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym?fitness=gym&getPlaces=Submit&where=toronto,1402953404,
+d70d28,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1402953434,
+f40670,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402953542,
+94bafc,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402953557,
+0edb40,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402953607,
+ec46ac,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402954233,

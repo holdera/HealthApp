@@ -74,7 +74,6 @@ Create:
     path: /newpost
     defaults: {_controller: healthforumBundle:Create:create }
 
-
 Resource:
     path: /resource
     defaults: {_controller: healthResourcesBundle:Resource:show }
@@ -82,6 +81,10 @@ Resource:
 Finder:
       path: /findgym
       defaults: {_controller: healthResourcesBundle:Gym:show }
+
+Video:
+    path: /videos
+    defaults: {_controller: healthResourcesBundle:Video:show }
 
 Sample:
     path: /healthsample
