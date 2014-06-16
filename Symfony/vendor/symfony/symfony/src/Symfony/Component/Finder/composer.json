@@ -1,7 +1,7 @@
 {
     "name": "symfony/finder",
     "type": "library",
-    "description": "Symfony Finder Component",
+    "description": "Symfony Gym Component",
     "keywords": [],
     "homepage": "http://symfony.com",
     "license": "MIT",
@@ -21,7 +21,7 @@
     "autoload": {
         "psr-0": { "Symfony\\Component\\Finder\\": "" }
     },
-    "target-dir": "Symfony/Component/Finder",
+    "target-dir": "Symfony/Component/Gym",
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {

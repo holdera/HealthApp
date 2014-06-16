@@ -1,0 +1,91 @@
+{%  extends 'healthhealthUserBundle::layout.html.twig' %}
+
+{% block head %}
+    {% block stylesheets %}
+        {% stylesheets '@healthhealthUserBundle/Resources/public/css/*' filter='cssrewrite' %}
+        <link href="{{ asset_url }}"  rel="stylesheet">
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        <link href="{{ asset_url }}"  rel="stylesheet" >
+        {% endstylesheets %}
+    {% endblock %}
+    <style type="text/css">
+        html { height: 70% }
+        body { height: 70%; margin: 0; padding: 0 }
+        #map-canvas { height: 100% }
+    </style>
+
+    {% block javascript %}
+        <script src="{{ asset('bundles/healthhealthuser/js/mapscript.js') }}"></script>
+    {% endblock %}
+
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA83Uvup9ezN7hjFRCj0FS3V6RySUyUb0o">
+    </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(43.65323, -79.38318),
+                zoom: 8
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"),
+                    mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+{% endblock %}
+{% block main_content %}
+
+    <section class="col-md-8 main_content">
+
+
+
+        <h1>Find a Gym</h1>
+
+        <div id="map-canvas"></div>
+
+        <div class="actions">
+            <div class="button">
+                <label for="gmap_where">Where:</label>
+                <input id="gmap_where" type="text" name="gmap_where" /></div>
+            <div id="button2" class="button" onclick="findAddress(); return false;">Search for address</div>
+            <div class="button">
+                <label for="gmap_keyword">Keyword (optional):</label>
+                <input id="gmap_keyword" type="text" name="gmap_keyword" /></div>
+            <div class="button">
+                <label for="gmap_type">Type:</label>
+                <select id="gmap_type">
+                    <option value="art_gallery">art_gallery</option>
+                    <option value="atm">atm</option>
+                    <option value="bank">bank</option>
+                    <option value="bar">bar</option>
+                    <option value="cafe">cafe</option>
+                    <option value="food">food</option>
+                    <option value="hospital">hospital</option>
+                    <option value="police">police</option>
+                    <option value="store">store</option>
+                </select>
+            </div>
+            <div class="button">
+                <label for="gmap_radius">Radius:</label>
+                <select id="gmap_radius">
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="1500">1500</option>
+                    <option value="5000">5000</option>
+                </select>
+            </div>
+            <input type="hidden" id="lat" name="lat" value="40.7143528" />
+            <input type="hidden" id="lng" name="lng" value="-74.0059731" />
+            <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div>
+        </div>
+
+
+        </div>
+        </div>
+
+
+
+    </section>
+{% endblock %}
+

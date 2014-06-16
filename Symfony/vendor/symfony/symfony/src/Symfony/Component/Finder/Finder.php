@@ -18,15 +18,15 @@ use Symfony\Component\Finder\Adapter\PhpAdapter;
 use Symfony\Component\Finder\Exception\ExceptionInterface;
 
 /**
- * Finder allows to build rules to find files and directories.
+ * Gym allows to build rules to find files and directories.
  *
  * It is a thin wrapper around several specialized iterator classes.
  *
  * All rules may be invoked several times.
  *
- * All methods return the current Finder object to allow easy chaining:
+ * All methods return the current Gym object to allow easy chaining:
  *
- * $finder = Finder::create()->files()->name('*.php')->in(__DIR__);
+ * $finder = Gym::create()->files()->name('*.php')->in(__DIR__);
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *
@@ -75,9 +75,9 @@ class Finder implements \IteratorAggregate, \Countable
     }
 
     /**
-     * Creates a new Finder.
+     * Creates a new Gym.
      *
-     * @return Finder A new Finder instance
+     * @return Finder A new Gym instance
      *
      * @api
      */
@@ -92,7 +92,7 @@ class Finder implements \IteratorAggregate, \Countable
      * @param AdapterInterface $adapter  An adapter instance
      * @param int              $priority Highest is selected first
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      */
     public function addAdapter(Adapter\AdapterInterface $adapter, $priority = 0)
     {
@@ -108,7 +108,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Sets the selected adapter to the best one according to the current platform the code is run on.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      */
     public function useBestAdapter()
     {
@@ -124,7 +124,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @throws \InvalidArgumentException
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      */
     public function setAdapter($name)
     {
@@ -141,7 +141,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Removes all adapters registered in the finder.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      */
     public function removeAdapters()
     {
@@ -165,7 +165,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Restricts the matching to directories only.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @api
      */
@@ -179,7 +179,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Restricts the matching to files only.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @api
      */
@@ -195,12 +195,12 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * Usage:
      *
-     *   $finder->depth('> 1') // the Finder will start matching at level 1.
-     *   $finder->depth('< 3') // the Finder will descend at most 3 levels of directories below the starting point.
+     *   $finder->depth('> 1') // the Gym will start matching at level 1.
+     *   $finder->depth('< 3') // the Gym will descend at most 3 levels of directories below the starting point.
      *
      * @param int $level The depth level expression
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\DepthRangeFilterIterator
      * @see Symfony\Component\Finder\Comparator\NumberComparator
@@ -226,7 +226,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $date A date rage string
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see strtotime
      * @see Symfony\Component\Finder\Iterator\DateRangeFilterIterator
@@ -252,7 +252,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $pattern A pattern (a regexp, a glob, or a string)
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\FilenameFilterIterator
      *
@@ -270,7 +270,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $pattern A pattern (a regexp, a glob, or a string)
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\FilenameFilterIterator
      *
@@ -293,7 +293,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $pattern A pattern (string or regexp)
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\FilecontentFilterIterator
      */
@@ -314,7 +314,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $pattern A pattern (string or regexp)
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\FilecontentFilterIterator
      */
@@ -337,7 +337,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $pattern A pattern (a regexp or a string)
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\FilenameFilterIterator
      */
@@ -360,7 +360,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $pattern A pattern (a regexp or a string)
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\FilenameFilterIterator
      */
@@ -380,7 +380,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string $size A size range string
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SizeRangeFilterIterator
      * @see Symfony\Component\Finder\Comparator\NumberComparator
@@ -399,7 +399,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string|array $dirs A directory path or an array of directories
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\ExcludeDirectoryFilterIterator
      *
@@ -417,7 +417,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param bool    $ignoreDotFiles Whether to exclude "hidden" files or not
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\ExcludeDirectoryFilterIterator
      *
@@ -439,7 +439,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param bool    $ignoreVCS Whether to exclude VCS files or not
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\ExcludeDirectoryFilterIterator
      *
@@ -481,7 +481,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param \Closure $closure An anonymous function
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SortableIterator
      *
@@ -499,7 +499,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This can be slow as all the matching files and directories must be retrieved for comparison.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SortableIterator
      *
@@ -517,7 +517,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This can be slow as all the matching files and directories must be retrieved for comparison.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SortableIterator
      *
@@ -537,7 +537,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This can be slow as all the matching files and directories must be retrieved for comparison.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SortableIterator
      *
@@ -559,7 +559,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This can be slow as all the matching files and directories must be retrieved for comparison.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SortableIterator
      *
@@ -579,7 +579,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * This can be slow as all the matching files and directories must be retrieved for comparison.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\SortableIterator
      *
@@ -600,7 +600,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param \Closure $closure An anonymous function
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @see Symfony\Component\Finder\Iterator\CustomFilterIterator
      *
@@ -616,7 +616,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Forces the following of symlinks.
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @api
      */
@@ -634,7 +634,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param bool    $ignore
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      */
     public function ignoreUnreadableDirs($ignore = true)
     {
@@ -648,7 +648,7 @@ class Finder implements \IteratorAggregate, \Countable
      *
      * @param string|array $dirs A directory path or an array of directories
      *
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      *
      * @throws \InvalidArgumentException if one of the directories does not exist
      *
@@ -674,7 +674,7 @@ class Finder implements \IteratorAggregate, \Countable
     }
 
     /**
-     * Returns an Iterator for the current Finder configuration.
+     * Returns an Iterator for the current Gym configuration.
      *
      * This method implements the IteratorAggregate interface.
      *
@@ -685,7 +685,7 @@ class Finder implements \IteratorAggregate, \Countable
     public function getIterator()
     {
         if (0 === count($this->dirs) && 0 === count($this->iterators)) {
-            throw new \LogicException('You must call one of in() or append() methods before iterating over a Finder.');
+            throw new \LogicException('You must call one of in() or append() methods before iterating over a Gym.');
         }
 
         if (1 === count($this->dirs) && 0 === count($this->iterators)) {
@@ -707,7 +707,7 @@ class Finder implements \IteratorAggregate, \Countable
     /**
      * Appends an existing set of files/directories to the finder.
      *
-     * The set can be another Finder, an Iterator, an IteratorAggregate, or even a plain array.
+     * The set can be another Gym, an Iterator, an IteratorAggregate, or even a plain array.
      *
      * @param mixed $iterator
      *
@@ -728,7 +728,7 @@ class Finder implements \IteratorAggregate, \Countable
             }
             $this->iterators[] = $it;
         } else {
-            throw new \InvalidArgumentException('Finder::append() method wrong argument type.');
+            throw new \InvalidArgumentException('Gym::append() method wrong argument type.');
         }
 
         return $this;
@@ -745,7 +745,7 @@ class Finder implements \IteratorAggregate, \Countable
     }
 
     /**
-     * @return Finder The current Finder instance
+     * @return Finder The current Gym instance
      */
     private function sortAdapters()
     {

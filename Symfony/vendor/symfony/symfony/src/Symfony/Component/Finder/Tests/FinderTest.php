@@ -445,7 +445,7 @@ class FinderTest extends Iterator\RealIteratorTestCase
      */
     public function testAppendReturnsAFinder($adapter)
     {
-        $this->assertInstanceOf('Symfony\\Component\\Finder\\Finder', $this->buildFinder($adapter)->append(array()));
+        $this->assertInstanceOf('Symfony\\Component\\Gym\\Gym', $this->buildFinder($adapter)->append(array()));
     }
 
     /**
@@ -733,9 +733,9 @@ class FinderTest extends Iterator\RealIteratorTestCase
 
         try {
             $this->assertIterator($this->toAbsolute(array('foo bar', 'test.php', 'test.py')), $finder->getIterator());
-            $this->fail('Finder should throw an exception when opening a non-readable directory.');
+            $this->fail('Gym should throw an exception when opening a non-readable directory.');
         } catch (\Exception $e) {
-            $this->assertInstanceOf('Symfony\\Component\\Finder\\Exception\\AccessDeniedException', $e);
+            $this->assertInstanceOf('Symfony\\Component\\Gym\\Exception\\AccessDeniedException', $e);
         }
 
         // restore original permissions

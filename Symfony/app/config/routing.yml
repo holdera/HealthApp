@@ -79,6 +79,10 @@ Resource:
     path: /resource
     defaults: {_controller: healthResourcesBundle:Resource:show }
 
+Finder:
+      path: /findgym
+      defaults: {_controller: healthResourcesBundle:Gym:show }
+
 Sample:
     path: /healthsample
     defaults: {_controller: healthLifestyleBundle:Sample:show }

@@ -43,7 +43,7 @@ class FilterIteratorTest extends RealIteratorTestCase
             $c++;
         }
 
-        // This would fail with \FilterIterator but works with Symfony\Component\Finder\Iterator\FilterIterator
+        // This would fail with \FilterIterator but works with Symfony\Component\Gym\Iterator\FilterIterator
         // see https://bugs.php.net/bug.php?id=49104
         $this->assertEquals(1, $c);
     }

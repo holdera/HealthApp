@@ -31,7 +31,7 @@ monolog:
 
 assetic:
     use_controller: true
-    bundles: ['healthhealthUserBundle', 'healthLifestyleBundle']
+    bundles: ['healthhealthUserBundle', 'healthLifestyleBundle', 'healthResourcesBundle']
     debug:          %kernel.debug%
 
 #swiftmailer:
