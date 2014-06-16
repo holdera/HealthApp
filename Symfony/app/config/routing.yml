@@ -89,39 +89,3 @@ Greens:
 Cheat:
     path: /cheat-generator
     defaults: {_controller: healthLifestyleBundle:Cheat:show }
-
-register_register:
-    path: /register
-    defaults: { _controller: healthuserBundle:Register:register }
-
-Login_login:
-    path: /login
-    defaults: { _controller: healthuserBundle:Login:index }
-
-Login_logout:
-    path: /logout
-    defaults: { _controller: healthuserBundle:Login:logout }
-
-Recover_recover:
-    path: /recover
-    defaults: { _controller: healthuserBundle:Recover:recover }
-
-Recover_security:
-    path: /recover/security
-    defaults: { _controller: healthuserBundle:Recover:security }
-
-Recover_password:
-    path: /recover/password 
-    defaults: { _controller: healthuserBundle:Recover:password }
-
-User_cpassword:
-    path: /cpassword 
-    defaults: { _controller: healthuserBundle:User:cpassword }
-
-Recipe_addrecipe:
-    path: /addrecipe
-    defaults: { _controller: healthuserBundle:Recipe:addrecipe }
-
-Recipe_showrecipe:
-    path: /showrecipe
-    defaults: { _controller: healthuserBundle:Recipe:showrecipe }
