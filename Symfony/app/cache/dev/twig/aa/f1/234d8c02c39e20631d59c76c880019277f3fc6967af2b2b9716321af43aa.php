@@ -45,21 +45,9 @@ class __TwigTemplate_aaf1234d8c02c39e20631d59c76c880019277f3fc6967af2b2b9716321a
         $this->displayBlock('javascript', $context, $blocks);
         // line 20
         echo "
-    <script type=\"text/javascript\"
-            src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyA83Uvup9ezN7hjFRCj0FS3V6RySUyUb0o\">
-    </script>
-    <script type=\"text/javascript\" src=\"http://maps.googleapis.com/maps/api/js?libraries=places\"></script>
-    <script type=\"text/javascript\">
-        function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(43.65323, -79.38318),
-                zoom: 8
-            };
-            var map = new google.maps.Map(document.getElementById(\"map-canvas\"),
-                    mapOptions);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    <script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>
+<script type=\"text/javascript\" src=\"http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false\"></script>
+
 ";
     }
 
@@ -176,19 +164,16 @@ class __TwigTemplate_aaf1234d8c02c39e20631d59c76c880019277f3fc6967af2b2b9716321a
     ";
     }
 
-    // line 37
+    // line 25
     public function block_main_content($context, array $blocks = array())
     {
-        // line 38
+        // line 26
         echo "
     <section class=\"col-md-8 main_content\">
 
-
-
         <h1>Find a Gym</h1>
 
-        <div id=\"map-canvas\"></div>
-
+        <div id=\"gmap_canvas\"></div>
         <div class=\"actions\">
             <div class=\"button\">
                 <label for=\"gmap_where\">Where:</label>
@@ -200,15 +185,10 @@ class __TwigTemplate_aaf1234d8c02c39e20631d59c76c880019277f3fc6967af2b2b9716321a
             <div class=\"button\">
                 <label for=\"gmap_type\">Type:</label>
                 <select id=\"gmap_type\">
-                    <option value=\"art_gallery\">art_gallery</option>
-                    <option value=\"atm\">atm</option>
-                    <option value=\"bank\">bank</option>
-                    <option value=\"bar\">bar</option>
-                    <option value=\"cafe\">cafe</option>
-                    <option value=\"food\">food</option>
-                    <option value=\"hospital\">hospital</option>
-                    <option value=\"police\">police</option>
-                    <option value=\"store\">store</option>
+                    <option value=\"gym\">gym</option>
+                    <option value=\"fitness\">fitness</option>
+                    <option value=\"healthy\">Health</option>
+
                 </select>
             </div>
             <div class=\"button\">
@@ -226,12 +206,153 @@ class __TwigTemplate_aaf1234d8c02c39e20631d59c76c880019277f3fc6967af2b2b9716321a
         </div>
 
 
-        </div>
-        </div>
-
-
 
     </section>
+
+<script>
+    var geocoder;
+    var map;
+    var markers = Array();
+    var infos = Array();
+
+    function initialize() {
+        // prepare Geocoder
+        geocoder = new google.maps.Geocoder();
+
+        // set initial position (New York)
+        var myLatlng = new google.maps.LatLng(40.7143528,-74.0059731);
+
+        var myOptions = { // default map options
+            zoom: 14,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    }
+
+    // clear overlays function
+    function clearOverlays() {
+        if (markers) {
+            for (i in markers) {
+                markers[i].setMap(null);
+            }
+            markers = [];
+            infos = [];
+        }
+    }
+
+    // clear infos function
+    function clearInfos() {
+        if (infos) {
+            for (i in infos) {
+                if (infos[i].getMap()) {
+                    infos[i].close();
+                }
+            }
+        }
+    }
+
+    // find address function
+    function findAddress() {
+        var address = document.getElementById(\"gmap_where\").value;
+
+        // script uses our 'geocoder' in order to find location by address name
+        geocoder.geocode( { 'address': address}, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) { // and, if everything is ok
+
+                // we will center map
+                var addrLocation = results[0].geometry.location;
+                map.setCenter(addrLocation);
+
+                // store current coordinates into hidden variables
+                document.getElementById('lat').value = results[0].geometry.location.lat();
+                document.getElementById('lng').value = results[0].geometry.location.lng();
+
+                // and then - add new custom marker
+                var addrMarker = new google.maps.Marker({
+                    position: addrLocation,
+                    map: map,
+                    title: results[0].formatted_address,
+                    icon: 'marker.png'
+                });
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+
+    // find custom places function
+    function findPlaces() {
+
+        // prepare variables (filter)
+        var type = document.getElementById('gmap_type').value;
+        var radius = document.getElementById('gmap_radius').value;
+        var keyword = document.getElementById('gmap_keyword').value;
+
+        var lat = document.getElementById('lat').value;
+        var lng = document.getElementById('lng').value;
+        var cur_location = new google.maps.LatLng(lat, lng);
+
+        // prepare request to Places
+        var request = {
+            location: cur_location,
+            radius: radius,
+            types: [type]
+        };
+        if (keyword) {
+            request.keyword = [keyword];
+        }
+
+        // send request
+        service = new google.maps.places.PlacesService(map);
+        service.search(request, createMarkers);
+    }
+
+    // create markers (from 'findPlaces' function)
+    function createMarkers(results, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+
+            // if we have found something - clear map (overlays)
+            clearOverlays();
+
+            // and create new markers by search result
+            for (var i = 0; i < results.length; i++) {
+                createMarker(results[i]);
+            }
+        } else if (status == google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+            alert('Sorry, nothing is found');
+        }
+    }
+
+    // creare single marker function
+    function createMarker(obj) {
+
+        // prepare new Marker object
+        var mark = new google.maps.Marker({
+            position: obj.geometry.location,
+            map: map,
+            title: obj.name
+        });
+        markers.push(mark);
+
+        // prepare info window
+        var infowindow = new google.maps.InfoWindow({
+            content: '<img src=\"' + obj.icon + '\" /><font style=\"color:#000;\">' + obj.name +
+                    '<br />Rating: ' + obj.rating + '<br />Vicinity: ' + obj.vicinity + '</font>'
+        });
+
+        // add event handler to current marker
+        google.maps.event.addListener(mark, 'click', function() {
+            clearInfos();
+            infowindow.open(map,mark);
+        });
+        infos.push(infowindow);
+    }
+
+    // initialization
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
 ";
     }
 
@@ -247,6 +368,6 @@ class __TwigTemplate_aaf1234d8c02c39e20631d59c76c880019277f3fc6967af2b2b9716321a
 
     public function getDebugInfo()
     {
-        return array (  183 => 38,  180 => 37,  173 => 18,  170 => 17,  166 => 10,  160 => 8,  156 => 7,  151 => 6,  144 => 8,  140 => 7,  135 => 6,  129 => 8,  125 => 7,  120 => 6,  114 => 8,  110 => 7,  105 => 6,  99 => 8,  95 => 7,  90 => 6,  84 => 8,  80 => 7,  75 => 6,  70 => 5,  67 => 4,  47 => 20,  45 => 17,  37 => 11,  34 => 4,  31 => 3,);
+        return array (  171 => 26,  168 => 25,  161 => 18,  158 => 17,  154 => 10,  148 => 8,  144 => 7,  139 => 6,  132 => 8,  128 => 7,  123 => 6,  117 => 8,  113 => 7,  108 => 6,  102 => 8,  98 => 7,  93 => 6,  87 => 8,  83 => 7,  78 => 6,  72 => 8,  68 => 7,  63 => 6,  58 => 5,  55 => 4,  47 => 20,  45 => 17,  37 => 11,  34 => 4,  31 => 3,);
     }
 }
