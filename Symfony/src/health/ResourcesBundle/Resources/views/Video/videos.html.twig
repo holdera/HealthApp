@@ -7,26 +7,52 @@
 
     <h1>Workout Videos</h1>
 
+    {% for tones in tone %}
 <section id="tone" class="workIt col-md-4">
+    <img src="{{ asset('bundles/healthhealthuser/images/vid1.png') }}" class="slider" alt="health" />
+
+    <h3>{{ tones.intensity }}</h3>
+
+    <section class="gone">
+        <h4>{{ tones.workout }}</h4>
+        <p>
+            {{ tones.content }}
+        </p>
+    </section>
 
 </section>
+    {% endfor %}
 
+    {% for c in cardio %}
     <section id="cardio" class="workIt col-md-4">
+        <img src="{{ asset('bundles/healthhealthuser/images/vid2.png') }}" class="slider" alt="health" />
 
+        <h3>{{ c.intensity }}</h3>
+
+        <section class="gone">
+            <h4>{{ c.workout }}</h4>
+            <p>
+                {{ c.content }}
+            </p>
+        </section>
     </section>
+    {% endfor %}
 
+    {% for int in intense %}
     <section id="intense" class="workIt col-md-4">
+        <img src="{{ asset('bundles/healthhealthuser/images/vid3.png') }}" class="slider" alt="health" />
+        <h3>{{ int.intensity }}</h3>
 
+        <section class="gone">
+            <h4>{{ int.workout }}</h4>
+            <p>
+                {{ int.content }}
+            </p>
+        </section>
     </section>
+    {% endfor %}
 
 
 </section>
 
-    <script>
-        //jquery dom manipulation
-
-        $(document).ready(function(){
-            //code here
-        });
-    </script>
 {% endblock %}

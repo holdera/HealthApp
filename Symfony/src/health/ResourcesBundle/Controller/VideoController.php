@@ -20,14 +20,14 @@ class VideoController extends Controller
 
         $query2 = $repository->createQueryBuilder('t')
             ->where("t.id = :id")
-            ->setParameter('id', 2)
+            ->setParameter('id', 3)
             ->getQuery();
 
         $tone = $query2->getResult();
 
         $query3 = $repository->createQueryBuilder('i')
             ->where("i.id = :id")
-            ->setParameter('id', 3)
+            ->setParameter('id', 5)
             ->getQuery();
 
         $intense = $query3->getResult();

@@ -106,6 +106,17 @@ $white:#fff;
   text-shadow: 0 1px 1px #fff;
   width: 150px;
 }
+.gone{
+  background-color: #149155;
+  border-radius: 10px;
+  padding:10px;
+  color:$white;
+  }
+
+.workIt{
+  cursor:pointer;
+}
+
 .button:hover {
   background-color: #ccd9e8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccd9e8), color-stop(100%, #c1d4e8));
