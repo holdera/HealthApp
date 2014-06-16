@@ -2392,6 +2392,7 @@
               <argument key="healthforumBundle">health\forumBundle\Entity</argument>
               <argument key="healthLifestyleBundle">health\LifestyleBundle\Entity</argument>
               <argument key="healthDetoxBundle">health\DetoxBundle\Entity</argument>
+              <argument key="healthuserBundle">health\userBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -2487,6 +2488,17 @@
                     </service>
                   </argument>
                   <argument>health\DetoxBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/userBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>health\userBundle\Entity</argument>
                 </call>
               </service>
             </argument>

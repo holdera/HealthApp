@@ -1,0 +1,27 @@
+{%  extends 'healthhealthUserBundle::layout.html.twig' %}
+
+{% block visual_heading %}
+
+
+{% endblock %}
+
+{% block main_content %}
+
+    {% for mids in mid %}
+        <section class="col-md-9 main_content">
+
+            <h1>{{ mids.bodyPart }}</h1>
+
+            <p>{{ mids.exercise1 }}</p>
+
+            <p>{{ mids.exercise2 }}</p>
+
+            <p>{{ mids.exercise3 }}</p>
+
+
+        </section>
+    {% endfor %}
+
+
+
+{% endblock %}

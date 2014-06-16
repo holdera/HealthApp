@@ -26,6 +26,10 @@ healthhealth_user:
     path: /
     defaults: {_controller: healthhealthUserBundle:Default:index}
 
+Contest:
+    path: /contest
+    defaults: {_controller: healthhealthUserBundle:Contest:show}
+
 life:
   path: /lifestyle
   defaults: {_controller: healthhealthUserBundle:Life:show}
@@ -33,6 +37,18 @@ life:
 Exercise:
     path: /exercise
     defaults: {_controller: healthhealthUserBundle:Exercise:show}
+
+Upper:
+  path: /upperbody
+  defaults: {_controller: healthhealthUserBundle:Upper:show}
+
+Lower:
+  path: /lowerbody
+  defaults: {_controller: healthhealthUserBundle:Lower:show}
+
+Midsection:
+  path: /midsection
+  defaults: {_controller: healthhealthUserBundle:Midsection:show}
 
 Detox:
     path: /detox
@@ -53,6 +69,10 @@ Vegan:
 Forum:
     path: /forum
     defaults: {_controller: healthforumBundle:Forum:show }
+
+Create:
+    path: /newpost
+    defaults: {_controller: healthforumBundle:Create:show }
 
 Resource:
     path: /resource

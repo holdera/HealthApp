@@ -7,25 +7,35 @@
 
         <h1>Health Forum</h1>
 
-        <ul>
-            <li class="forum-title">Newbies</li>
-            <li>Introduce yourself</li>
-        </ul>
+       <a href=""><span class="new">create new thread</span></a>
+    {% for post in posts  %}
+       <table class="table table-condensed">
+           <tr>
+               <th>Subject</th>
+               <th>Poster</th>
+               <th>Posted On</th>
+           </tr>
+           <tr>
+               <td>
+                    <a href="{{ post.permalink }}">
+                        {{ post.title }}</a>
+                   </td>
+               <td>
+                   {{ post.author }}
+                   </td>
+                <td>
+                    Date
+                </td>
+           </tr>
+       </table>
+        {% endfor %}
 
-      <ul>
-          <li class="forum-title">Topics</li>
-          <li>Weightloss</li>
-          <li>transformations</li>
-          <li>Eating</li>
-          <li>Fitness</li>
-      </ul>
+        <table>
+            <tr>
 
-        <ul>
-            <li class="forum-title">Diet</li>
-            <li>Detoxes</li>
-            <li>Vegan</li>
-            <li>Miscellaneous</li>
-        </ul>
+            </tr>
+        </table>
+
 
 
     </section>

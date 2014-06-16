@@ -1,0 +1,49 @@
+$link:#fbf202;
+$light:#ebfeed;
+$main:#481d70;
+$text:#000;
+$white:#fff;
+
+/*.slider{
+
+  width:80%;
+  height:300px;
+  border:solid thin #ccc;
+  overflow: hidden;
+
+}*/
+
+.allBtn{
+  background-color: $main;
+  color:$white;
+  font-size:18px;
+  :hover{
+    color:$link;
+  }
+
+.allForms{
+  display: block;
+  label{display:block; padding: 5px}
+  input[type="radio"]{
+    display:block;
+    float:left;
+  }
+}
+}
+
+.forum-title{
+
+}
+.new{
+  float:right;
+  text-decoration: underline;
+    a:hover{
+      text-decoration: none;
+      color:$main;
+    }
+}
+
+.create{
+  label{display:block;}
+
+}

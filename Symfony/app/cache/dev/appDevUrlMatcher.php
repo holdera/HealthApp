@@ -272,6 +272,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\healthUserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'healthhealth_user',);
         }
 
+        // Contest
+        if ($pathinfo === '/contest') {
+            return array (  '_controller' => 'health\\healthUserBundle\\Controller\\ContestController::showAction',  '_route' => 'Contest',);
+        }
+
         // life
         if ($pathinfo === '/lifestyle') {
             return array (  '_controller' => 'healthhealthUserBundle:Life:show',  '_route' => 'life',);
@@ -280,6 +285,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // Exercise
         if ($pathinfo === '/exercise') {
             return array (  '_controller' => 'health\\healthUserBundle\\Controller\\ExerciseController::showAction',  '_route' => 'Exercise',);
+        }
+
+        // Upper
+        if ($pathinfo === '/upperbody') {
+            return array (  '_controller' => 'health\\healthUserBundle\\Controller\\UpperController::showAction',  '_route' => 'Upper',);
+        }
+
+        // Lower
+        if ($pathinfo === '/lowerbody') {
+            return array (  '_controller' => 'health\\healthUserBundle\\Controller\\LowerController::showAction',  '_route' => 'Lower',);
+        }
+
+        // Midsection
+        if ($pathinfo === '/midsection') {
+            return array (  '_controller' => 'health\\healthUserBundle\\Controller\\MidsectionController::showAction',  '_route' => 'Midsection',);
         }
 
         // Detox
@@ -305,6 +325,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // Forum
         if ($pathinfo === '/forum') {
             return array (  '_controller' => 'health\\forumBundle\\Controller\\ForumController::showAction',  '_route' => 'Forum',);
+        }
+
+        // Create
+        if ($pathinfo === '/newpost') {
+            return array (  '_controller' => 'health\\forumBundle\\Controller\\CreateController::showAction',  '_route' => 'Create',);
         }
 
         // Resource

@@ -54,9 +54,11 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
         $context['_seq'] = twig_ensure_traversable((isset($context["all"]) ? $context["all"] : $this->getContext($context, "all")));
         foreach ($context['_seq'] as $context["_key"] => $context["alls"]) {
             // line 20
-            echo "        <h4>";
+            echo "        <a href=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alls"]) ? $context["alls"] : $this->getContext($context, "alls")), "link"), "html", null, true);
+            echo "\"><h4>";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alls"]) ? $context["alls"] : $this->getContext($context, "alls")), "bodyPart"), "html", null, true);
-            echo "</h4>
+            echo "</h4></a>
         ";
         }
         $_parent = $context['_parent'];
@@ -84,6 +86,6 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
 
     public function getDebugInfo()
     {
-        return array (  66 => 22,  57 => 20,  53 => 19,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
+        return array (  68 => 22,  57 => 20,  53 => 19,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
     }
 }

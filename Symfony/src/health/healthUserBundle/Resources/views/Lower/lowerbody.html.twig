@@ -1,0 +1,27 @@
+{%  extends 'healthhealthUserBundle::layout.html.twig' %}
+
+{% block visual_heading %}
+
+
+{% endblock %}
+
+{% block main_content %}
+
+    {% for lower in low %}
+        <section class="col-md-9 main_content">
+
+            <h1>{{ lower.bodyPart }}</h1>
+
+            <p>{{ lower.exercise1 }}</p>
+
+            <p>{{ lower.exercise2 }}</p>
+
+            <p>{{ lower.exercise3 }}</p>
+
+
+        </section>
+    {% endfor %}
+
+
+
+{% endblock %}

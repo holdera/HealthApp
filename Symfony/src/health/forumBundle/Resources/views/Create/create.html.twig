@@ -1,0 +1,21 @@
+{%  extends 'healthhealthUserBundle::layout.html.twig' %}
+
+
+{% block main_content %}
+
+    <section class="col-md-8 main_content">
+
+        <h1>Health Forum</h1>
+
+        <form class="create" method="post" action="/health/forumBundle/Controller/addPost.php">
+            <label>Topic:</label>
+            <input type="text" name="topic" />
+
+            <label>Body:</label>
+            <textarea name="content"></textarea>
+
+            <input type="submit" name="post" class="btn">
+        </form>
+
+    </section>
+{% endblock %}

@@ -50,7 +50,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 ";
         // line 53
         $this->displayBlock('sideBar', $context, $blocks);
-        // line 81
+        // line 82
         echo "
  <footer class=\"row\">
 
@@ -280,9 +280,10 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
         <aside class=\"sidebar\">
             <h3>Monthly Contest</h3>
-            <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
-                Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
-                normcore odio gluten-free tofu ullamco. </p>
+            <p>Have a health or fitness goal? Want to be features as the Healthy lifestyle Ambasador for the month?
+                Come enter our contest.
+                <span class=\"\"><a href=\"/HealthApp/Symfony/web/app_dev.php/contest\">Learn More</a></span>
+            </p>
         </aside>
 
         <aside class=\" sidebar\">
@@ -311,6 +312,6 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
     public function getDebugInfo()
     {
-        return array (  278 => 54,  275 => 53,  265 => 44,  262 => 43,  257 => 39,  254 => 38,  233 => 19,  230 => 18,  226 => 11,  220 => 9,  216 => 8,  211 => 7,  204 => 9,  200 => 8,  195 => 7,  189 => 9,  185 => 8,  180 => 7,  174 => 9,  170 => 8,  165 => 7,  159 => 9,  155 => 8,  150 => 7,  144 => 9,  140 => 8,  135 => 7,  130 => 6,  127 => 5,  122 => 12,  120 => 5,  115 => 2,  112 => 1,  54 => 81,  52 => 53,  48 => 51,  46 => 43,  42 => 41,  40 => 38,  37 => 37,  35 => 18,  31 => 16,  28 => 14,  25 => 1,);
+        return array (  278 => 54,  275 => 53,  265 => 44,  262 => 43,  257 => 39,  254 => 38,  233 => 19,  230 => 18,  226 => 11,  220 => 9,  216 => 8,  211 => 7,  204 => 9,  200 => 8,  195 => 7,  189 => 9,  185 => 8,  180 => 7,  174 => 9,  170 => 8,  165 => 7,  159 => 9,  155 => 8,  150 => 7,  144 => 9,  140 => 8,  135 => 7,  130 => 6,  127 => 5,  122 => 12,  120 => 5,  115 => 2,  112 => 1,  54 => 82,  52 => 53,  48 => 51,  46 => 43,  42 => 41,  40 => 38,  37 => 37,  35 => 18,  31 => 16,  28 => 14,  25 => 1,);
     }
 }

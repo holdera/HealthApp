@@ -4,10 +4,7 @@
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="snacks" type="text" column="snacks" nullable="false"/>
-    <field name="breakfast" type="text" column="breakfast" nullable="false"/>
-    <field name="lunch" type="text" column="lunch" nullable="false"/>
-    <field name="dinner" type="text" column="dinner" nullable="false"/>
-    <field name="general" type="text" column="general" nullable="false"/>
+    <field name="contentTitle" type="text" column="content_title" nullable="false"/>
+    <field name="content" type="text" column="content" nullable="false"/>
   </entity>
 </doctrine-mapping>

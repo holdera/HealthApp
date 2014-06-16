@@ -609,9 +609,10 @@ class appDevDebugProjectContainer extends Container
         $e->addDriver($d, 'health\\forumBundle\\Entity');
         $e->addDriver($d, 'health\\LifestyleBundle\\Entity');
         $e->addDriver($d, 'health\\DetoxBundle\\Entity');
+        $e->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($this->get('annotation_reader'), array(0 => '/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/userBundle/Entity')), 'health\\userBundle\\Entity');
 
         $f = new \Doctrine\ORM\Configuration();
-        $f->setEntityNamespaces(array('healthhealthUserBundle' => 'health\\healthUserBundle\\Entity', 'healthforumBundle' => 'health\\forumBundle\\Entity', 'healthLifestyleBundle' => 'health\\LifestyleBundle\\Entity', 'healthDetoxBundle' => 'health\\DetoxBundle\\Entity'));
+        $f->setEntityNamespaces(array('healthhealthUserBundle' => 'health\\healthUserBundle\\Entity', 'healthforumBundle' => 'health\\forumBundle\\Entity', 'healthLifestyleBundle' => 'health\\LifestyleBundle\\Entity', 'healthDetoxBundle' => 'health\\DetoxBundle\\Entity', 'healthuserBundle' => 'health\\userBundle\\Entity'));
         $f->setMetadataCacheImpl($a);
         $f->setQueryCacheImpl($b);
         $f->setResultCacheImpl($c);

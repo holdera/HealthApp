@@ -33,25 +33,54 @@ class __TwigTemplate_a44a68adad6b91d6603e39d7fce2bd9d69faa8e7690b25745c71f270836
 
         <h1>Health Forum</h1>
 
-        <ul>
-            <li class=\"forum-title\">Newbies</li>
-            <li>Introduce yourself</li>
-        </ul>
+       <a href=\"\"><span class=\"new\">create new thread</span></a>
+    ";
+        // line 11
+        $context['_parent'] = (array) $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) ? $context["posts"] : $this->getContext($context, "posts")));
+        foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
+            // line 12
+            echo "       <table class=\"table table-condensed\">
+           <tr>
+               <th>Subject</th>
+               <th>Poster</th>
+               <th>Posted On</th>
+           </tr>
+           <tr>
+               <td>
+                    <a href=\"";
+            // line 20
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "permalink"), "html", null, true);
+            echo "\">
+                        ";
+            // line 21
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "title"), "html", null, true);
+            echo "</a>
+                   </td>
+               <td>
+                   ";
+            // line 24
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["post"]) ? $context["post"] : $this->getContext($context, "post")), "author"), "html", null, true);
+            echo "
+                   </td>
+                <td>
+                    Date
+                </td>
+           </tr>
+       </table>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 32
+        echo "
+        <table>
+            <tr>
 
-      <ul>
-          <li class=\"forum-title\">Topics</li>
-          <li>Weightloss</li>
-          <li>transformations</li>
-          <li>Eating</li>
-          <li>Fitness</li>
-      </ul>
+            </tr>
+        </table>
 
-        <ul>
-            <li class=\"forum-title\">Diet</li>
-            <li>Detoxes</li>
-            <li>Vegan</li>
-            <li>Miscellaneous</li>
-        </ul>
 
 
     </section>
@@ -70,6 +99,6 @@ class __TwigTemplate_a44a68adad6b91d6603e39d7fce2bd9d69faa8e7690b25745c71f270836
 
     public function getDebugInfo()
     {
-        return array (  31 => 5,  28 => 4,);
+        return array (  77 => 32,  63 => 24,  57 => 21,  53 => 20,  43 => 12,  39 => 11,  31 => 5,  28 => 4,);
     }
 }

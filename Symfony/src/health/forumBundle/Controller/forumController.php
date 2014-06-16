@@ -8,6 +8,11 @@ class forumController extends Controller
 {
     public function showAction()
     {
-        return $this->render('healthforumBundle:Forum:Forum.html.twig');
+        $repository=$this->getDoctrine()
+            ->getRepository('healthforumBundle:forum');
+
+        $posts=$repository->findAll();
+
+        return $this->render('healthforumBundle:Forum:Forum.html.twig', array('posts'=>$posts));
     }
 }

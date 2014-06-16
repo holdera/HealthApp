@@ -18,7 +18,7 @@
     <field name="logout" type="string" column="logout" length="30" nullable="false"/>
     <field name="newThread" type="string" column="new_thread" length="40" nullable="false"/>
     <field name="subject" type="string" column="subject" length="30" nullable="false"/>
-    <field name="body" type="string" column="body" length="30" nullable="false"/>
+    <field name="body" type="text" column="body"  nullable="false"/>
     <field name="submit" type="string" column="submit" length="30" nullable="false"/>
     <field name="postedOn" type="string" column="posted_on" length="30" nullable="false"/>
     <field name="postedBy" type="string" column="posted_by" length="30" nullable="false"/>
