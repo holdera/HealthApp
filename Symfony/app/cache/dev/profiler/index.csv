@@ -74,3 +74,7 @@ f40670,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,
 94bafc,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402953557,
 0edb40,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402953607,
 ec46ac,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/resource,1402954233,
+4af61f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402955562,e6d6e3
+e6d6e3,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402955562,
+cc8667,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402957345,
+deb352,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/exercise,1402958941,

@@ -362,6 +362,70 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\CheatController::showAction',  '_route' => 'Cheat',);
         }
 
+        if (0 === strpos($pathinfo, '/register')) {
+            // register_register
+            if ($pathinfo === '/register') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RegisterController::registerAction',  '_route' => 'register_register',);
+            }
+
+            // account_create
+            if ($pathinfo === '/register/create') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RegisterController::createAction',  '_route' => 'account_create',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/log')) {
+            // Login_login
+            if ($pathinfo === '/login') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\LoginController::indexAction',  '_route' => 'Login_login',);
+            }
+
+            // Login_logout
+            if ($pathinfo === '/logout') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\LoginController::logoutAction',  '_route' => 'Login_logout',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/recover')) {
+            // Recover_recover
+            if ($pathinfo === '/recover') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RecoverController::recoverAction',  '_route' => 'Recover_recover',);
+            }
+
+            // Recover_security
+            if ($pathinfo === '/recover/security') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RecoverController::securityAction',  '_route' => 'Recover_security',);
+            }
+
+            // Recover_password
+            if ($pathinfo === '/recover/password') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RecoverController::passwordAction',  '_route' => 'Recover_password',);
+            }
+
+        }
+
+        // User_cpassword
+        if ($pathinfo === '/cpassword') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\UserController::cpasswordAction',  '_route' => 'User_cpassword',);
+        }
+
+        // Recipe_addrecipe
+        if ($pathinfo === '/addrecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::addrecipeAction',  '_route' => 'Recipe_addrecipe',);
+        }
+
+        // Recipe_showrecipe
+        if ($pathinfo === '/showrecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::showrecipeAction',  '_route' => 'Recipe_showrecipe',);
+        }
+
+        // Upload_upload
+        if ($pathinfo === '/upload') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\UploadController::uploadAction',  '_route' => 'Upload_upload',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

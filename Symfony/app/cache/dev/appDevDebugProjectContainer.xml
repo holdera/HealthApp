@@ -443,7 +443,7 @@
     <parameter key="assetic.write_to">/Applications/MAMP/htdocs/HealthApp/Symfony/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
-    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
+    <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -2421,6 +2421,7 @@
               <argument key="healthforumBundle">health\forumBundle\Entity</argument>
               <argument key="healthLifestyleBundle">health\LifestyleBundle\Entity</argument>
               <argument key="healthDetoxBundle">health\DetoxBundle\Entity</argument>
+              <argument key="healthResourcesBundle">health\ResourcesBundle\Entity</argument>
               <argument key="healthuserBundle">health\userBundle\Entity</argument>
             </argument>
           </call>
@@ -2462,6 +2463,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/config/doctrine">health\ResourcesBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2478,6 +2480,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/config/doctrine">health\ResourcesBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2494,6 +2497,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/config/doctrine">health\ResourcesBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2510,6 +2514,7 @@
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
                         <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/config/doctrine">health\ResourcesBundle\Entity</argument>
                       </argument>
                       <call method="setGlobalBasename">
                         <argument>mapping</argument>
@@ -2517,6 +2522,23 @@
                     </service>
                   </argument>
                   <argument>health\DetoxBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/healthUserBundle/Resources/config/doctrine">health\healthUserBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/forumBundle/Resources/config/doctrine">health\forumBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/LifestyleBundle/Resources/config/doctrine">health\LifestyleBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/DetoxBundle/Resources/config/doctrine">health\DetoxBundle\Entity</argument>
+                        <argument key="/Applications/MAMP/htdocs/HealthApp/Symfony/src/health/ResourcesBundle/Resources/config/doctrine">health\ResourcesBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
+                    </service>
+                  </argument>
+                  <argument>health\ResourcesBundle\Entity</argument>
                 </call>
                 <call method="addDriver">
                   <argument type="service">
