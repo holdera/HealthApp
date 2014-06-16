@@ -50,7 +50,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 ";
         // line 53
         $this->displayBlock('sideBar', $context, $blocks);
-        // line 82
+        // line 84
         echo "
  <footer class=\"row\">
 
@@ -279,25 +279,36 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
     <aside class=\"col-md-3\" id=\"page_side\">
 
         <aside class=\"sidebar\">
-            <h3>Monthly Contest</h3>
+            <a href=\"/HealthApp/Symfony/web/app_dev.php/contest\"><img src=\"";
+        // line 58
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/sideIMG1.png"), "html", null, true);
+        echo "\" alt=\"contest\" /></a>
+
+            <a href=\"/HealthApp/Symfony/web/app_dev.php/contest\"><h3>Monthly Contest</h3>
             <p>Have a health or fitness goal? Want to be features as the Healthy lifestyle Ambasador for the month?
                 Come enter our contest.
-                <span class=\"\"><a href=\"/HealthApp/Symfony/web/app_dev.php/contest\">Learn More</a></span>
             </p>
+                </a>
         </aside>
 
         <aside class=\" sidebar\">
-            <h3>Latest Posts</h3>
-            <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
-                Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
-                normcore odio gluten-free tofu ullamco. </p>
+            <a href=\"/HealthApp/Symfony/web/app_dev.php/upperbody\"><img src=\"";
+        // line 68
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/sideIMG2.png"), "html", null, true);
+        echo "\" alt=\"weights\" /></a>
+                <h3>Sexy Arms</h3>
+            <p>Check out this upper body workout to get lean, toned sexy arms for the summer. </p></a>
         </aside>
 
         <aside class=\" sidebar\">
-            <h3>Latest Recipes</h3>
-            <p>Carles anim wayfarers chambray, mumblecore consequat flannel small batch sunt pug Wes
-                Anderson deserunt. Kogi locavore elit viral, placeat Portland umami iPhone shabby chic
-                normcore odio gluten-free tofu ullamco. </p>
+            <a href=\"/HealthApp/Symfony/web/app_dev.php/recipes\">
+                <img src=\"";
+        // line 75
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/sideIMG3.png"), "html", null, true);
+        echo "\" alt=\"recipes\" /></a>
+            <h3>Healthy Recipes</h3>
+            <p>Check out our healthy delicious recipes that will not compromise your goals or your taste buds</p>
+                </a>
         </aside>
 
     </aside>
@@ -312,6 +323,6 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
     public function getDebugInfo()
     {
-        return array (  278 => 54,  275 => 53,  265 => 44,  262 => 43,  257 => 39,  254 => 38,  233 => 19,  230 => 18,  226 => 11,  220 => 9,  216 => 8,  211 => 7,  204 => 9,  200 => 8,  195 => 7,  189 => 9,  185 => 8,  180 => 7,  174 => 9,  170 => 8,  165 => 7,  159 => 9,  155 => 8,  150 => 7,  144 => 9,  140 => 8,  135 => 7,  130 => 6,  127 => 5,  122 => 12,  120 => 5,  115 => 2,  112 => 1,  54 => 82,  52 => 53,  48 => 51,  46 => 43,  42 => 41,  40 => 38,  37 => 37,  35 => 18,  31 => 16,  28 => 14,  25 => 1,);
+        return array (  307 => 75,  297 => 68,  284 => 58,  278 => 54,  275 => 53,  265 => 44,  262 => 43,  257 => 39,  254 => 38,  233 => 19,  230 => 18,  226 => 11,  220 => 9,  216 => 8,  211 => 7,  204 => 9,  200 => 8,  195 => 7,  189 => 9,  185 => 8,  180 => 7,  174 => 9,  170 => 8,  165 => 7,  159 => 9,  155 => 8,  150 => 7,  144 => 9,  140 => 8,  135 => 7,  130 => 6,  127 => 5,  122 => 12,  120 => 5,  115 => 2,  112 => 1,  54 => 84,  46 => 43,  42 => 41,  40 => 38,  37 => 37,  35 => 18,  31 => 16,  28 => 14,  25 => 1,  98 => 46,  83 => 34,  68 => 22,  62 => 18,  52 => 53,  48 => 51,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
     }
 }

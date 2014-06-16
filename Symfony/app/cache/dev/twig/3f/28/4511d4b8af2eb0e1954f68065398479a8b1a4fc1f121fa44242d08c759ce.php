@@ -33,8 +33,34 @@ class __TwigTemplate_3f284511d4b8af2eb0e1954f68065398479a8b1a4fc1f121fa44242d08c
 
         <h1>Resources</h1>
 
-        <p>Text will go here</p>
+       <section class=\"col-md-4\">
 
+           <h2>Find a Gym</h2>
+           <p>
+               Have you decided to start working out but you do not know where. Click here to find the closes health clubs
+               in your areas.
+           </p>
+       </section>
+
+        <section class=\"col-md-4\">
+
+            <h2>Diet Reviews</h2>
+
+            <p>
+                Have you decided to start working out but you do not know where. Click here to find the closes health clubs
+                in your areas.
+            </p>
+
+        </section>
+
+        <section class=\"col-md-4\">
+
+            <h2>Top Workout Videos</h2>
+            <p>
+                Have you decided to start working out but you do not know where. Click here to find the closes health clubs
+                in your areas.
+            </p>
+        </section>
 
 
     </section>

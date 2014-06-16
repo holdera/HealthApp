@@ -72,7 +72,8 @@ Forum:
 
 Create:
     path: /newpost
-    defaults: {_controller: healthforumBundle:Create:show }
+    defaults: {_controller: healthforumBundle:Create:create }
+
 
 Resource:
     path: /resource

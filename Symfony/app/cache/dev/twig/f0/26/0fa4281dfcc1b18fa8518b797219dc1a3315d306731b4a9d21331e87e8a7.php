@@ -171,7 +171,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
     {
         // line 19
         echo "        <script src=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery.stellar.min.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/skrollr.min.js"), "html", null, true);
         echo "\"></script>
         <script src=\"";
         // line 20
@@ -246,7 +246,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
         <section class=\"row first\">
 
-    <section class=\"col-md-6 col-md-push-1 welcome\">
+    <section class=\"col-md-6 col-md-push-1 welcome da\">
         <h1>Change Your Lifestyle!</h1>
 
         <p>Fingerstache wayfarers mlkshk, flexitarian skateboard paleo banh mi Austin.
@@ -259,7 +259,7 @@ class __TwigTemplate_f0260fa4281dfcc1b18fa8518b797219dc1a3315d306731b4a9d21331e8
 
 
 
-    <section class=\"col-md-6 move \">
+    <section class=\"col-md-6 move\">
         <h1>Login/Sign Up</h1>
 <form class=\"form-horizontal login\" method=\"post\">
 

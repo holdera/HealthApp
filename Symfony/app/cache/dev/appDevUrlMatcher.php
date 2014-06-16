@@ -329,7 +329,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // Create
         if ($pathinfo === '/newpost') {
-            return array (  '_controller' => 'health\\forumBundle\\Controller\\CreateController::showAction',  '_route' => 'Create',);
+            return array (  '_controller' => 'health\\forumBundle\\Controller\\CreateController::createAction',  '_route' => 'Create',);
         }
 
         // Resource

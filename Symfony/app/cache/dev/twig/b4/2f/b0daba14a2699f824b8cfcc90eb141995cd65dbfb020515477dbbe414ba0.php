@@ -54,7 +54,21 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
         $context['_seq'] = twig_ensure_traversable((isset($context["all"]) ? $context["all"] : $this->getContext($context, "all")));
         foreach ($context['_seq'] as $context["_key"] => $context["alls"]) {
             // line 20
-            echo "        <a href=\"";
+            echo "        <img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/fitImg1.png"), "html", null, true);
+            echo "\" alt=\"recipes\" />
+
+        <img src=\"";
+            // line 22
+            echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/fitImg2.png"), "html", null, true);
+            echo "\" alt=\"recipes\" />
+
+        <img src=\"";
+            // line 24
+            echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/fitImg3.png"), "html", null, true);
+            echo "\" alt=\"recipes\" />
+        <a href=\"";
+            // line 25
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alls"]) ? $context["alls"] : $this->getContext($context, "alls")), "link"), "html", null, true);
             echo "\"><h4>";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["alls"]) ? $context["alls"] : $this->getContext($context, "alls")), "bodyPart"), "html", null, true);
@@ -64,7 +78,7 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['alls'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 22
+        // line 27
         echo "
 
     </section>
@@ -86,6 +100,6 @@ class __TwigTemplate_b42fb0daba14a2699f824b8cfcc90eb141995cd65dbfb020515477dbbe4
 
     public function getDebugInfo()
     {
-        return array (  68 => 22,  57 => 20,  53 => 19,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
+        return array (  82 => 27,  72 => 25,  68 => 24,  63 => 22,  57 => 20,  53 => 19,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
     }
 }

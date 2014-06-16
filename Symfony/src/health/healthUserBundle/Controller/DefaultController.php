@@ -10,15 +10,9 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $repository = $this->getDoctrine()
-            ->getRepository('healthhealthUserBundle:Navigation');
 
-        $nav = $this->getDoctrine()->getManager();
-        $query = $nav->createQuery(
-            'SELECT n FROM healthhealthUserBundle:Navigation n'
-        );
 
-        $navigation = $query->getResult();
+
 
         return $this->render('healthhealthUserBundle:Default:index.html.twig');
 

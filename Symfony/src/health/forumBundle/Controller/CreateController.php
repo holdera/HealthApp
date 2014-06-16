@@ -3,20 +3,16 @@
 namespace health\forumBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\BrowserKit\Response;
+
+use Symfony\forumBundle\Entity\forum;
 
 class CreateController extends Controller
 {
-    public function showAction()
-    {
 
-        return $this->render('healthforumBundle:Create:create.html.twig');
-    }
-/*
     public function createAction(){
 
 
-        $forum = new Post();
+        $forum = new forum();
         $forum->setTitle(['topic']);
         $forum->setContent(['content']);
         $forum->setAuthor('Anonymous');
@@ -26,7 +22,7 @@ class CreateController extends Controller
         $em->flush();
 
         return new Response('Thanks for posting');
-    }*/
+    }
 }
 
 /**

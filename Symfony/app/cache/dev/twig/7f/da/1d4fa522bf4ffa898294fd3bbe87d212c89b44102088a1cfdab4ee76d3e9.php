@@ -63,6 +63,11 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
        <section class=\"col-md-4\">
 
+           <img src=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/contImg1.png"), "html", null, true);
+        echo "\" alt=\"recipes\" />
+
            <h3>Ideal Way of Eating</h3>
 
             <a href=\"/HealthApp/Symfony/web/app_dev.php/healthsample\">
@@ -72,6 +77,11 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
        </section>
 
        <section class=\"col-md-4\">
+
+           <img src=\"";
+        // line 34
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/contImg2.png"), "html", null, true);
+        echo "\" alt=\"recipes\" />
 
            <h3>More Green = More Lean</h3>
 
@@ -83,7 +93,12 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
        <section class=\"col-md-4\">
 
-           <h3>Healthy Cheat Generator</h3>
+           <img src=\"";
+        // line 46
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/contImg3.png"), "html", null, true);
+        echo "\" alt=\"recipes\" />
+
+           <h3>BMI & Heart Rate Calculator</h3>
 
            <a href=\"/HealthApp/Symfony/web/app_dev.php/cheat-generator\">
                <p>Cheat days can fuel your body but also make you lose track, this generator will help
@@ -111,6 +126,6 @@ class __TwigTemplate_7fda1d4fa522bf4ffa898294fd3bbe87d212c89b44102088a1cfdab4ee7
 
     public function getDebugInfo()
     {
-        return array (  62 => 18,  52 => 15,  48 => 14,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
+        return array (  98 => 46,  83 => 34,  68 => 22,  62 => 18,  52 => 15,  48 => 14,  41 => 9,  38 => 8,  32 => 4,  29 => 3,);
     }
 }

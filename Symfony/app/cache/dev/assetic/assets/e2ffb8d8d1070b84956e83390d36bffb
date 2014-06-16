@@ -1,4 +1,0 @@
-.slider {
-  width: 60%;
-  height: 300px;
-  border: solid thin #ccc; }

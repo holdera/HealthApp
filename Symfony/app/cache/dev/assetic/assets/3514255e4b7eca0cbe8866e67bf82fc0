@@ -1,7 +1,0 @@
-.allBtn {
-  padding: 10px;
-  background-color: #481d70;
-  color: white;
-  font-size: 18px; }
-  .allBtn :hover {
-    color: #fbf202; }
