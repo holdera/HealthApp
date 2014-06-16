@@ -134,3 +134,9 @@ e5c7b2,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/cpas
 485f6c,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1402961503,
 829f14,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1402961639,
 >>>>>>> FETCH_HEAD
+ad480b,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402962632,8e3521
+8e3521,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/forum,1402962632,
+f44566,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402962647,
+2835c8,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402962696,
+1d3c82,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402962951,
+cfe81d,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402962954,
