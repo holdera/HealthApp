@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 7653e0,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/newpost,1402938734,
 c29260,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402939519,
 efd651,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402939524,
@@ -102,3 +103,34 @@ c8ac65,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,14
 1e5ec9,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402961903,
 8b647f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402961953,
 852253,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962048,
+=======
+ef407d,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1402960760,
+7a8c81,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960779,adc0f4
+adc0f4,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960779,
+6af8f0,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960808,
+e75c0f,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960905,
+d68135,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960910,
+6d286a,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960941,
+eef796,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1402960950,
+4fc835,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402960958,
+5952e6,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961015,
+a888c8,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961032,
+44fc58,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961095,
+c46965,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961155,
+5d2e9d,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1402961161,
+982df1,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961169,
+c601f8,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961244,
+b3b5ef,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961259,1520fa
+1520fa,::1,POST,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961259,
+952478,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961303,
+ed7203,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961314,3b5f49
+3b5f49,::1,POST,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961314,
+cd07a5,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961344,
+75b287,::1,POST,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402961358,
+e5c7b2,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/cpassword,1402961364,
+44b1e6,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/addrecipe,1402961369,9a0e42
+9a0e42,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/addrecipe,1402961369,
+631159,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/addrecipe,1402961496,
+485f6c,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1402961503,
+829f14,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1402961639,
+>>>>>>> FETCH_HEAD
