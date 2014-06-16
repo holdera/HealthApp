@@ -28,6 +28,61 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $request = $this->request;
 
         if (0 === strpos($pathinfo, '/css')) {
+            if (0 === strpos($pathinfo, '/css/2cd4855')) {
+                // _assetic_2cd4855
+                if ($pathinfo === '/css/2cd4855.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_2cd4855',);
+                }
+
+                if (0 === strpos($pathinfo, '/css/2cd4855_part_1_')) {
+                    if (0 === strpos($pathinfo, '/css/2cd4855_part_1_bootstrap')) {
+                        // _assetic_2cd4855_0
+                        if ($pathinfo === '/css/2cd4855_part_1_bootstrap-responsive_1.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_2cd4855_0',);
+                        }
+
+                        // _assetic_2cd4855_1
+                        if ($pathinfo === '/css/2cd4855_part_1_bootstrap_2.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_2cd4855_1',);
+                        }
+
+                        // _assetic_2cd4855_2
+                        if ($pathinfo === '/css/2cd4855_part_1_bootstrap.min_3.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_2cd4855_2',);
+                        }
+
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/2cd4855_part_1_innerPage_')) {
+                        // _assetic_2cd4855_3
+                        if ($pathinfo === '/css/2cd4855_part_1_innerPage_4.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 3,  '_format' => 'css',  '_route' => '_assetic_2cd4855_3',);
+                        }
+
+                        // _assetic_2cd4855_4
+                        if ($pathinfo === '/css/2cd4855_part_1_innerPage_5.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 4,  '_format' => 'css',  '_route' => '_assetic_2cd4855_4',);
+                        }
+
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/2cd4855_part_1_styles_')) {
+                        // _assetic_2cd4855_5
+                        if ($pathinfo === '/css/2cd4855_part_1_styles_6.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 5,  '_format' => 'css',  '_route' => '_assetic_2cd4855_5',);
+                        }
+
+                        // _assetic_2cd4855_6
+                        if ($pathinfo === '/css/2cd4855_part_1_styles_7.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '2cd4855',  'pos' => 6,  '_format' => 'css',  '_route' => '_assetic_2cd4855_6',);
+                        }
+
+                    }
+
+                }
+
+            }
+
             if (0 === strpos($pathinfo, '/css/4f9dc43')) {
                 // _assetic_4f9dc43
                 if ($pathinfo === '/css/4f9dc43.css') {
@@ -350,6 +405,57 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         // Cheat
         if ($pathinfo === '/cheat-generator') {
             return array (  '_controller' => 'health\\LifestyleBundle\\Controller\\CheatController::showAction',  '_route' => 'Cheat',);
+        }
+
+        // register_register
+        if ($pathinfo === '/register') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RegisterController::registerAction',  '_route' => 'register_register',);
+        }
+
+        if (0 === strpos($pathinfo, '/log')) {
+            // Login_login
+            if ($pathinfo === '/login') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\LoginController::indexAction',  '_route' => 'Login_login',);
+            }
+
+            // Login_logout
+            if ($pathinfo === '/logout') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\LoginController::logoutAction',  '_route' => 'Login_logout',);
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/recover')) {
+            // Recover_recover
+            if ($pathinfo === '/recover') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RecoverController::recoverAction',  '_route' => 'Recover_recover',);
+            }
+
+            // Recover_security
+            if ($pathinfo === '/recover/security') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RecoverController::securityAction',  '_route' => 'Recover_security',);
+            }
+
+            // Recover_password
+            if ($pathinfo === '/recover/password') {
+                return array (  '_controller' => 'health\\userBundle\\Controller\\RecoverController::passwordAction',  '_route' => 'Recover_password',);
+            }
+
+        }
+
+        // User_cpassword
+        if ($pathinfo === '/cpassword') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\UserController::cpasswordAction',  '_route' => 'User_cpassword',);
+        }
+
+        // Recipe_addrecipe
+        if ($pathinfo === '/addrecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::addrecipeAction',  '_route' => 'Recipe_addrecipe',);
+        }
+
+        // Recipe_showrecipe
+        if ($pathinfo === '/showrecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::showrecipeAction',  '_route' => 'Recipe_showrecipe',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
