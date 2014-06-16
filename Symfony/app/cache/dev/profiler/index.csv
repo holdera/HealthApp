@@ -137,3 +137,6 @@ e5c7b2,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/cpas
 5b7d62,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962277,5418a4
 5418a4,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962277,
 613fdc,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962322,
+ae5973,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962398,
+42e34f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/videos,1402962451,
+335218,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402962455,
