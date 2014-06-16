@@ -9,7 +9,7 @@
     <field name="ingredients" type="text" column="ingredients" nullable="false"/>
     <field name="rProcedure" type="text" column="r_procedure" nullable="false"/>
     <field name="image" type="string" column="image" length="80" nullable="false"/>
-    <field name="postedOn" type="date" column="posted_on" nullable="false"/>
+    <field name="postedOn" type="datetime" column="posted_on" nullable="false"/>
     <field name="postedBy" type="string" column="posted_by" length="50" nullable="false"/>
   </entity>
 </doctrine-mapping>

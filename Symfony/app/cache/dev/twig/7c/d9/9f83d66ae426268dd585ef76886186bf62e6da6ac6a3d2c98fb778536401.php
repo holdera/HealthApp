@@ -258,7 +258,7 @@ class __TwigTemplate_7cd99f83d66ae426268dd585ef76886186bf62e6da6ac6a3d2c98fb7785
             <input type=\"text\" id=\"username\" class=\"input-block-level\" name=\"username\" placeholder=\"Username\" data-trigger=\"change\" data-required=\"true\">
             <input type=\"password\" id=\"password\" class=\"input-block-level\" name=\"password\" placeholder=\"Password\" data-trigger=\"change\" data-required=\"true\">
             <br />
-            <label class=\"checkbox\" name=\"remember\" value=\"remember-me\">Remember me</label>
+            <label class=\"checkbox\"><input type=\"checkbox\" name=\"remember\" value=\"remember-me\">Remember me</label>
             <button class=\"btn btn-large btn-primary\" type=\"submit\">Login</button><br />
             <a href =\"";
         // line 64
