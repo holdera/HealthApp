@@ -200,8 +200,8 @@ class __TwigTemplate_aaf1234d8c02c39e20631d59c76c880019277f3fc6967af2b2b9716321a
                     <option value=\"5000\">5000</option>
                 </select>
             </div>
-            <input type=\"hidden\" id=\"lat\" name=\"lat\" value=\"40.7143528\" />
-            <input type=\"hidden\" id=\"lng\" name=\"lng\" value=\"-74.0059731\" />
+            <input type=\"hidden\" id=\"lat\" name=\"lat\" value=\"43.7001100\" />
+            <input type=\"hidden\" id=\"lng\" name=\"lng\" value=\"-79.4163000\" />
             <div id=\"button1\" class=\"button\" onclick=\"findPlaces(); return false;\">Search for objects</div>
         </div>
 

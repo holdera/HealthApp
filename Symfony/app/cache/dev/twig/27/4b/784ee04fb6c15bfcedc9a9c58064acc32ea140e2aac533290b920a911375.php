@@ -14,6 +14,7 @@ class __TwigTemplate_274b784ee04fb6c15bfcedc9a9c58064acc32ea140e2aac533290b920a9
             'stylesheets' => array($this, 'block_stylesheets'),
             'visual_heading' => array($this, 'block_visual_heading'),
             'main_content' => array($this, 'block_main_content'),
+            'sideBar' => array($this, 'block_sideBar'),
         );
     }
 
@@ -198,11 +199,6 @@ class __TwigTemplate_274b784ee04fb6c15bfcedc9a9c58064acc32ea140e2aac533290b920a9
         unset($context["asset_url"]);
         // line 12
         echo "<style type=\"text/css\">
-        body {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f5f5f5;
-        }
 
         .form-signin {
             max-width: 600px;
@@ -233,31 +229,50 @@ class __TwigTemplate_274b784ee04fb6c15bfcedc9a9c58064acc32ea140e2aac533290b920a9
 ";
     }
 
-    // line 47
+    // line 42
     public function block_visual_heading($context, array $blocks = array())
     {
-        // line 48
+        // line 43
         echo "
 
 ";
     }
 
-    // line 52
+    // line 47
     public function block_main_content($context, array $blocks = array())
     {
-        // line 53
+        // line 48
         echo "
     <section class=\"col-md-9 main_content\">
 <div class=\"container\">
 
        <h2>Hello ";
-        // line 57
+        // line 52
         echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
         echo "</h2>
-    </div> 
+    </div>
+
+        <section>
+            Hello Welcome your Healthy Lifestyle Portal!
+
+            <p>
+                elly beans marshmallow macaroon cake gingerbread bonbon dragée. Ice cream chocolate bar macaroon chocolate jelly-o biscuit. Marzipan chocolate bar danish. Dragée toffee biscuit donut jujubes. Sugar plum dragée candy canes cotton candy donut pastry ice cream. Cotton candy cookie chocolate cake marzipan bear claw pie cheesecake sweet roll macaroon. Topping sesame snaps caramels. Tart sugar plum jelly icing tiramisu powder. Cake sugar plum gingerbread cake icing cookie tart unerdwear.com. Jujubes biscuit lemon drops caramels dragée croissant topping. Gummies liquorice cookie gummi bears ice cream chupa chups topping. Chupa chups sesame snaps carrot cake chocolate cake candy ice cream icing croissant pie. Croissant macaroon donut apple pie toffee pudding candy bear claw macaroon. Chocolate bar brownie ice cream
+            </p>
+        </section>
     
     </section>
-";
+    ";
+        // line 64
+        $this->displayBlock('sideBar', $context, $blocks);
+    }
+
+    public function block_sideBar($context, array $blocks = array())
+    {
+        // line 65
+        echo "        <section style=\"display:none;\">
+
+        </section>
+        ";
     }
 
     public function getTemplateName()
@@ -272,6 +287,6 @@ class __TwigTemplate_274b784ee04fb6c15bfcedc9a9c58064acc32ea140e2aac533290b920a9
 
     public function getDebugInfo()
     {
-        return array (  255 => 57,  249 => 53,  319 => 53,  303 => 42,  295 => 37,  276 => 27,  263 => 19,  260 => 18,  256 => 11,  124 => 44,  113 => 9,  23 => 2,  281 => 96,  236 => 77,  228 => 75,  213 => 70,  205 => 68,  197 => 66,  192 => 64,  335 => 65,  331 => 64,  326 => 63,  323 => 62,  289 => 75,  280 => 72,  266 => 96,  261 => 43,  234 => 9,  215 => 8,  194 => 10,  191 => 16,  181 => 7,  161 => 7,  148 => 8,  134 => 8,  129 => 7,  110 => 40,  104 => 7,  100 => 38,  81 => 9,  58 => 5,  316 => 52,  306 => 43,  301 => 60,  286 => 52,  277 => 49,  272 => 26,  259 => 43,  250 => 9,  245 => 39,  237 => 47,  232 => 76,  223 => 73,  218 => 30,  210 => 7,  202 => 22,  190 => 9,  186 => 8,  172 => 8,  167 => 7,  160 => 10,  152 => 8,  118 => 9,  114 => 8,  90 => 8,  84 => 10,  76 => 26,  65 => 10,  34 => 4,  53 => 7,  378 => 184,  358 => 167,  328 => 140,  296 => 114,  225 => 7,  184 => 25,  178 => 20,  153 => 8,  146 => 54,  137 => 9,  97 => 13,  77 => 8,  307 => 62,  297 => 68,  284 => 97,  275 => 47,  265 => 64,  262 => 43,  257 => 42,  233 => 19,  226 => 11,  216 => 71,  211 => 28,  200 => 12,  195 => 7,  185 => 8,  180 => 7,  174 => 10,  170 => 9,  165 => 7,  155 => 10,  150 => 7,  127 => 5,  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  453 => 151,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 122,  384 => 121,  381 => 185,  379 => 119,  374 => 116,  368 => 112,  365 => 111,  362 => 110,  360 => 109,  355 => 106,  341 => 105,  337 => 103,  322 => 101,  314 => 99,  312 => 127,  309 => 67,  305 => 95,  298 => 38,  294 => 58,  285 => 30,  283 => 73,  278 => 71,  268 => 100,  264 => 46,  258 => 81,  252 => 39,  247 => 78,  241 => 7,  229 => 32,  220 => 72,  214 => 29,  177 => 9,  169 => 60,  140 => 8,  132 => 9,  128 => 8,  107 => 63,  61 => 19,  273 => 96,  269 => 65,  254 => 38,  243 => 37,  240 => 48,  238 => 36,  235 => 59,  230 => 8,  227 => 81,  224 => 71,  221 => 77,  219 => 9,  217 => 50,  208 => 45,  204 => 9,  179 => 69,  159 => 9,  143 => 56,  135 => 7,  119 => 43,  102 => 8,  71 => 8,  67 => 19,  63 => 6,  59 => 28,  38 => 10,  94 => 9,  89 => 20,  85 => 7,  75 => 9,  68 => 7,  56 => 9,  87 => 8,  21 => 2,  26 => 6,  93 => 6,  88 => 30,  78 => 6,  46 => 42,  27 => 24,  44 => 5,  31 => 3,  28 => 14,  201 => 67,  196 => 90,  183 => 82,  171 => 26,  166 => 8,  163 => 62,  158 => 17,  156 => 9,  151 => 9,  142 => 7,  138 => 9,  136 => 10,  121 => 46,  117 => 10,  105 => 40,  91 => 7,  62 => 18,  49 => 14,  24 => 4,  25 => 1,  19 => 1,  79 => 10,  72 => 8,  69 => 23,  47 => 7,  40 => 5,  37 => 36,  22 => 2,  246 => 52,  157 => 54,  145 => 46,  139 => 6,  131 => 47,  123 => 7,  120 => 5,  115 => 2,  111 => 37,  108 => 6,  101 => 14,  98 => 10,  96 => 37,  83 => 28,  74 => 14,  66 => 7,  55 => 4,  52 => 8,  50 => 14,  43 => 6,  41 => 13,  35 => 18,  32 => 5,  29 => 4,  209 => 82,  203 => 22,  199 => 21,  193 => 17,  189 => 9,  187 => 12,  182 => 61,  176 => 9,  173 => 8,  168 => 25,  164 => 59,  162 => 56,  154 => 10,  149 => 51,  147 => 8,  144 => 9,  141 => 10,  133 => 8,  130 => 6,  125 => 44,  122 => 12,  116 => 14,  112 => 1,  109 => 8,  106 => 36,  103 => 51,  99 => 35,  95 => 8,  92 => 36,  86 => 33,  82 => 27,  80 => 27,  73 => 25,  64 => 27,  60 => 10,  57 => 8,  54 => 80,  51 => 14,  48 => 50,  45 => 12,  42 => 40,  39 => 13,  36 => 5,  33 => 4,  30 => 3,);
+        return array (  272 => 65,  266 => 64,  251 => 52,  245 => 48,  242 => 47,  236 => 43,  233 => 42,  201 => 12,  195 => 10,  191 => 9,  187 => 8,  182 => 7,  175 => 10,  171 => 9,  167 => 8,  162 => 7,  156 => 10,  152 => 9,  148 => 8,  143 => 7,  137 => 10,  133 => 9,  129 => 8,  124 => 7,  118 => 10,  114 => 9,  110 => 8,  105 => 7,  99 => 10,  95 => 9,  91 => 8,  86 => 7,  80 => 10,  76 => 9,  72 => 8,  67 => 7,  61 => 10,  57 => 9,  53 => 8,  48 => 7,  44 => 6,  41 => 5,  35 => 4,  32 => 3,);
     }
 }
