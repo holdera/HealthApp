@@ -581,7 +581,7 @@ class appDevDebugProjectContainer extends Container
         $b = new \Doctrine\DBAL\Configuration();
         $b->setSQLLogger($a);
 
-        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => 8889, 'dbname' => 'healthdb', 'user' => 'root', 'password' => 'root', 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
+        return $this->services['doctrine.dbal.default_connection'] = $this->get('doctrine.dbal.connection_factory')->createConnection(array('driver' => 'pdo_mysql', 'host' => '50.62.209.8', 'port' => 3306, 'dbname' => 'healthApp', 'user' => 'APSquared', 'password' => 'APSquared1234', 'charset' => 'UTF8', 'driverOptions' => array()), $b, new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), array());
     }
 
     /**
@@ -3412,7 +3412,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => '/Applications/MAMP/htdocs/HealthApp/Symfony/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'ap_',
+            'kernel.name' => 'app',
             'kernel.cache_dir' => '/Applications/MAMP/htdocs/HealthApp/Symfony/app/cache/dev',
             'kernel.logs_dir' => '/Applications/MAMP/htdocs/HealthApp/Symfony/app/logs',
             'kernel.bundles' => array(
@@ -3438,11 +3438,11 @@ class appDevDebugProjectContainer extends Container
             'kernel.charset' => 'UTF-8',
             'kernel.container_class' => 'appDevDebugProjectContainer',
             'database_driver' => 'pdo_mysql',
-            'database_host' => '127.0.0.1',
-            'database_port' => 8889,
-            'database_name' => 'healthdb',
-            'database_user' => 'root',
-            'database_password' => 'root',
+            'database_host' => '50.62.209.8',
+            'database_port' => 3306,
+            'database_name' => 'healthApp',
+            'database_user' => 'APSquared',
+            'database_password' => 'APSquared1234',
             'mailer_transport' => 'smtp',
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,
@@ -3868,7 +3868,7 @@ class appDevDebugProjectContainer extends Container
 
             ),
             'assetic.java.bin' => '/usr/bin/java',
-            'assetic.node.bin' => '/usr/local/bin/node',
+            'assetic.node.bin' => '/usr/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',

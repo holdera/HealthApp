@@ -1,10 +1,10 @@
 parameters:
     database_driver: pdo_mysql
-    database_host: '127.0.0.1' #'50.62.209.8' #''
-    database_port: 8889 #3306
-    database_name: healthdb #healthApp
-    database_user: root #APSquared
-    database_password: root #APSquared1234
+    database_host: '50.62.209.8'
+    database_port: 3306
+    database_name: healthApp
+    database_user: APSquared
+    database_password: APSquared1234
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
