@@ -151,3 +151,5 @@ b467ae,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/logi
 >>>>>>> FETCH_HEAD
 74ba30,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402963553,45975e
 45975e,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402963553,
+6a5d92,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402964064,
+91181f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402964751,
