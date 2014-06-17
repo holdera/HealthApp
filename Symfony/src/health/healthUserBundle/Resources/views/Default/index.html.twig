@@ -28,13 +28,14 @@
 
     <nav class="top_nav">
         <ul>
-            <li><a href="#">Login</a></li>
+            <li><a href="/HealthApp/Symfony/web/app_dev.php/login">Login</a></li>
             <li><a href="/HealthApp/Symfony/web/app_dev.php/lifestyle">Lifestyle</a></li>
-            <li><a href="#">Fitness</a></li>
-            <li><a href="#">Detox</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Chatroom</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="/HealthApp/Symfony/web/app_dev.php/exercise">Fitness</a></li>
+            <li><a href="/HealthApp/Symfony/web/app_dev.php/detox">Detox</a></li>
+            <li><a href="/HealthApp/Symfony/web/app_dev.php/forum">Forum</a></li>
+            <li><a href="/HealthApp/Symfony/web/app_dev.php/chat">Chatroom</a></li>
+            <li><a href="/HealthApp/Symfony/web/app_dev.php/resource">Resources</a></li>
+
         </ul>
     </nav>
 
@@ -64,7 +65,7 @@
 
     <section class="container-fluid cont_top">
 
-        <section class="row first">
+        <section class="row first" data-0="background-color:rgb(208, 205, 211);" data-500="background-color:rgb(71, 29, 112); color:#fff">
 
     <section class="col-md-6 col-md-push-1 welcome da">
         <h1>Change Your Lifestyle!</h1>
@@ -100,13 +101,17 @@
 
 </section><!--end of row-->
 
-        <section id="why" class="row">
-            <h1 class="quote">Why Join Us?</h1>
+        <section class="row join" data-0="background-color:#ebfeed;"
+                 data-top="background-color:(0,0,0);"
+                 data-anchor-target=".join">
+            <h1 class="quote skrollable skrollable-between" data-top-top="left:50%;" data-bottom-bottom="left:25%">Why Join Us?</h1>
         </section>
 
-        <section class="row third">
+        <section class="row why"  data-center="opacity:1" data-100-end="opacity:0.2">
 
-            <section class="col-md-4">
+            <section class="col-md-4 check">
+
+                <img src="{{ asset('bundles/healthhealthuser/images/record.png') }}" alt="love" />
 
                 <ul class="list_one">
                     <li>Add years to your life</li>
@@ -117,7 +122,9 @@
 
             </section>
 
-            <section class="col-md-4">
+            <section class="col-md-4 check">
+
+                <img src="{{ asset('bundles/healthhealthuser/images/check.png') }}" alt="check" />
 
                 <ul class="list_two">
                     <li>Learn new ways to make your favorite foods healthy</li>
@@ -128,7 +135,9 @@
 
             </section>
 
-            <section class="col-md-4">
+            <section class="col-md-4 check">
+
+                <img src="{{ asset('bundles/healthhealthuser/images/heart.png') }}" alt="love" />
 
                 <ul class="list_two">
                     <li>Try new healthy foods</li>
@@ -143,27 +152,26 @@
         </section>
 
 
-        <section class="row third">
+        <section class="row extras" data-center-bottom="opacity: 1" data-center-top="opacity: 0.3">
 
-            <section class="col-md-4">
 
-                <img src="{{ asset('bundles/healthhealthuser/images/run.png') }}" alt="running" class="hL"/>
+            <section class="col-md-6 col-md-push-1">
 
-            </section>
-
-            <section class="col-md-4">
-
-                <h1 class="quote">"Take care of your body. It's the only place you to live in" </h1>
+                <h1 class="quote">"Take care of your body. It's the only place you live in" </h1>
                 <span class="quote">-Anymonous</span>
 
             </section>
 
-            <section class="col-md-4">
+            <section class="col-md-6">
 
                 <img src="{{ asset('bundles/healthhealthuser/images/apple.png') }}" alt="apple" class="apple"/>
 
             </section>
 
+
+        </section>
+
+        <section class="try">
 
         </section>
 
@@ -226,7 +234,7 @@
         </section>
 
     </footer>
-    <script>
-        $(window).stellar('.first');
+    <script type="text/javascript">
+        var s = skrollr.init();
     </script>
 {% endblock %}

@@ -1,4 +1,4 @@
-$link:#fbf202;
+$link:#149155;
 $light:#ebfeed;
 $main:#481d70;
 $text:#000;
@@ -6,7 +6,9 @@ $white:#fff;
 
 body{
   margin:0;
+  height:804px;
   padding:0;
+    a{color:$main;}
 	a:hover{ color:$link;}
 	color:$text;
 	list-style-types:none;
@@ -35,7 +37,9 @@ header{
   text-decoration: none;
     color:$white;
   }
-  li a:hover{ color:$link;}
+  li  a:hover{
+    color:#fbf202;
+  }
 }
 #non-slider{
   width:1024px;
@@ -106,25 +110,34 @@ header{
   margin-bottom:60px;
 }
 
-
-.quote{
-  font-style: italic;
-  text-align: center;
-}
 .hL{
   border-radius: 60%;
 }
 
-#why{
-  padding:50px 0;
+.check{
+  img{
+    padding:30px 140px;
+  }
+    li{text-align: center; list-style-type: none;}
+  }
+
+.join{
+  margin:90px 0;
+  height:150px;
+  background-color:$light;
+  .quote{
+    padding:20px 0 0 0;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+.why{
+  height:400px;
+  margin:20px 0;
 }
 
-.third{
-  margin:20px 0;
-  height:400px;
-  li{
-    padding:8px 0;
-  }
+.extras{
+  margin:100px 0 -50px 0;
 }
 /*content styles*/
 

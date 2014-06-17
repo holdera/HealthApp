@@ -3412,7 +3412,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => '/Applications/MAMP/htdocs/HealthApp/Symfony/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => '/Applications/MAMP/htdocs/HealthApp/Symfony/app/cache/dev',
             'kernel.logs_dir' => '/Applications/MAMP/htdocs/HealthApp/Symfony/app/logs',
             'kernel.bundles' => array(
@@ -3868,7 +3868,7 @@ class appDevDebugProjectContainer extends Container
 
             ),
             'assetic.java.bin' => '/usr/bin/java',
-            'assetic.node.bin' => '/usr/bin/node',
+            'assetic.node.bin' => '/usr/local/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',

@@ -7,8 +7,23 @@
 
 {% block main_content %}
     <section class="col-md-9 main_content">
+
         <h2>BMI Calculator</h2>
 
+        <section class="col-md-4 heart">
+            <img src="{{ asset('bundles/healthhealthuser/images/solid-heart-plus.png') }}" alt="weights" />
+        </section>
+
+        <section class="col-md-4 heart">
+        <img src="{{ asset('bundles/healthhealthuser/images/line-heart.png') }}" alt="weights" />
+    </section>
+
+        <section class="col-md-4 heart">
+            <img src="{{ asset('bundles/healthhealthuser/images/solid-heart-minus.png') }}" alt="weights" />
+        </section>
+
+
+    <section class="heart">
      <form>
          <label>Weight (lbs):</label>
          <input type="text" id="weight">
@@ -19,6 +34,7 @@
          <input type="button" id="submit" onclick="calcBMI();" class="btn" value="calculate" />
 
      </form>
+
 
         <section>
             <p id="bmiResults"></p>
@@ -40,6 +56,8 @@
         </section>
 
         <input type="button" class="btn allBtn" value="Back" onclick="goBack();" />
+
+        </section>
     </section><!--end of container-->
 
     {% block javascripts  %}

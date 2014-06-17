@@ -22,7 +22,10 @@
 
     <section class="col-md-9 main_content">
 
-        <section id="kale" class="col-md-4">
+        <h1>Green N Lean</h1>
+
+        <section id="kale" class="col-md-4 green">
+            <img src="{{ asset('bundles/healthhealthuser/images/kale.png') }}" alt="recipes" />
             {% for kale in greens %}
                 <h2 class="title">{{ kale.green }}</h2>
                 <p> {{ kale.gContent }}</p>
@@ -30,7 +33,8 @@
             {% endfor %}
         </section>
 
-        <section id="spinach" class="col-md-4">
+        <section id="spinach" class="col-md-4 green">
+            <img src="{{ asset('bundles/healthhealthuser/images/spinach.png') }}" alt="recipes" />
             {% for spin in spinach %}
                 <h2 class="title">{{ spin.green }}</h2>
                 <p> {{ spin.gContent }}</p>
@@ -38,7 +42,8 @@
             {% endfor %}
         </section>
 
-        <section id="collards" class="col-md-4">
+        <section id="collards" class="col-md-4 green">
+            <img src="{{ asset('bundles/healthhealthuser/images/collards.png') }}" alt="recipes" />
             {% for coll in collards %}
                 <h2 class="title">{{ coll.green }}</h2>
                 <p> {{ coll.gContent }}</p>

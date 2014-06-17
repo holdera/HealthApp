@@ -4,9 +4,9 @@ namespace health\forumBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use Symfony\forumBundle\Entity\forum;
 
 class CreateController extends Controller
+
 {
 
     public function createAction(){
@@ -21,7 +21,7 @@ class CreateController extends Controller
         $em->persist($forum);
         $em->flush();
 
-        return new Response('Thanks for posting');
+        return $this->render('healtForumBundle:Create:create.html.twig');
     }
 }
 
@@ -29,5 +29,5 @@ class CreateController extends Controller
  * Created by PhpStorm.
  * User: alannahholder
  * Date: 2014-06-16
- * Time: 8:33 AM
+ * Time: 8:33 AM new Response('Thanks for posting'),
  */ 
