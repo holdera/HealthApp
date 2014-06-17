@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 74652c,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1403011591,
 88dc6d,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1403011644,
 a4bc95,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/login,1403011681,
@@ -88,3 +89,17 @@ ca7892,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/greenlean
 a01398,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/greenlean,1403017667,
 301828,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/greenlean,1403017778,
 df9d68,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/greenlean,1403017836,
+=======
+d28f77,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/,1403017481,
+eab284,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1403017511,
+32e2ed,::1,POST,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1403017526,
+2cac52,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/editprofile,1403017536,
+32c620,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/cpassword,1403017540,
+c673d0,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/addrecipe,1403017544,
+e1dde1,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/showrecipe,1403017554,
+55eeb3,::1,POST,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/editrecipe,1403017563,
+f8a436,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/logout,1403017569,
+6ef23e,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/register,1403017581,
+7ee491,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1403017602,
+464b1f,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/recover,1403017608,
+>>>>>>> FETCH_HEAD

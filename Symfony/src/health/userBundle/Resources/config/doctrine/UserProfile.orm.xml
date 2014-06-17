@@ -13,7 +13,6 @@
     <field name="city" type="string" column="city" length="20" nullable="false"/>
     <field name="province" type="string" column="province" length="20" nullable="false"/>
     <field name="country" type="string" column="country" length="20" nullable="false"/>
-    <field name="image" type="string" column="image" length="30" nullable="false"/>
     <field name="height" type="string" column="height" length="4" nullable="false"/>
     <field name="weight" type="string" column="weight" length="4" nullable="false"/>
     <field name="bodyType" type="string" column="body_type" length="11" nullable="false"/>
