@@ -10,12 +10,16 @@
         <link href="{{ asset_url }}"  rel="stylesheet" >
         {% endstylesheets %}
 <style type="text/css">
-
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
 
         .form-signin {
             max-width: 300px;
             padding: 19px 29px 29px;
-            margin: 50px 350px;
+            margin: 0 auto 20px;
             background-color: #fff;
             border: 1px solid #e5e5e5;
             -webkit-border-radius: 5px;
@@ -48,10 +52,10 @@
 {% block main_content %}
 
     <section class="col-md-9 main_content">
-<div class="row">
+<div class="container">
 
-        <form class=" col-md-6 form-signin" method ="POST" action="{{path('Login_login')}}" data-validate="parsley">
-            <h2 class="form-signin-heading">Login</h2>
+        <form class="form-signin" method ="POST" action="{{path('Login_login')}}" data-validate="parsley">
+            <h2 class="form-signin-heading">LogIn</h2>
             <input type="text" id="username" class="input-block-level" name="username" placeholder="Username" data-trigger="change" data-required="true">
             <input type="password" id="password" class="input-block-level" name="password" placeholder="Password" data-trigger="change" data-required="true">
             <br />

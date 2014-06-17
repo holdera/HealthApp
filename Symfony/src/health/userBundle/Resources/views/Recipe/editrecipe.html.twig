@@ -16,6 +16,20 @@
             background-color: #f5f5f5;
         }
 
+        td{
+        padding: 20px;
+        height: 30px;
+        text-align:left;
+        }
+
+        th{
+
+        padding: 20px;
+        height: 30px;
+        text-align:left;
+        
+        }
+
         .form-signin {
             max-width: 600px;
             padding: 19px 29px 29px;
@@ -64,16 +78,20 @@
                 </thead>
                <tbody>
                     {% for recipes in recipe %}
+                    <form class="form-signin" method ="POST">
                     <tr>
-                        <td>{{recipes.title}}</td>
+                        <td>
+                        <input type="hidden" name="id" id="id" value="{{recipes.id}}">
+                        {{recipes.title}}
+                        </td>
                         <td>{{recipes.category}}</td>
                         <td>{{recipes.postedOn|date('Y-m-d H:i:s')}}</td>
                         <td>
-                            <button class="btn btn-large btn-primary" type="submit">Edit</button>
-                            <button class="btn btn-large btn-primary" type="submit">Delete</button>
+                            <button class="btn btn-large btn-primary" type="submit" formaction="{{path('Recipe_editrecipe')}}">Edit</button>
+                           
                         </td>
                     </tr>
-
+                    </form>
                      {% endfor %}
                 </tbody>
             </table>

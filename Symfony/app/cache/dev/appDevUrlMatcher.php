@@ -476,9 +476,34 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::showrecipeAction',  '_route' => 'Recipe_showrecipe',);
         }
 
-        // Upload_upload
-        if ($pathinfo === '/upload') {
-            return array (  '_controller' => 'health\\userBundle\\Controller\\UploadController::uploadAction',  '_route' => 'Upload_upload',);
+        // Recipe_editrecipe
+        if ($pathinfo === '/editrecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::editrecipeAction',  '_route' => 'Recipe_editrecipe',);
+        }
+
+        // Recipe_updaterecipe
+        if ($pathinfo === '/updaterecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::updaterecipeAction',  '_route' => 'Recipe_updaterecipe',);
+        }
+
+        // Recipe_deleterecipe
+        if ($pathinfo === '/deleterecipe') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\RecipeController::deleterecipeAction',  '_route' => 'Recipe_deleterecipe',);
+        }
+
+        // Profile_edit
+        if ($pathinfo === '/editprofile') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\ProfileController::editAction',  '_route' => 'Profile_edit',);
+        }
+
+        // Profile_addprofile
+        if ($pathinfo === '/addprofile') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\ProfileController::addprofileAction',  '_route' => 'Profile_addprofile',);
+        }
+
+        // Profile_updateprofile
+        if ($pathinfo === '/updateprofile') {
+            return array (  '_controller' => 'health\\userBundle\\Controller\\ProfileController::updateprofileAction',  '_route' => 'Profile_updateprofile',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

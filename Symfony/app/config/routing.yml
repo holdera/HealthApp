@@ -138,6 +138,27 @@ Recipe_showrecipe:
     path: /showrecipe
     defaults: { _controller: healthuserBundle:Recipe:showrecipe }
 
-Upload_upload:
-    path: /upload 
-    defaults: { _controller: healthuserBundle:Upload:upload }
+
+Recipe_editrecipe:
+    path: /editrecipe 
+    defaults: { _controller: healthuserBundle:Recipe:editrecipe }
+
+Recipe_updaterecipe:
+    path: /updaterecipe 
+    defaults: { _controller: healthuserBundle:Recipe:updaterecipe }
+
+Recipe_deleterecipe:
+    path: /deleterecipe 
+    defaults: { _controller: healthuserBundle:Recipe:deleterecipe }
+
+Profile_edit:
+    path: /editprofile
+    defaults: { _controller: healthuserBundle:Profile:edit }
+
+Profile_addprofile:
+    path: /addprofile
+    defaults: { _controller: healthuserBundle:Profile:addprofile }
+
+Profile_updateprofile:
+    path: /updateprofile
+    defaults: { _controller: healthuserBundle:Profile:updateprofile }

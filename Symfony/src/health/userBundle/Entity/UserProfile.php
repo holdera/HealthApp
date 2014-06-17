@@ -70,12 +70,6 @@ class UserProfile
 	protected $country;
 
 	/**
-	* @ORM\Column(type="string")
-	* @Assert\NotBlank()
-	*/
-	protected $image;
-
-	/**
 	* @ORM\Column(type="string", length=255)
 	* @Assert\NotBlank()
 	*/
@@ -205,17 +199,7 @@ class UserProfile
 	{
 		$this->country = $country;
 	}
-
-	public function getImage()
-	{
-		return $this->image;
-	}
-
-	public function setImage($image)
-	{
-		$this->image = $image;
-	}
-
+	
 	public function getHeight()
 	{
 		return $this->height;

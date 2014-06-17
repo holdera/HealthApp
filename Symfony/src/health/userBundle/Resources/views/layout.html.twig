@@ -22,11 +22,10 @@
             <nav class="top_nav">
                 <ul>
                     <li><a href="/HealthApp/Symfony/web/app_dev.php/">Home</a></li>
-                    <li><a href="/HealthApp/Symfony/web/app_dev.php/profile">Edit Profile</a></li>
+                    <li><a href="{{path('Profile_edit')}}">Edit Profile</a></li>
                     <li><a href="{{path('User_cpassword')}}">Change Password</a></li>
                     <li><a href="{{path('Recipe_addrecipe')}}">Recipes</a></li>
                     <li><a href="{{path('Recipe_showrecipe')}}">Edit Recipes</a></li>
-                    <li><a href="/HealthApp/Symfony/web/app_dev.php/chatroom">Chatroom</a></li>
                     <li><a href="{{path('Login_logout')}}">Logout</a></li>
                 </ul>
             </nav>
