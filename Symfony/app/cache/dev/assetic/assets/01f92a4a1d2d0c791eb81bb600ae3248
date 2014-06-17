@@ -1,0 +1,31 @@
+#health-slider {
+  border: solid thin #ccc; }
+  #health-slider .content-slider {
+    width: 400px; }
+
+.allBtn {
+  padding: 10px;
+  margin: 70px 0;
+  background-color: #481d70;
+  color: white;
+  font-size: 18px; }
+  .allBtn :hover {
+    color: #fbf202; }
+
+.green {
+  padding: 40px 0; }
+
+.green:hover {
+  color: green;
+  text-align: center;
+  padding: 0px 40px;
+  width: 300px;
+  border: #481d70 dashed thin; }
+
+.headers {
+  border-bottom: 1px solid #ccc;
+  padding: 9px 0; }
+
+.links {
+  clear: both;
+  display: block; }

@@ -9,6 +9,11 @@
         <link href="{{ asset_url }}"  rel="stylesheet" >
         {% endstylesheets %}
     {% endblock %}
+
+     {% block javascript %}
+         <script src="{{ asset('bundles/healthhealthuser/js/skrollr.min.js') }}"></script>
+         <script src="{{ asset('bundles/healthhealthuser/js/jquery-2.1.1.js') }}"></script>
+     {% endblock %}
 </head>
 {% endblock %}
 

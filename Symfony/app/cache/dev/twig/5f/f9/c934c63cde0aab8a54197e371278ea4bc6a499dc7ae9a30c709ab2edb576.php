@@ -12,6 +12,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'stylesheets' => array($this, 'block_stylesheets'),
+            'javascript' => array($this, 'block_javascript'),
             'header' => array($this, 'block_header'),
             'visual_heading' => array($this, 'block_visual_heading'),
             'main_content' => array($this, 'block_main_content'),
@@ -24,33 +25,33 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         // line 1
         echo " ";
         $this->displayBlock('head', $context, $blocks);
-        // line 14
+        // line 19
         echo "
 ";
-        // line 16
+        // line 21
         echo "
 
     ";
-        // line 18
+        // line 23
         $this->displayBlock('header', $context, $blocks);
-        // line 37
+        // line 42
         echo "
  ";
-        // line 38
-        $this->displayBlock('visual_heading', $context, $blocks);
-        // line 41
-        echo "
-
-";
         // line 43
-        $this->displayBlock('main_content', $context, $blocks);
-        // line 51
+        $this->displayBlock('visual_heading', $context, $blocks);
+        // line 46
         echo "
 
 ";
-        // line 53
+        // line 48
+        $this->displayBlock('main_content', $context, $blocks);
+        // line 56
+        echo "
+
+";
+        // line 58
         $this->displayBlock('sideBar', $context, $blocks);
-        // line 84
+        // line 89
         echo "
  <footer class=\"row\">
 
@@ -119,6 +120,11 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         // line 5
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 12
+        echo "
+     ";
+        // line 13
+        $this->displayBlock('javascript', $context, $blocks);
+        // line 17
         echo "</head>
 ";
     }
@@ -226,10 +232,24 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         echo "    ";
     }
 
-    // line 18
+    // line 13
+    public function block_javascript($context, array $blocks = array())
+    {
+        // line 14
+        echo "         <script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/skrollr.min.js"), "html", null, true);
+        echo "\"></script>
+         <script src=\"";
+        // line 15
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/js/jquery-2.1.1.js"), "html", null, true);
+        echo "\"></script>
+     ";
+    }
+
+    // line 23
     public function block_header($context, array $blocks = array())
     {
-        // line 19
+        // line 24
         echo "        <header>
             <h1 id=\"logo\">The Healthy Lifestyle</h1>
 
@@ -250,18 +270,18 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
     ";
     }
 
-    // line 38
+    // line 43
     public function block_visual_heading($context, array $blocks = array())
     {
-        // line 39
+        // line 44
         echo "
  ";
     }
 
-    // line 43
+    // line 48
     public function block_main_content($context, array $blocks = array())
     {
-        // line 44
+        // line 49
         echo "    <section class=\"row\">
 
 
@@ -271,16 +291,16 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 ";
     }
 
-    // line 53
+    // line 58
     public function block_sideBar($context, array $blocks = array())
     {
-        // line 54
+        // line 59
         echo " <section class=\"row\">
     <aside class=\"col-md-3\" id=\"page_side\">
 
         <aside class=\"sidebar\">
             <a href=\"/HealthApp/Symfony/web/app_dev.php/contest\"><img src=\"";
-        // line 58
+        // line 63
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/sideIMG1.png"), "html", null, true);
         echo "\" alt=\"contest\" /></a>
 
@@ -293,7 +313,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
         <aside class=\" sidebar\">
             <a href=\"/HealthApp/Symfony/web/app_dev.php/upperbody\"><img src=\"";
-        // line 68
+        // line 73
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/sideIMG2.png"), "html", null, true);
         echo "\" alt=\"weights\" /></a>
                 <h3>Sexy Arms</h3>
@@ -303,7 +323,7 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
         <aside class=\" sidebar\">
             <a href=\"/HealthApp/Symfony/web/app_dev.php/recipes\">
                 <img src=\"";
-        // line 75
+        // line 80
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/healthhealthuser/images/sideIMG3.png"), "html", null, true);
         echo "\" alt=\"recipes\" /></a>
             <h3>Healthy Recipes</h3>
@@ -323,6 +343,6 @@ class __TwigTemplate_5ff9c934c63cde0aab8a54197e371278ea4bc6a499dc7ae9a30c709ab2e
 
     public function getDebugInfo()
     {
-        return array (  307 => 75,  297 => 68,  284 => 58,  278 => 54,  275 => 53,  265 => 44,  262 => 43,  257 => 39,  254 => 38,  233 => 19,  230 => 18,  226 => 11,  220 => 9,  216 => 8,  211 => 7,  204 => 9,  200 => 8,  195 => 7,  189 => 9,  185 => 8,  180 => 7,  174 => 9,  170 => 8,  165 => 7,  159 => 9,  155 => 8,  150 => 7,  140 => 8,  135 => 7,  130 => 6,  127 => 5,  122 => 12,  120 => 5,  115 => 2,  112 => 1,  54 => 84,  52 => 53,  48 => 51,  46 => 43,  42 => 41,  40 => 38,  35 => 18,  28 => 14,  25 => 1,  171 => 26,  168 => 25,  161 => 18,  158 => 17,  154 => 10,  148 => 8,  144 => 9,  139 => 6,  132 => 8,  128 => 7,  123 => 6,  117 => 8,  113 => 7,  108 => 6,  102 => 8,  98 => 7,  93 => 6,  87 => 8,  83 => 7,  78 => 6,  72 => 8,  68 => 7,  63 => 6,  58 => 5,  55 => 4,  47 => 20,  45 => 17,  37 => 37,  34 => 4,  31 => 16,);
+        return array (  327 => 80,  317 => 73,  304 => 63,  298 => 59,  295 => 58,  285 => 49,  282 => 48,  277 => 44,  274 => 43,  253 => 24,  250 => 23,  244 => 15,  239 => 14,  236 => 13,  232 => 11,  226 => 9,  222 => 8,  217 => 7,  210 => 9,  206 => 8,  201 => 7,  195 => 9,  191 => 8,  186 => 7,  180 => 9,  176 => 8,  171 => 7,  165 => 9,  161 => 8,  156 => 7,  150 => 9,  146 => 8,  141 => 7,  136 => 6,  133 => 5,  128 => 17,  126 => 13,  123 => 12,  121 => 5,  116 => 2,  113 => 1,  55 => 89,  53 => 58,  49 => 56,  47 => 48,  43 => 46,  41 => 43,  38 => 42,  36 => 23,  32 => 21,  29 => 19,  26 => 1,);
     }
 }

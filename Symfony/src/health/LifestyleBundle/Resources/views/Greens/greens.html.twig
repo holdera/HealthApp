@@ -11,6 +11,12 @@
         {% endstylesheets %}
     {% endblock %}
 
+    {% block javascripts  %}
+        <script src="{{ asset('bundles/healthlifestyle/js/jquery-1.11.1.js') }}"></script>
+        <script src="{{ asset('bundles/healthlifestyle/js/jquery.liquid-slider.js') }}"></script>
+        <script src="{{ asset('bundles/healthlifestyle/js/jquery.touchSwipe.js') }}"></script>
+    {% endblock %}
+
 {% endblock %}
 
 {% block visual_heading %}
@@ -70,6 +76,12 @@
 
     </section><!-- end of content container-->
     <script>
+
+        $(document).ready(function(){
+            $('#collards').hide();
+            $('#kale').hide();
+            $('#spinach').hide();
+        });
 
         function goBack() {history.back();}
 
