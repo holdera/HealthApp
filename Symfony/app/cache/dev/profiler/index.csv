@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 7653e0,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/newpost,1402938734,
 c29260,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1402939519,
 efd651,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402939524,
@@ -142,3 +143,9 @@ f44566,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle
 cfe81d,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402962954,
 32c47f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402962985,
 0cd816,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1402963207,
+=======
+bbc0d9,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402963204,b467ae
+b467ae,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402963204,
+8f704d,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402963224,
+39917a,::1,GET,https://localhost/projects/HealthApp/Symfony/web/app_dev.php/login,1402963249,
+>>>>>>> FETCH_HEAD
