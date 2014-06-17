@@ -44,7 +44,7 @@
       <file leaf-file-name="finder.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="69" selection-start="1468" selection-end="1468" vertical-scroll-proportion="-3.75" vertical-offset="465" max-vertical-offset="3270">
+            <state line="37" column="69" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3270">
               <folding>
                 <marker date="1403015054000" expanded="false" signature="6708:6719" placeholder="..." />
               </folding>
@@ -52,19 +52,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="greens.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="greens.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="23" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.7980769" vertical-offset="815" max-vertical-offset="1410">
+            <state line="82" column="23" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-17.291666" vertical-offset="815" max-vertical-offset="1410">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <file leaf-file-name="CreateController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="315">
+            <state line="24" column="7" selection-start="528" selection-end="528" vertical-scroll-proportion="0.6923077" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="26" selection-start="580" selection-end="580" vertical-scroll-proportion="-0.0" vertical-offset="255" max-vertical-offset="1200">
+            <state line="17" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -82,7 +82,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="752" selection-end="974" vertical-scroll-proportion="-6.25" vertical-offset="150" max-vertical-offset="3675">
+            <state line="20" column="18" selection-start="752" selection-end="974" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3675">
               <folding />
             </state>
           </provider>
@@ -91,7 +91,7 @@
       <file leaf-file-name="lifestyle.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="-0.625" vertical-offset="450" max-vertical-offset="1065">
+            <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -100,7 +100,7 @@
       <file leaf-file-name="sample.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/healthSample/sample.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="-9.791667" vertical-offset="680" max-vertical-offset="1260">
+            <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -168,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/health/forumBundle/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/src/health/forumBundle/Resources/views/Create/create.html.twig" />
         <option value="$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig" />
         <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/welcome.html.twig" />
@@ -176,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php" />
       </list>
     </option>
   </component>
@@ -211,6 +211,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,7 +360,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LifestyleBundle" />
+              <option name="myItemId" value="forumBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,193 +382,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LifestyleBundle" />
+              <option name="myItemId" value="forumBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LifestyleBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="healthSample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LifestyleBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="healthUserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="healthUserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="healthUserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="healthUserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -905,11 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="121" selection-end="121" vertical-scroll-proportion="0.20192307" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="44" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="705">
@@ -933,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="69" selection-start="1468" selection-end="1468" vertical-scroll-proportion="-3.75" vertical-offset="465" max-vertical-offset="3270">
+        <state line="37" column="69" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3270">
           <folding>
             <marker date="1403015054000" expanded="false" signature="6708:6719" placeholder="..." />
           </folding>
@@ -949,35 +768,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1200">
+        <state line="17" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="752" selection-end="974" vertical-scroll-proportion="-6.25" vertical-offset="150" max-vertical-offset="3675">
+        <state line="20" column="18" selection-start="752" selection-end="974" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="-0.625" vertical-offset="450" max-vertical-offset="1065">
+        <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/healthSample/sample.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="-9.791667" vertical-offset="680" max-vertical-offset="1260">
+        <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="23" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.7980769" vertical-offset="815" max-vertical-offset="1410">
+        <state line="82" column="23" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-17.291666" vertical-offset="815" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="528" selection-end="528" vertical-scroll-proportion="0.6923077" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>

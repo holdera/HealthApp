@@ -9,7 +9,7 @@ class CreateController extends Controller
 
 {
 
-    public function createAction(){
+  /*  public function createAction(){
 
 
         $forum = new forum();
@@ -22,7 +22,7 @@ class CreateController extends Controller
         $em->flush();
 
         return $this->render('healtForumBundle:Create:create.html.twig');
-    }
+    }*/
 }
 
 /**
