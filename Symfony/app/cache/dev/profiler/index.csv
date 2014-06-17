@@ -81,3 +81,5 @@ dd909f,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1
 0104d8,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1403014956,
 dbdf05,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1403015063,
 968f2d,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/findgym,1403015127,
+5563e1,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/,1403016998,
+f0ed80,::1,GET,http://localhost:8888/HealthApp/Symfony/web/app_dev.php/lifestyle,1403017004,
