@@ -57,6 +57,13 @@
             {% endfor %}
         </section>
 
+
+            <p>What are you most deficient in?</p>
+            <button id="I" value="iron">Iron</button>
+            <button id="K" value="iron">Vitamin K</button>
+            <button id="M" value="iron">Minerals</button>
+
+
 <section class="row">
         <section class="helpful col-md-8">
             <h2 class="headers">Helpful Links</h2>
@@ -72,18 +79,30 @@
         </section>
     </section>
 
+
+
         <input type="button" class="btn allBtn" value="Back" onclick="goBack();" />
 
     </section><!-- end of content container-->
     <script>
 
         $(document).ready(function(){
+
             $('#collards').hide();
             $('#kale').hide();
             $('#spinach').hide();
+
+            $('#K').click(function(){
+               $('#kale').show(6000);
+            });
+
+            $('#I').click(function(){
+                $('#collards').show(6000);
+            });
+
+            $('#M').click(function(){
+                $('#spinach').show(6000);
+            });
         });
-
-        function goBack() {history.back();}
-
     </script>
 {% endblock %}

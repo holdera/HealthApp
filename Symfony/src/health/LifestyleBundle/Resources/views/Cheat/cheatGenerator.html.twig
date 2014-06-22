@@ -8,23 +8,14 @@
 {% block main_content %}
     <section class="col-md-9 main_content">
 
-        <h2>BMI Calculator</h2>
-
-        <section class="col-md-4 heart">
-            <img src="{{ asset('bundles/healthhealthuser/images/solid-heart-plus.png') }}" alt="weights" />
-        </section>
-
-        <section class="col-md-4 heart">
-        <img src="{{ asset('bundles/healthhealthuser/images/line-heart.png') }}" alt="weights" />
-    </section>
-
-        <section class="col-md-4 heart">
-            <img src="{{ asset('bundles/healthhealthuser/images/solid-heart-minus.png') }}" alt="weights" />
-        </section>
+        <h2>Health Calculators</h2>
 
 
-    <section class="heart">
-     <form>
+    <section class="col-md-4 heart">
+
+    <h3>BMI Calculator</h3>
+
+     <form class="allForms">
          <label>Weight (lbs):</label>
          <input type="text" id="weight">
 
@@ -36,14 +27,12 @@
      </form>
 
 
-        <section>
-            <p id="bmiResults"></p>
-            <p id="results"></p>
-        </section>
+      </section>
 
-        <p id="bmiResults"></p>
+        <section class="col-md-4 heart">
 
-        <form>
+            <h3>Maximum Heart-Rate Calculator</h3>
+        <form class="allForms">
             <label>Age:</label>
             <input type="text" id="age">
 
@@ -51,13 +40,32 @@
 
         </form>
 
-        <section>
+            <input type="button" class="btn allBtn" value="Back" style="clear:both;" onclick="goBack();" />
+
+        </section>
+
+        <section class="col-md-4 heart">
+
+            <h3>Calorie Counter</h3>
+
+            <script src="http://platform.fatsecret.com/js?key=a4e50ded35ad42e480164e8c12245010&auto_load=true"></script>
+
+            <input type="button" class="btn allBtn" value="Back" style="clear:both;" onclick="goBack();" />
+
+        </section>
+
+        <section class="col-md-4 heart res">
+            <p id="bmiResults"></p>
+
+            <p id="results"></p>
+
+            <p id="bmiResults"></p>
+
             <p id="ageResults"></p>
+
+            <p id="calResults"></p>
         </section>
 
-        <input type="button" class="btn allBtn" value="Back" onclick="goBack();" />
-
-        </section>
     </section><!--end of container-->
 
     {% block javascripts  %}

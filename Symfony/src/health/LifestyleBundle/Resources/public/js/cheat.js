@@ -21,11 +21,11 @@ function calcBMI() {
         "Thank you. Your BMI is "+bmi;
 
     if(bmi > 29.9){
-        document.getElementById('results').innerHTML = "You are considered overweight";
+        document.getElementById('results').innerHTML = " You are considered overweight";
     } else if (bmi < 18.5){
-        document.getElementById('results').innerHTML = "You are considered underweight";
+        document.getElementById('results').innerHTML = " You are considered underweight";
     } else {
-        document.getElementById('results').innerHTML = "You are at a normal weight";
+        document.getElementById('results').innerHTML = " You are at a normal weight";
     }
 
 }
@@ -45,7 +45,7 @@ function calcBPM(){
 
     document.getElementById('ageResults').innerHTML =
         "As you are "+age+ " years of age, your maximum heart rate is "+maxHeart+
-    "Try to stay between "+lowEnd+ " and "+highEnd+ " Remember to workout safely!";
+    ". Try to stay between "+lowEnd+ " and "+highEnd+ ". Remember to workout safely!";
 
     var age = document.getElementById('age').value="";
 }

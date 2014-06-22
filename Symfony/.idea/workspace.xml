@@ -23,93 +23,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="forum.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="44" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="innerPage.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/bundles/healthhealthuser/css/innerPage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="9" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="2190">
+            <state line="114" column="23" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finder.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig">
+      <file leaf-file-name="detoxQ.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bundles/healthdetox/js/detoxQ.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="69" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3270">
-              <folding>
-                <marker date="1403015054000" expanded="false" signature="6708:6719" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="greens.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="23" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-17.291666" vertical-offset="815" max-vertical-offset="1410">
+            <state line="54" column="19" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php">
+      <file leaf-file-name="cheat.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bundles/healthlifestyle/js/cheat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="7" selection-start="528" selection-end="528" vertical-scroll-proportion="0.6923077" vertical-offset="0" max-vertical-offset="570">
+            <state line="47" column="56" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig">
+      <file leaf-file-name="cheatGenerator.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Cheat/cheatGenerator.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1260">
+            <state line="51" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.53038675" vertical-offset="477" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="life_styles.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/bundles/healthlifestyle/css/life_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="752" selection-end="974" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lifestyle.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/healthSample/sample.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/PostController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="7" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="435">
+            <state line="27" column="0" selection-start="334" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -125,14 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/health/forumBundle/Resources/config/doctrine/Words.orm.xml" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/butt.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/abs.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/arms.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Exercises/legs.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/ArmsController.php" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Arms/arms.html.twig" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/config/doctrine/Exercieses.orm.xml" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Controller/UpperController.php" />
         <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Upper/upperbody.html.twig" />
@@ -159,29 +104,37 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/health/ResourcesBundle/Controller/VideoController.php" />
         <option value="$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Video/videos.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Resource/resource.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/healthhealthuser/css/styles.scss" />
         <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/healthlifestyle/css/life_styles.scss" />
-        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Cheat/cheatGenerator.html.twig" />
         <option value="$PROJECT_DIR$/src/health/forumBundle/Controller/PostController.php" />
         <option value="$PROJECT_DIR$/src/health/forumBundle/Resources/views/Create/create.html.twig" />
         <option value="$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php" />
+        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/User/cpassword.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Register/register.html.twig" />
         <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig" />
         <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/welcome.html.twig" />
-        <option value="$PROJECT_DIR$/web/bundles/healthhealthuser/css/innerPage.scss" />
+        <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Recover/password.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Recover/recover.html.twig" />
+        <option value="$PROJECT_DIR$/src/health/userBundle/Resources/views/Recover/security.html.twig" />
+        <option value="$PROJECT_DIR$/web/bundles/healthlifestyle/js/cheat.js" />
+        <option value="$PROJECT_DIR$/web/bundles/healthdetox/js/detoxQ.js" />
+        <option value="$PROJECT_DIR$/src/health/DetoxBundle/Resources/views/Detox/detox.html.twig" />
         <option value="$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig" />
-        <option value="$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php" />
+        <option value="$PROJECT_DIR$/web/bundles/healthhealthuser/css/styles.scss" />
+        <option value="$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/bundles/healthlifestyle/css/life_styles.scss" />
+        <option value="$PROJECT_DIR$/web/bundles/healthhealthuser/css/innerPage.scss" />
+        <option value="$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Cheat/cheatGenerator.html.twig" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="45" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="664" />
   </component>
@@ -211,7 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,7 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forumBundle" />
+              <option name="myItemId" value="LifestyleBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,16 +334,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forumBundle" />
+              <option name="myItemId" value="LifestyleBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LifestyleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cheat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="health" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LifestyleBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,19 +500,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="45" width="1280" height="664" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="664" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16640624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1650641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.040880505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.040336136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -504,6 +522,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -525,51 +544,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/LowerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="58" selection-start="538" selection-end="538" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="525" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/MidsectionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="63" selection-start="548" selection-end="548" vertical-scroll-proportion="0.5464481" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/forumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.4918033" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ExerciseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="540" selection-end="540" vertical-scroll-proportion="0.6557377" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/UpperController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="587" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="525" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Contest/contest.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/ContestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="68" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="405" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="287" selection-end="287" vertical-scroll-proportion="0.32786885" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/ResourcesBundle/Controller/ResourceController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573" />
@@ -665,26 +639,6 @@
         <state line="46" column="5" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.56346154" vertical-offset="397" max-vertical-offset="945" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/healthlifestyle/css/life_styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="335" selection-end="335" vertical-scroll-proportion="-14.791667" vertical-offset="65" max-vertical-offset="735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Cheat/cheatGenerator.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="18" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.625" vertical-offset="560" max-vertical-offset="1185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/DetoxBundle/Resources/views/Detox/detox.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/bundles/healthhealthuser/css/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="3" selection-start="568" selection-end="568" vertical-scroll-proportion="-20.416666" vertical-offset="125" max-vertical-offset="3000" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/health/DetoxBundle/Controller/DetoxController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="7" selection-end="454" vertical-scroll-proportion="0.057692308" vertical-offset="0" max-vertical-offset="520" />
@@ -707,9 +661,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="10" selection-start="1653" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="2220">
-          <folding />
-        </state>
+        <state line="73" column="10" selection-start="1653" selection-end="1661" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="2220" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Default/index.html.twig">
@@ -717,93 +669,142 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/welcome.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="834" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.90729785" vertical-offset="410" max-vertical-offset="1140" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
+        <state line="4" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Resources/views/Forum/forum.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="44" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="705">
+        <state line="20" column="44" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="705" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="7" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="623" selection-end="623" vertical-scroll-proportion="0.46487603" vertical-offset="0" max-vertical-offset="2220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1065" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/healthSample/sample.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.34615386" vertical-offset="705" max-vertical-offset="1695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/User/cpassword.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="455" selection-end="455" vertical-scroll-proportion="-1.875" vertical-offset="120" max-vertical-offset="1140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.2366864" vertical-offset="60" max-vertical-offset="1185" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Recover/recover.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="465" selection-end="465" vertical-scroll-proportion="0.35502958" vertical-offset="0" max-vertical-offset="1125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Recover/password.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="461" selection-end="461" vertical-scroll-proportion="0.32544377" vertical-offset="0" max-vertical-offset="1140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Recover/security.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="467" selection-end="467" vertical-scroll-proportion="0.35502958" vertical-offset="0" max-vertical-offset="1140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/welcome.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="455" selection-end="455" vertical-scroll-proportion="0.31730768" vertical-offset="0" max-vertical-offset="945" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/DetoxBundle/Resources/views/Detox/detox.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="42" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="1130" max-vertical-offset="1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Register/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1200" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="2566" selection-end="2566" vertical-scroll-proportion="-7.2916665" vertical-offset="740" max-vertical-offset="3255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/healthhealthuser/js/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="2786" selection-end="2786" vertical-scroll-proportion="0.19774011" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="105" selection-start="4708" selection-end="4708" vertical-scroll-proportion="0.3653846" vertical-offset="1415" max-vertical-offset="3885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/healthhealthuser/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="12" selection-start="1897" selection-end="1897" vertical-scroll-proportion="0.626151" vertical-offset="1820" max-vertical-offset="3435" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/healthdetox/js/detoxQ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="19" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/healthlifestyle/css/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="89" selection-end="89" vertical-scroll-proportion="0.20192307" vertical-offset="0" max-vertical-offset="2565" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/healthlifestyle/js/cheat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="56" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/healthlifestyle/css/life_styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="334" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/healthhealthuser/css/innerPage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="9" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="2190">
+        <state line="114" column="23" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/PostController.php">
+    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Cheat/cheatGenerator.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="7" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/ResourcesBundle/Resources/views/Gym/finder.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="69" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3270">
-          <folding>
-            <marker date="1403015054000" expanded="false" signature="6708:6719" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="623" selection-end="623" vertical-scroll-proportion="0.46487603" vertical-offset="0" max-vertical-offset="2220">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/userBundle/Resources/views/Login/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/healthUserBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="752" selection-end="974" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Lifestyle/lifestyle.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="726" selection-end="1227" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/healthSample/sample.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="2" selection-start="1745" selection-end="2074" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/LifestyleBundle/Resources/views/Greens/greens.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="23" selection-start="2624" selection-end="2624" vertical-scroll-proportion="-17.291666" vertical-offset="815" max-vertical-offset="1410">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/health/forumBundle/Controller/CreateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="528" selection-end="528" vertical-scroll-proportion="0.6923077" vertical-offset="0" max-vertical-offset="570">
+        <state line="51" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.53038675" vertical-offset="477" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
